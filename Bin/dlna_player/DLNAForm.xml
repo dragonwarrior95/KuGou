@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <Forms>
+    <Form Name="DLNAForm" Position="0,0,334,414" ShadowBitmap="DlnaFrameShadow.png" ShadowBound="24,24,24,24">
+      <Image name="DLNAFormBackground" position="2,2,332,152" Bitmap="DlnaBackground.png"/>
+	  <Button name="DLNAFormClose" position="302,8,325,26" anchors="right,top" NormalBack="close_Normal.png" HoverBack="close_hot.png" DownBack="close_down.png" DisabledBack="close_disable.png"/>
+	  <Button name="DLNAFormMiniSize" position="279,8,302,26" anchors="right,top" NormalBack="mini_Normal.png" HoverBack="mini_hot.png" DownBack="mini_down.png" DisabledBack="mini_disable.png"/>
+	  <Image name="DLNAFormKugouLogo" position="8,8,73,24" anchors="left,top" Bitmap="LOGO.png"/>
+	  <Label name="DLNAFormSongStatus" position="70,34,313,46" anchors="left,top"/>
+	  <CheckBox name="DLNAFormPlayPause" position="8,36,68,96" anchors="left,top" NormalBack="BtnPlay_0.png" HoverBack="BtnPlay_1.png" DownBack="BtnPlay_2.png" DisabledBack="BtnPlay_3.png" SelectedNormal="BtnPlay_4.png" SelectedHover="BtnPlay_5.png" SelectedDown="BtnPlay_6.png" SelectedDisabled="BtnPlay_7.png"/>
+      <TrackBar name="DLNAFormProgressBar" position="64,53,325,67" anchors="top,left,right" TrackBarThumbSize="12,16" TrackBarBackground="main_progressbar_background.png" TrackBarFront="main_progressbar_front.png" TrackBarThumbNormal="main_progressbar_thumb0.png" TrackBarThumbDisable="main_progressbar_thumb3.png" TrackBarThumbHover="main_progressbar_thumb1.png" TrackBarThumbDown="main_progressbar_thumb2.png"/>
+	  <DigitalTime Anchors="top,left,right" name="DLNAFormTimeStatus" position="70,78,193,94"/>
+	  <Button name="DLNAFormVolumeIndicator" Anchors="right,top" position="237,71,269,101" NormalBack="volume_indicator_normal.png" HoverBack="volume_indicator_hovering.png" DownBack="volume_indicator_pressed.png" DisabledBack="volume_indicator_disabled.png" />
+	  <TrackBar Anchors="top,right" name="DLNAFormVolume" position="260,78,325,92" TrackBarThumbSize="12,14" TrackBarBackground="mainvolumeback.png" TrackBarFront="SliderBkgndH_1.png" TrackBarThumbNormal="SoudSliderThumb_0.png" TrackBarThumbDisable="SoudSliderThumb_3.png" TrackBarThumbHover="SoudSliderThumb_1.png" TrackBarThumbDown="SoudSliderThumb_2.png"/>
+	  <Image name="DLNAFormPhonePic" Position="14,121,28,142" Bitmap="phone.png"/>
+	  <Label name="DLNAFormSenderId" position="34,124,204,139"/><!--这个大小还要代码里面更改-->
+	  <Label name="DLNAHelpLabel" position="242,125,300,137" anchors="right,top"/>
+	  <CheckBox name="DLNASwitchCheckBox" position="305,128,316,134" NormalBack="dlna_open_help_down.png" HoverBack="dlna_open_help_down.png" DownBack="dlna_open_help_down.png" DisabledBack="dlna_open_help_down.png" SelectedNormal="dlna_open_help_up.png" SelectedHover="dlna_open_help_up.png" SelectedDown="dlna_open_help_up.png" SelectedDisabled="dlna_open_help_up.png"/>
+	  <Button name="DLNAFormDisconnect" position="247,118,323,144" NormalBack="disconnect_normal.png" HoverBack="disconnect_hover.png" DownBack="disconnect_down.png" DisabledBack="disconnect_disabled.png"/>
+	  <Container name="DLNAGuideContianer" position="0,140,334,414">
+		<Image name="DLNAGuidePic" position="44,4,292,183" bitmap="DLNAFunctionGuide.png"/>
+		<Label name="DLNAGuideLabel" position="20,190,314,280"/>
+	  </Container>
+    </Form>
+
+	<WindowContainer name="DLNATrayIconMenu" Position="0,0,87,26" >
+      <Image name="DLNATrayIconMenuBackground" Position="0,0,87,26" Bitmap="menu_background.png"/>
+	  <Button name="DLNATrayIconMenuQuit" position="2,1,82,22" NormalBack="" HoverBack="" DownBack="" DisabledBack=""/>
+    </WindowContainer>
+	
+	<Form name="MessageBox" position="0,0,270,170" ShadowBitmap="ShadowImgFrame.png" ShadowBound="8,7,8,8">
+		<Button name="MessageBoxClose" anchors="top,right" position="238,6,261,24" NormalBack="close_Normal.png" HoverBack="close_hot.png" DownBack="close_down.png"/>
+		<Image name="MessageBoxBackground" anchors="left,top,right,bottom" position="3,0,267,167" Bitmap="MsgboxPanle.png"/>
+		<Image name="MessageBoxIcon" anchors="left,top" position="3,27,114,145" Bitmap="MsgBoxIcon.png"/>
+		<Label name="MessageBoxText" position="77,70,200,100"/>
+		<CheckBox name="MessageBoxCheckBox" position="13,134,13,150" achors="left,bottom"/>
+		<Button name="MessageBoxFirstButton" anchors="right,bottom" position="185,132,259,158" NormalBack="MsgboxBtnNormal_0.png" HoverBack="MsgboxBtnNormal_1.png" DownBack="MsgboxBtnNormal_2.png"/>
+		<Button name="MessageBoxSecondButton" anchors="right,bottom" position="99,132,173,158" NormalBack="MsgboxBtnConfirm_0.png" HoverBack="MsgboxBtnConfirm_1.png" DownBack="MsgboxBtnConfirm_2.png"/>
+		<Button name="MessageBoxSecondButtonNormal" anchors="right,bottom" position="99,132,173,158" NormalBack="MsgboxBtnNormal_0.png" HoverBack="MsgboxBtnNormal_1.png" DownBack="MsgboxBtnNormal_2.png"/>
+		<Button name="MessageBoxThirdButton" anchors="right,bottom" position="13,132,87,158" NormalBack="MsgboxBtnConfirm_0.png" HoverBack="MsgboxBtnConfirm_1.png" DownBack="MsgboxBtnConfirm_2.png"/>
+	</Form>
+ </Forms>

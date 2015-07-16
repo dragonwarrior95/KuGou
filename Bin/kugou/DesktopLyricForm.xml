@@ -1,0 +1,6 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Form Name="DesktopLyricForm" ClipPic="" Position="0,0,900,50" BackgroundSep="7,7,63,24" BackgroundPic="Desktop_lyric_form_Back.png">
+    <MusicRender Name="DesktopLyricFormLyricRender" Position="7,7,893,43" Anchors="left,top,right,bottom"/>
+  </Form>
+</Forms>

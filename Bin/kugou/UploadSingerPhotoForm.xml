@@ -1,0 +1,13 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Form Name="UploadSingerPhotoForm" Position="0,0,458,321" ShadowBitmap="ShadowImgFrame.png" ShadowBound="8,7,8,8">
+    <Image Name="UploadSingerPhotoFormBackgroundImage" Anchors="left,top,right,bottom" RelativePosition="0,0,0,0" Bitmap="DlgPanel.png" />
+    <WindowControl Name="UploadSingerPhotoFormWebBrowser" Anchors="left,top,right,bottom" RelativePosition="3,30,3,3" WinBackColor="0xFFFFFFFF"/>
+    <WindowControl Name="UploadSingerPhotoFormLoadingWndContainer" Anchors="" RelativePosition="0,0,174,110" WinBackColor="0xFFFFFFFF"/>
+    <Button Name="UploadSingerPhotoFormCloseButton" Anchors="right,top" RelativePosition="10,7,25,21" NormalBack="close_Normal.png" HoverBack="close_hot.png" DownBack="close_down.png" DisabledBack="close_disable.png"/>
+    <Container Name="UploadSingerPhotoFormErrorContainer" Anchors="" RelativePosition="0,0,226,182">
+      <Image Name="_0" RelativePosition="0,0,226,136" Bitmap="UploadSingerPhotoFormErrerIcon.png" Anchors="top"/>
+      <Image Name="_1" RelativePosition="0,166,221,16" Bitmap="UploadSingerPhotoFormErrorTips.png" Anchors="top"/>      
+    </Container>
+  </Form>
+</Forms>

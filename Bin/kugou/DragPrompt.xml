@@ -1,0 +1,6 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Container Name="DragPrompt" Position="0,0,290,150" BackgroundPic="DragPrompt.png" BackgroundSep="0,0,0,0">
+    <Button Name="PromptClose" Anchors="right,top," RelativePosition="39,11,27,25" NormalBack="ActiveDesktopFormTipsCloseButton_0.png" HoverBack="ActiveDesktopFormTipsCloseButton_1.png" DownBack="ActiveDesktopFormTipsCloseButton_2.png" DisabledBack="ActiveDesktopFormTipsCloseButton_3.png"/>
+  </Container>
+</Forms>

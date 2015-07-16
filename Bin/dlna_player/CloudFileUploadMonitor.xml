@@ -1,0 +1,29 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Form name="CloudFileUploadMonitor" position="0,0,467,339" ShadowBitmap="ShadowImgFrame.png" ShadowBound="8,7,8,8">
+    <Button name="CloudFileUploadMonitorClose" position="435,6,460,27" NormalBack="close_Normal.png" HoverBack="close_hot.png" DownBack="close_down.png"/>
+    <Label name="CloudFileUploadMonitorUploadInfo" position="300,40,415,55"/>
+    <CheckBox name="CloudFileUploadMonitorPause" position="420,34,442,56" NormalBack="FavorUploadMonitorPauseBtn_0.png" HoverBack="FavorUploadMonitorPauseBtn_1.png" DownBack="FavorUploadMonitorPauseBtn_3.png" DisabledBack="FavorUploadMonitorPauseBtn_4.png" SelectedNormal="FavorUploadMonitorPauseBtn_4.png" SelectedHover="FavorUploadMonitorPauseBtn_5.png" SelectedDown="FavorUploadMonitorPauseBtn_6.png" SelectedDisabled="FavorUploadMonitorPauseBtn_7.png"/>
+    <Image name="CloudFileUploadMonitorSplit" position="3,60,463,72" Bitmap="FavorUploadMonitorLine.png"/>
+    <Image name="CloudFileUploadMonitorBackground" position="3,-27,467,339" Bitmap="DlgPanel.png"/>
+    <Container name="CloudFileUploadMonitorList" position="3,63,465,336">
+      <Container name="_0">
+        <ScrollBar Name="_0"/>
+        <Container name="_1">
+          <Container name="CloudFileUploadMonitorItem">
+            <Image name="CloudFileUploadMonitorItemUploadStateDone" position="17,18,27,28" Bitmap="FavorUploadGroupStateDone.png"/>
+            <Image name="CloudFileUploadMonitorItemUploadStateError" position="17,18,27,28" Bitmap="FavorUploadGroupStateError.png"/>
+            <Image name="CloudFileUploadMonitorItemUploadStatePause" position="17,18,27,28" Bitmap="FavorUploadGroupStatePause.png"/>
+            <Image name="CloudFileUploadMonitorItemUploadStateUploading" position="17,18,27,28" Bitmap="FavorUploadGroupStateUpload.png"/>
+            <Image name="CloudFileUploadMonitorItemUploadStateWait" position="17,18,27,28" Bitmap="FavorUploadGroupStateWait.png"/>
+            <Label name="CloudFileUploadMonitorItemSongTitle" position="37,18,167,33"/>
+            <Label name="CloudFileUploadMonitorItemSongSize" position="174,18,214,33"/>
+            <ProgressBar name="CloudFileUploadMonitorItemProgress" position="232,17,382,25"/>
+            <Label name="CloudFileUploadMonitorItemPercent" position="394,18,424,33"/>
+          </Container>
+        </Container>
+      </Container>
+      <ColumnHead name="_1" position="0,0,0,0"/>
+    </Container>
+  </Form>
+</Forms>

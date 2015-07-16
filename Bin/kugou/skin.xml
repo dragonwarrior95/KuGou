@@ -1,0 +1,4 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<!--这个皮肤包的颜色等信息-->
+<Skin MainColor="0xFF64b0fa" MainBack="MainSkin.jpg" MainBackThumb="MainSkin_Thumb.png" HintWindowBack="TipBak.png" HintWindowFontColor="0xFF000000">
+</Skin>

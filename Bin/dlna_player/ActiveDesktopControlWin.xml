@@ -1,0 +1,25 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Form Name="ActiveDesktopControlWin" Position="0,0,272,91" ClipPic="" FrameSep="0,0,0,0" FramePic="">
+    <Container Name="_0" Anchors="left,top,right,bottom" RelativePosition="0,0,0,0">
+      <Button Name="_0" Anchors="left,top" RelativePosition="11,37,40,40" NormalBack="active_desktop_logo_0.png" HoverBack="active_desktop_logo_1.png" DownBack="active_desktop_logo_2.png" DisabledBack="active_desktop_logo_3.png"/>
+      <Button Name="_1" Anchors="left,top" RelativePosition="53,37,40,40" NormalBack="active_desktop_pre_0.png" HoverBack="active_desktop_pre_1.png" DownBack="active_desktop_pre_2.png" DisabledBack="active_desktop_pre_3.png"/>
+      <CheckBox  Name="_2" Anchors="left,top" RelativePosition="95,37,40,40" NormalBack="active_desktop_play_0.png" HoverBack="active_desktop_play_1.png" DownBack="active_desktop_play_2.png" DisabledBack="active_desktop_play_3.png"
+        SelectedNormal="active_desktop_play_4.png" SelectedHover="active_desktop_play_5.png" SelectedDown="active_desktop_play_6.png" SelectedDisabled="active_desktop_play_7.png"/>
+      <Button Name="_3" Anchors="left,top" RelativePosition="137,37,40,40" NormalBack="active_desktop_next_0.png" HoverBack="active_desktop_next_1.png" DownBack="active_desktop_next_2.png" DisabledBack="active_desktop_next_3.png"/>
+      <Button Name="_4" Anchors="left,top" RelativePosition="179,37,40,40" NormalBack="active_desktop_settings_0.png" HoverBack="active_desktop_settings_1.png" DownBack="active_desktop_settings_2.png" DisabledBack="active_desktop_settings_3.png"/>
+      <Button Name="_5" Anchors="left,top" RelativePosition="221,37,40,40" NormalBack="active_desktop_exit_0.png" HoverBack="active_desktop_exit_1.png" DownBack="active_desktop_exit_2.png" DisabledBack="active_desktop_exit_3.png"/>
+      <Image Name="_6" Anchors="left,top" RelativePosition="0,0,272,91" Bitmap="ActiveDesktopControlBackImage.png"/>
+      <Label Name="_7" Anchors="left,top" RelativePosition="10,4,250,18" Constraints="0,0,241,9999" ControlSpace="6,6,2,18"/>
+      <Container Name="_8" Anchors="left,top" RelativePosition="150,0,110,30">
+        <CheckBox Name="_0" Anchors="left,top" RelativePosition="2,7,28,28" NormalBack="ActiveDesktopControlLike_0.png" HoverBack="ActiveDesktopControlLike_1.png" DownBack="ActiveDesktopControlLike_2.png" DisabledBack="ActiveDesktopControlLike_3.png" 
+          SelectedNormal="ActiveDesktopControlLike_4.png" SelectedHover="ActiveDesktopControlLike_5.png" SelectedDown="ActiveDesktopControlLike_6.png" SelectedDisabled="ActiveDesktopControlLike_7.png"/>
+        <Button name="_1" Anchors="left,top" RelativePosition="31,7,29,26" NormalBack="ActiveDesktopVolumeIndicator_0.png" HoverBack="ActiveDesktopVolumeIndicator_1.png" DownBack="ActiveDesktopVolumeIndicator_2.png" DisabledBack="ActiveDesktopVolumeIndicator_3.png"/>
+        <TrackBar Name="_2" Anchors="left,top" RelativePosition="59,16,50,12" TrackBarThumbSize="10,12" TrackBarBackground="ActiveDesktopVolumnBackground.png" TrackBarFront="ActiveDesktopVolumnForeground.png" 
+                  TrackBarThumbNormal="ActiveDesktopSoudSliderThumb_0.png" TrackBarThumbHover="ActiveDesktopSoudSliderThumb_1.png" TrackBarThumbDown="ActiveDesktopSoudSliderThumb_2.png" TrackBarThumbDisable="ActiveDesktopSoudSliderThumb_3.png"/>
+      </Container>
+    </Container>
+    <Image Name="_1" Anchors="left,top" RelativePosition="0,0,17,91" Bitmap="ActiveDesktopControlLeftImage.png"/>
+    <Image Name="_2" Anchors="left,top" RelativePosition="255,0,17,91" Bitmap="ActiveDesktopControlRightImage.png"/>
+  </Form>
+</Forms>

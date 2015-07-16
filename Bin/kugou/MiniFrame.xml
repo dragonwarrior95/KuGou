@@ -1,0 +1,22 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Form name="MiniFrame" position="0,0,205,215" ClipPic="" FrameSep="0,0,0,0" FramePic="">
+    <Button name="MiniFrameMainForm" position="85,31,119,65" NormalBack="MiniPlayerBtnMainPlayer_0.png" HoverBack="MiniPlayerBtnMainPlayer_1.png" DownBack="MiniPlayerBtnMainPlayer_2.png" DisabledBack="MiniPlayerBtnMainPlayer_3.png" ActionId="3124" ActionName="点击返回主界面|魔方模式"/>
+    <CheckBox name="MiniFrameLyric" position="85,149,119,183" NormalBack="MiniPlayerBtnLyrics_0.png" HoverBack="MiniPlayerBtnLyrics_1.png" DownBack="MiniPlayerBtnLyrics_2.png" DisabledBack="MiniPlayerBtnLyrics_3.png" SelectedNormal="MiniPlayerBtnLyrics_4.png" SelectedHover="MiniPlayerBtnLyrics_5.png" SelectedDown="MiniPlayerBtnLyrics_6.png" SelectedDisabled="MiniPlayerBtnLyrics_7.png" ActionId="3123" ActionName="点击歌词|魔方模式"/>
+    <Button name="MiniFramePre" position="27,89,61,123" NormalBack="MiniPlayPreNormal.png" HoverBack="MiniPlayPreHover.png" DownBack="MiniPlayPreDown.png" DisabledBack="MiniPlayPreDisable.png" ActionId="3121" ActionName="点击上一首|魔方模式"/>
+    <Button name="MiniFrameNext" position="142,89,176,123" NormalBack="MiniPlayNextNormal.png" HoverBack="MiniPlayNextHover.png" DownBack="MiniPlayNextDown.png" DisabledBack="MiniPlayNextDisable.png" ActionId="3122" ActionName="点击下一首|魔方模式"/>
+    <CheckBox name="MiniFramePlayPause" position="77,81,126,130" NormalBack="MiniPlayButtonPlay_0.png" HoverBack="MiniPlayButtonPlay_1.png" DownBack="MiniPlayButtonPlay_2.png" DisabledBack="MiniPlayButtonPlay_3.png" SelectedNormal="MiniPlayButtonPlay_4.png" SelectedHover="MiniPlayButtonPlay_5.png" SelectedDown="MiniPlayButtonPlay_6.png" SelectedDisabled="MiniPlayButtonPlay_7.png" ActionId="3120" ActionName="点击播放/暂停|魔方模式"/>
+    <Image Name="MiniFrameCenter" position="52,57,152,157" Bitmap="MiniPlayerBkgndCenter.png"/>
+    <Button name="MiniFrameMute" position="64,121,90,144" NormalBack="volume_indicator_normal.png" HoverBack="volume_indicator_hovering.png" DownBack="volume_indicator_pressed.png" DisabledBack="volume_indicator_disabled.png" ActionId="3126" ActionName="点击静音|魔方模式"/>
+    <TrackBar Name="MiniFrameVolume" position="89,132,139,140" TrackBarThumbSize="8,8" TrackBarBackground="SliderBkgndH_2.png" TrackBarFront="SliderBkgndH_1.png" TrackBarThumbNormal="SoudSliderThumb_0.png" TrackBarThumbDisable="SoudSliderThumb_3.png" TrackBarThumbHover="SoudSliderThumb_1.png" TrackBarThumbDown="SoudSliderThumb_2.png"/>
+    <Image Name="MiniFrameSinger" position="62,67,142,147" Bitmap=""/>
+    <Image Name="MiniFrameDefaultSinger" position="62,67,142,147" Bitmap="MiniPlayerSingerHeadDefault.png"/>
+    <Image Name="MiniFrameLeft" position="0,54,99,160" Bitmap="MiniPlayerBkgndLeft.png"/>
+    <Image Name="MiniFrameTop" position="52,2,151,108" Bitmap="MiniPlayerBkgndTop.png"/>
+    <Image Name="MiniFrameRight" position="103,55,202,161" Bitmap="MiniPlayerBkgndRight.png"/>
+    <Image Name="MiniFrameBottom" position="52,106,151,212" Bitmap="MiniPlayerBkgndBottom.png"/>
+    <TrackBar Name="MiniFramePosition" position="63,145,141,148" TrackBarThumbSize="0,0"/>
+    <Image Name="MiniFrameBottomBack" position="62,67,142,147"/>
+    <Image name="MiniFramePlayAnimation" position="126,131,142,147" Bitmap="MiniFramePlayAnimation.png"/>
+  </Form>
+</Forms>

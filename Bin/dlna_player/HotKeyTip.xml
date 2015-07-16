@@ -1,0 +1,6 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <WindowContainer name="HotKeyTip" HotKeyTipConfig="Key_Configuration.png" HotKeyTipPlay="Key_Play.png" HotKeyTipPause="Key_Pause.png" HotKeyTipPre="Key_PreMusic.png" HotKeyTipNext="Key_NextMusic.png" HotKeyTipSwitch="Key_ModeChange.png" HotKeyTipAddVolume="Key_UpVoice.png" HotKeyTipSubVolume="Key_DownVoice.png" HotKeyTipMute="Key_MuteVoice.png" HotKeyTipRearrange="Key_ResetMain.png" HotKeyTipForword="key_QuickGo.png" HotKeyTipRewind="key_QuickBack.png" HotKeyTipShowLyric="key_show_lyric.png" HotKeyTipHideLyric="key_hide_lyric.png" HotKeyTipLockLyric="key_lock_lyric.png" HotKeyTipUnlockLyric="key_unlock_lyric.png" HotKeyTipEnableBeautiful="EnableBeautiful.png" HotKeyTipModifyUserSex="modify_success.png" HotKeyTipModifyUserSex2="modify_fail.png" HotKeyTipEnableActiveDesktop="HotKeyTipEnableActiveDesktop.png" HotKeyTipHideDesktopItem="HotKeyTipHideDesktopItem.png" HotKeyTipEnableAutoRunActiveDesktop="HotKeyTipEnableAutoRunActiveDesktop.png">
+    <Image Name="HotKeyTipImage"/>
+  </WindowContainer>
+</Forms>

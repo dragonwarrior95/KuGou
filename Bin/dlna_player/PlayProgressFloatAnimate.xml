@@ -1,0 +1,4 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <WindowContainer name="PlayProgressFloatAnimate" BackgroundPic="PlayAni.png" FrameCount="20" FrameTick="70" FrameRound="1" />
+</Forms>

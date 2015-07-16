@@ -1,0 +1,7 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Form Name="LockDesktopLyricToolWin" ClipPic="" Position="0,0,28,28" FramePic="DesktopLyricToolWin_back.png" FrameSep="1,1,10,10">
+    <Image Name="LockDesktopLyricToolWinBk" Bitmap="DesktopLyricToolWin_Mask.png" Position="1,1,27,27"/>
+    <Button Name="LockDesktopLyricToolWinBtn" Position="4,4,24,24" NormalBack="LockLyricToolWin_btnLock_0.png" HoverBack="LockLyricToolWin_btnLock_1.png" DownBack="LockLyricToolWin_btnLock_2.png"/>
+  </Form>
+</Forms>

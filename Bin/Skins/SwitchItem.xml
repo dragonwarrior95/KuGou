@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+    <HorizontalLayout maxwidth="230" bkimage="file='ver_tab_label.png' source='400,0,600,30' corner='10,0,170,0'" >
+		<HorizontalLayout >
+			<Text name="TextTitle" text="" relativepos="0,0,100,100" endellipsis="true" showhtml="true" height="30" textpadding="12,0,0,0" font="2" align="left" valign="vcenter" bordercolor="#FFFF0000" bordersize="0" />
+		</HorizontalLayout>
+		<HorizontalLayout width="32" >
+			<Button name="BtnTabClose" float="true" pos="0,0,0,0" width="20" height="30" normalimage="file='btn_tab_close.png' dest='0,0,20,30' source='0,0,20,31'" hotimage="file='btn_tab_close.png' dest='0,0,20,30' source='20,0,40,31'" pushedimage="file='btn_tab_close.png' dest='0,0,20,30' source='40,0,60,31'" disabledimage="file='btn_tab_close.png' dest='0,0,20,30' source='60,0,80,31'" />
+		</HorizontalLayout>
+	</HorizontalLayout>
+</Window>

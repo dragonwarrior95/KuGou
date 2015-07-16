@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Container name="DeviceDetailContainer" position="0,0,210,76" BackgroundSep="0,0,0,0">
+    <Image name="backgroundBig" position="0,0,210,76" bitmap="device_detail_container_BK_Big.png"/>
+    <Image name="backgroundSmall" position="0,0,210,46" bitmap="device_detail_container_BK.png"/>
+    <Container name="DeviceInfo" position="17,12,200,40" >
+      <Label name="DeviceName" position="0,5,173,20"/>
+    </Container>
+    <Container name="USBControl" position="17,40,200,76">
+			<Label name="OpenFolder" position="0,0,65,24"/>
+			<Image name="Split" position="72,5,73,19"/>
+			<Label name="ChangeDirectory" position="84,0,135,24"/>		
+		</Container>
+	</Container>

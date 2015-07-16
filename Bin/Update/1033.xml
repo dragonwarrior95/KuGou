@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dui_language>
+	<!--caption.xml-->
+	<string id="ids_text_checkupdate">Checking for update…</string>
+	<string id="ids_text_curversion">Current version V</string>
+	<string id="ids_text_findnew">Update available</string>
+	<string id="ids_text_newversion">Latest version V</string>
+	<string id="ids_text_newinfo">Update info</string>
+	<string id="ids_btn_update">Update now</string>
+	<string id="ids_text_updating">Updating</string>
+	<string id="ids_text_lastversion">You already have the latest version!</string>
+	<string id="ids_btn_ok">OK</string>
+
+	
+</dui_language>

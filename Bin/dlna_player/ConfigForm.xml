@@ -1,0 +1,352 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Form Name="ConfigForm" Position="0,0,635,487" ShadowBitmap="ShadowImgFrame.png" ShadowBound="8,7,8,8">
+    <!--<Image name="_0" Position="153,444,640,447" Bitmap="Spit.png"/>-->
+    <Image name="ConfigFormBackground" Position="2,32,634,486" Bitmap="ConfigPanel.png"/>
+    <Button Name="ConfigClose" Position="603,6,628,27" Anchors="right,top" NormalBack="close_Normal.png" HoverBack="close_hot.png" DownBack="close_down.png" DisabledBack="close_disable.png"/>
+    <Container name="MainConfigGroup" position="10,32,138,486">
+      <Image name="MainBaseConfig" position="0,22,128,48" Bitmap="Main_Base_Config.png"/>
+      <Container name="MainBaseConfigGroup" position="0,50,128,170">
+        <RadioBox Name="MainConfigGeneral" Position="0,0,128,26" NormalBack="NormalConfig0.png" HoverBack="NormalConfig1.png" DownBack="NormalConfig1.png" DisabledBack="" RadioNormal="NormalConfig2.png" RadioHover="NormalConfig2.png" RadioDown="NormalConfig2.png" RadioDisabled=""/>
+        <RadioBox Name="MainConfigDownload" Position="0,28,128,54" NormalBack="DownloadConfig0.png" HoverBack="DownloadConfig1.png" DownBack="DownloadConfig1.png" DisabledBack="" RadioNormal="DownloadConfig2.png" RadioHover="DownloadConfig2.png" RadioDown="DownloadConfig2.png" RadioDisabled=""/>
+        <RadioBox Name="MainConfigHotKey" Position="0,56,128,82" NormalBack="HotKeyConfig0.png" HoverBack="HotKeyConfig1.png" DownBack="HotKeyConfig1.png" DisabledBack="" RadioNormal="HotKeyConfig2.png" RadioHover="HotKeyConfig2.png" RadioDown="HotKeyConfig2.png" RadioDisabled=""/>
+        <RadioBox Name="MainConfigUpdata" Position="0,84,128,110" NormalBack="UpdataConfig0.png" HoverBack="UpdataConfig1.png" DownBack="UpdataConfig1.png" DisabledBack="" RadioNormal="UpdataConfig2.png" RadioHover="UpdataConfig2.png" RadioDown="UpdataConfig2.png" RadioDisabled=""/>
+      </Container>
+      <Image name="MainLyricConfig" position="0,184,128,210" Bitmap="Main_Lyric_Config.png"/>
+      <Container name="MainLyricConfigGroup" position="0,212,128,276">
+        <RadioBox name="MainConfigDesktopLyric" position="0,0,128,26" NormalBack="LyricConfig0.png" HoverBack="LyricConfig1.png" DownBack="LyricConfig1.png" DisabledBack="" RadioNormal="LyricConfig2.png" RadioHover="LyricConfig2.png" RadioDown="LyricConfig2.png" RadioDisabled=""/>
+        <RadioBox name="MainConfigFrameLyric" position="0,28,128,54" NormalBack="FrameLyricConfig0.png" HoverBack="FrameLyricConfig1.png" DownBack="FrameLyricConfig1.png" DisabledBack="" RadioNormal="FrameLyricConfig2.png" RadioHover="FrameLyricConfig2.png" RadioDown="FrameLyricConfig2.png" RadioDisabled=""/>
+      </Container>
+      <Image name="MainAdvancedConfig" position="0,290,128,316" Bitmap="Main_Advanced_Config.png"/>
+      <Container name="MainAdvancedConfigGroup" position="0,318,130,413">
+        <RadioBox name="MainConfigSoundEffect" position="0,0,128,26" NormalBack="MusicConfig0.png" HoverBack="MusicConfig1.png" DownBack="MusicConfig1.png" DisabledBack="" RadioNormal="MusicConfig2.png" RadioHover="MusicConfig2.png" RadioDown="MusicConfig2.png" RadioDisabled=""/>
+        <RadioBox name="MainConfigNetwork" position="0,28,128,54" NormalBack="ProxyConfig_0.png" HoverBack="ProxyConfig_1.png" DownBack="ProxyConfig_1.png" DisabledBack="" RadioNormal="ProxyConfig_2.png" RadioHover="ProxyConfig_2.png" RadioDown="ProxyConfig_2.png" RadioDisabled=""/>
+        <RadioBox Name="ConfigOther" Position="0,56,128,82" NormalBack="OtherConfig0.png" HoverBack="OtherConfig1.png" DownBack="OtherConfig1.png" DisabledBack="" RadioNormal="OtherConfig2.png" RadioHover="OtherConfig2.png" RadioDown="OtherConfig2.png" RadioDisabled=""/>
+      </Container>
+    </Container>
+    <Button Name="ConfigOK" Position="305,440,395,466" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+    <Button Name="ConfigCancel" Position="410,440,500,466" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+    <Button Name="ConfigApply" Position="515,440,605,466" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+	<!--常规设置-->
+    <Container Name="GeneralConfig" Position="136,32,635,442">
+      <Image name="_0" Position="100,33,472,34" Bitmap="Config_Spilt.png"/>
+      <Image name="_1" Position="136,117,472,118" Bitmap="Config_Spilt.png"/>
+      <Image name="_2" Position="112,201,472,202" Bitmap="Config_Spilt.png"/>
+      <Image name="_3" Position="112,353,472,354" Bitmap="Config_Spilt.png"/>
+      <Label Name="GeneralConfigLabel0" Position="54,26,100,41"/>
+      <CheckBox Name="GeneralConfigPlayLastSound" Position="54,51,200,69" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <CheckBox Name="GeneralConfigRestoreUI" Position="250,51,460,69" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <CheckBox Name="GeneralConfigPlayHelloKugou" Position="54,75,270,93" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <Label Name="GeneralConfigLabel1" Position="54,110,136,125"/>
+      <Container name="GeneralConfigClickCloseButton" position="54,135,284,179">
+        <RadioBox name="GeneralConfigMinSize" position="0,0,225,18" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+        <RadioBox name="GeneralConfigExit" position="0,24,127,42" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+      </Container>
+      <Label Name="GeneralConfigLabel2" Position="54,194,112,209"/>
+	  <CheckBox name="GeneralConfigLocalPlayer" position="54,219,460,237" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <CheckBox Name="GeneralConfigReceiveAD" Position="54,243,234,261" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <CheckBox Name="GeneralConfigAutoRun" Position="54,266,234,284" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <CheckBox Name="GeneralConfigAutoRunActiveDesktop" Position="54,290,259,308" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+	  <CheckBox Name="GeneralConfigDeviceArriveHint" Position="54,312,259,330" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+	  <!--文件关联-->
+      <Label Name="GeneralConfigLabel3" Position="54,346,112,361"/>
+      <CheckBox Name="GeneralConfigDefaultPlayer" Position="54,371,315,389" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+    </Container>
+    <Container Name="HabitsConfig" Position="136,28,632,442">
+      <Image name="_0" Position="20,92,507,95" Bitmap="Spit.png"/>
+      <Label Name="HabitsConfigLabel2" Position="20,10,134,25"/>
+      <Image name="HabitsConfigClickCloseIcon" Position="139,7,162,28" Bitmap="HabitsConfig_ClickClose_Icon.png"/>
+      <Container name="HabitsConfigClickCloseButton" position="30,35,500,78">
+        <RadioBox Name="HabitsConfigMinSize" Position="0,0,200,18" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+        <RadioBox Name="HabitsConfigExit" Position="0,25,200,43" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+      </Container>
+      <Label Name="HabitsConfigLabel4" Position="20,107,134,122"/>
+      <Image name="HabitsConfigDeleteOperationIcon" Position="139,104,162,125" Bitmap="HabitsConfig_DeleteOperation_Icon.png"/>
+      <Container name="HabitsConfigDeleteOperation" position="30,136,130,209">
+        <RadioBox Name="HabitsConfigKeepFile" Position="0,0,100,18"/>
+        <RadioBox Name="HabitsConfigDeleteFile" Position="0,25,100,43"/>
+        <RadioBox Name="HabitsConfigAskMe" Position="0,50,100,68"/>
+      </Container>
+    </Container>
+    <!--歌词设置面板-->
+    <!--桌面歌词-->
+    <Container Name="LyricConfig" Position="136,32,635,442">
+      <Image name="_0" Position="112,33,472,34" Bitmap="Config_Spilt.png"/>
+      <Image name="_1" Position="88,196,472,197" Bitmap="Config_Spilt.png"/>
+      <Label Name="LyricConfigSytleLabel" Position="54,26,112,41"/>
+      <CheckBox Name="LyricConfigSingleLine" Position="54,47,330,69" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <Label Name="LyricConfigFontLabel" Position="54,80,88,95"/>
+      <Label Name="LyricConfigFontSizeLabel" Position="186,80,220,95"/>
+      <Label Name="LyricConfigFontStyleLabel" Position="318,80,352,95"/>
+      <Combobox name="LyricConfigFontCombobox" Position="88,76,168,98">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Combobox name="LyricConfigFontSizeCombobox" Position="220,76,300,98">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Combobox name="LyricConfigFontStyleCombobox" Position="352,76,432,98">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Label Name="LyricConfigColor" Position="54,114,88,129"/>
+      <Button Name="LyricConfigBackgroundColor" Position="89,109,171,135" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Button Name="LyricConfigForegroundColor" Position="181,109,263,135" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Label name="LyricConfigProgramLabel" position="296,114,352,129"/>
+      <Combobox Name="LyricConfigProgram" Position="352,109,432,131">
+        <ComboboxEdit name="_0" FramePic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Label Name="LyricConfigTransparentLabel" Position="54,148,100,163"/>
+      <TrackBar Name="LyricConfigTransparentTrackBar" Position="101,145,360,166"/>
+      <Label Name="LyricConfigTransparentPercentageLabel" Position="370,148,416,163"/>
+      <Label name="LyricConfigPreviewLabel" position="54,189,88,204"/>
+      <MusicRender Name="LyricConfigKalaRender" Position="54,217,469,317"/>
+      <Button Name="LyricConfigReset" Position="54,330,154,356" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+    </Container>
+    <!--窗口歌词-->
+    <Container Name="FrameLyricConfig" Position="136,32,635,442">
+      <Image name="_0" Position="112,33,472,34" Bitmap="Config_Spilt.png"/>
+      <Image name="_1" Position="88,139,472,140" Bitmap="Config_Spilt.png"/>
+      <Label Name="FrameLyricConfigSytleLabel" Position="54,26,112,41"/>
+      <Label Name="FrameLyricConfigFontLabel" Position="54,55,88,70"/>
+      <Label Name="FrameLyricConfigFontSizeLabel" Position="186,55,220,70"/>
+      <Label Name="FrameLyricConfigFontStyleLabel" Position="318,55,352,70"/>
+      <Combobox name="FrameLyricConfigFontCombobox" Position="88,50,168,72">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Combobox name="FrameLyricConfigFontSizeCombobox" Position="220,50,300,72">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Combobox name="FrameLyricConfigFontStyleCombobox" Position="352,50,432,72">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Label Name="FrameLyricConfigColor" Position="54,90,88,105"/>
+      <Button Name="FrameLyricConfigBackgroundColor" Position="89,86,171,112" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Button Name="FrameLyricConfigForegroundColor" Position="181,86,263,112" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Label name="FrameLyricConfigProgramLabel" position="296,90,352,105"/>
+      <Combobox Name="FrameLyricConfigProgramCombobox" Position="352,85,432,107">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Label name="FrameLyricConfigPreviewLabel" position="54,132,88,147"/>
+      <MusicRender Name="FrameLyricConfigVertRender" Position="54,154,469,264"/>
+      <Button Name="FrameLyricConfigReset" Position="54,275,154,301" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+    </Container>
+    <!--下载设置面板-->
+    <Container Name="DownLoadConfig" Position="136,32,635,442">
+      <!--目录设置-->
+      <Image name="_0" Position="112,31,472,32" Bitmap="Config_Spilt.png"/>
+      <Image name="_1" Position="112,190,472,191" Bitmap="Config_Spilt.png"/>
+      <Image name="_2" Position="94,303,472,304" Bitmap="Config_Spilt.png"/>
+      <Label name="DirectorySettingLabel" Position="54,26,112,41"/>
+      <Label name="DownLoadConfigPathLabel" Position="54,54,102,69"/>
+      <RichEdit name="DownLoadConfigPathEdit" Position="119,50,371,72" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <Button name="DownLoadConfigPathButton" Position="385,49,455,75" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Label name="DownLoadConfigTempLabel"/>
+      <!--这个也没有显示了-->
+      <Label Name="DownLoadConfigLyricPathLabel" Position="54,82,102,97"/>
+      <RichEdit Name="DownLoadConfigLyricPathEdit" Position="119,78,371,100" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <Button Name="DownLoadConfigLyricButton" Position="385,77,455,103" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Label name="DownLoadConfigTempPathLabel" Position="54,110,102,125"/>
+      <RichEdit name="DownLoadConfigTempPathEdit" Position="119,106,371,128" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <Button name="DownLoadConfigTempPathButton" Position="385,105,455,131" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Label name="DownLoadConfigTempSizeLabel" Position="54,144,136,159"/>
+      <Container name="DownLoadConfigTempPathSize" position="154,139,284,161">
+        <RadioBox Name="DownLoadConfigAutoSize" Position="0,0,50,22" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+        <RadioBox Name="DownLoadConfigManualSize" Position="70,0,120,22" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+      </Container>
+      <SpinEdit name="DownLoadConfigSizeEdit" Position="296,138,356,161" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" >
+        <SpinEditUpButton name="_0" NormalBack="spin_edit_up_button_config_normal.png" HoverBack="spin_edit_up_button_config_hover.png" DownBack="spin_edit_up_button_config_pressed.png" DisabledBack="spin_edit_up_button_config_disabled.png"/>
+        <SpinEditDownButton name="_1" NormalBack="spin_edit_down_button_config_normal.png" HoverBack="spin_edit_down_button_config_hover.png" DownBack="spin_edit_down_button_config_pressed.png" DisabledBack="spin_edit_down_button_config_disabled.png"/>
+      </SpinEdit>
+      <Label name="DownLoadConfigSizeLabel" Position="360,143,460,158"/>
+      <!--速度控制-->
+      <Label name="DownLoadConfigSpeedLabel" Position="54,183,112,198"/>
+      <Container name="DownLoadConfigSpeedModeGroup" position="54,209,300,255">
+        <RadioBox Name="DownLoadConfigFullSpeedMode" Position="0,0,100,18" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+        <RadioBox Name="DownLoadConfigCustomSpeedMode" Position="0,26,85,44" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+      </Container>
+      <Label name="DownLoadConfigDownloadBandwidthLabel" Position="127,236,183,251"/>
+      <Combobox name="DownLoadConfigDownloadBandwidthCombobox" Position="183,230,256,252">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Label name="DownLoadConfigDownloadBandwidthKBSLabel" Position="259,235,303,250"/>
+      <Label name="DownLoadConfigUploadBandwidthLabel" Position="305,236,361,251"/>
+      <Combobox name="DownLoadConfigUploadBandwidthCombobox" Position="361,230,434,252">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Label name="DownLoadConfigUploadBandwidthKBSLabel" Position="437,235,481,250"/>
+      <CheckBox name="DownLoadConfigvipAccelerateMode" Position="54,259,180,277" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <Label name="DownLoadConfigActiveVipLabel" position="180,261,250,277"/>
+      <!--其他-->
+      <Label name="DownLoadConfigOtherLabel" Position="54,296,94,311"/>
+      <CheckBox Name="DownloadConfigDownloadDialogCheckBox" position="54,323,280,341" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <Label name="DownLoadConfigMaxLabel" Position="54,355,150,370"/>
+      <RichEdit name="DownLoadConfigMaxEdit" Position="150,349,230,371" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <CheckBox name="DownLoadConfigEnableBatchDownload" Position="54,379,263,397" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <!--这个暂时保留-->
+      <Label name="DownLoadConfigDownloadPortLabel" Position="270,355,328,370"/>
+      <RichEdit name="DownLoadConfigDownloadPortEdit" Position="328,349,408,371" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+    </Container>
+    <!--代理设置面板-->
+    <Container Name="NetworkConfig" Position="136,32,635,442">
+      <Image name="_0" Position="112,33,472,34" Bitmap="Config_Spilt.png"/>
+      <Image name="_1" Position="112,203,472,204" Bitmap="Config_Spilt.png"/>
+      <Label name="NetworkConfigProxyLabel" Position="54,26,112,41"/>
+      <Label name="NetworkConfigProxyTypeLabel" Position="54,54,124,69"/>
+      <Combobox name="NetworkConfigProxyTypeCombobox" Position="124,50,254,72">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <RichEdit name="NetworkConfigProxyAddressEdit" Position="124,83,254,105" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <Label name="NetworkConfigProxyAddressLabel" Position="54,86,124,101"/>
+      <RichEdit name="NetworkConfigUserNameEdit" Position="124,115,254,137" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <Label name="NetworkConfigUserNameLabel" Position="54,119,124,134"/>
+      <Label name="NetworkConfigDomainLabel" Position="54,151,124,166"/>
+      <RichEdit name="NetworkConfigDomainEdit" Position="124,147,254,169" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <CheckBox name="NetworkConfigForceTransfer" Position="262,150,454,168"/>
+      <RichEdit name="NetworkConfigProxyPortEdit" Position="318,83,448,105" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <Label name="NetworkConfigProxyPortLabel" Position="272,86,318,101"/>
+      <Label name="NetworkConfigPasswordLabel" Position="272,119,318,134"/>
+      <RichEdit name="NetworkConfigpasswordEdit" Position="318,115,448,137" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <Button name="NetworkConfigTestProxyButton" Position="272,48,332,74" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Label Name="NetworkConfigTestProxyLabel"/>
+      <Label Name="NetworkConfigConnectLabel" position="54,196,112,211"/>
+      <Label Name="NetworkConfigISPTypeLabel" position="54,227,220,242"/>
+      <Combobox name="NetworkConfigISPCombobox" Position="220,222,320,244">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Button name="NetworkConfigISPTypeTestButton" Position="334,220,414,246" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Label name="NetworkConfigISPTypeInfoLabel" Position="0,0,0,0"/>
+      <!--这个应该是会自动变化的，暂时不管-->
+      <Button name="NetworkConfigISPTypeTestStopButton" Position="334,220,414,246" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Image name="NetworkConfigISPTypeTestIngImg" Position="54,289,70,305" Bitmap="LoadAnimation.png"/>
+      <Label name="NetworkConfigISPTypeTestIngInfoLabel" Position="78,289,422,305"/>
+      <Label name="NetworkConfigConnectionTypeLabel" Position="54,259,300,272"/>
+      <Button name="NetworkConfigTestButton" Position="334,252,414,278" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+    </Container>
+    <!--热键面板-->
+    <Container Name="HotKeyConfig" Position="136,32,635,442">
+      <Image name="_0" Position="112,33,472,34" Bitmap="Config_Spilt.png"/>
+      <Image name="_1" Position="112,288,472,289" Bitmap="Config_Spilt.png"/>
+      <Label name="HotKeyConfigPlaybackLabel" position="54,26,112,41"/>
+      <Label name="HotKeyConfigPlayStopLabel" position="54,53,214,68"/>
+      <RichEdit name="HotKeyConfigPlayStopHotKeyInput" position="244,48,410,70" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <HotKey name="HotKeyConfigPlayStopHotKey" position="244,48,410,70" HotKeyBackground="edit_frame_config.png" HotKeyFocus="edit_focused_config.png" HotKeyDisabled="edit_disabled_config.png" />
+      <Label name="HotKeyConfigPreviousSongLabel" position="54,80,214,95"/>
+      <RichEdit name="HotKeyConfigPreviousSongHotKeyInput" position="244,75,410,97" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <HotKey name="HotKeyConfigPreviousSongHotKey" position="244,75,410,97" HotKeyBackground="edit_frame_config.png" HotKeyFocus="edit_focused_config.png" HotKeyDisabled="edit_disabled_config.png" />
+      <Label name="HotKeyConfigNextSongLabel" position="54,107,214,122"/>
+      <RichEdit name="HotKeyConfigNextSongHotKeyInput" position="244,102,410,124" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <HotKey name="HotKeyConfigNextSongHotKey" position="244,102,410,124" HotKeyBackground="edit_frame_config.png" HotKeyFocus="edit_focused_config.png" HotKeyDisabled="edit_disabled_config.png" />
+      <Label name="HotKeyConfigFastForwardLabel" position="54,134,214,149"/>
+      <RichEdit name="HotKeyConfigFastForwardInput" position="244,129,410,151" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <Hotkey name="HotKeyConfigFastForwardHotKey" position="244,129,410,151" HotKeyBackground="edit_frame_config.png" HotKeyFocus="edit_focused_config.png" HotKeyDisabled="edit_disabled_config.png" />
+      <Label name="HotKeyConfigRewindLabel" position="54,161,214,176"/>
+      <RichEdit name="HotKeyConfigRewindInput" position="244,156,410,178" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <Hotkey name="HotKeyConfigRewindHotKey" position="244,156,410,178" HotKeyBackground="edit_frame_config.png" HotKeyFocus="edit_focused_config.png" HotKeyDisabled="edit_disabled_config.png" />
+      <Label name="HotKeyConfigAddVolumeLabel" position="54,188,214,203"/>
+      <RichEdit name="HotKeyConfigAddVolumeHotKeyInput" position="244,183,410,205" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <HotKey name="HotKeyConfigAddVolumeHotKey" position="244,183,410,205" HotKeyBackground="edit_frame_config.png" HotKeyFocus="edit_focused_config.png" HotKeyDisabled="edit_disabled_config.png" />
+      <Label name="HotKeyConfigSubVolumeLabel" position="54,215,214,230"/>
+      <RichEdit name="HotKeyConfigSubVolumeHotKeyInput" position="244,210,410,232" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <HotKey name="HotKeyConfigSubVolumeHotKey" position="244,210,410,232" HotKeyBackground="edit_frame_config.png" HotKeyFocus="edit_focused_config.png" HotKeyDisabled="edit_disabled_config.png" />
+      <Label name="HotKeyConfigMuteLabel" position="54,242,214,257"/>
+      <RichEdit name="HotKeyConfigMuteHotKeyInput" position="244,237,410,259" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <HotKey name="HotKeyConfigMuteHotKey" position="244,237,410,259" HotKeyBackground="edit_frame_config.png" HotKeyFocus="edit_focused_config.png" HotKeyDisabled="edit_disabled_config.png" />
+      <Label name="HotKeyConfigLyricControlLabel" position="54,281,112,296"/>
+      <Label name="HotKeyConfigShowLabel" position="54,308,214,323"/>
+      <RichEdit name="HotKeyConfigShowHotKeyInput" position="244,303,410,325" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <HotKey name="HotKeyConfigShowHotKey" position="244,303,410,325" HotKeyBackground="edit_frame_config.png" HotKeyFocus="edit_focused_config.png" HotKeyDisabled="edit_disabled_config.png" />
+      <Label name="HotKeyConfigLockLabel" position="54,333,214,350"/>
+      <RichEdit name="HotKeyConfigLockHotKeyInput" position="244,330,410,352" BackgroundPic="edit_frame_config.png"  FrameDisabled="edit_disabled_config.png" FrameFocused="edit_focused_config.png"/>
+      <HotKey name="HotKeyConfigLockHotKey" position="244,330,410,352" HotKeyBackground="edit_frame_config.png" HotKeyFocus="edit_focused_config.png" HotKeyDisabled="edit_disabled_config.png" />
+      <CheckBox Name="HotKeyConfigEnableGlobalHotKey" Position="54,364,164,386" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <CheckBox Name="HotKeyConfigEnableGlobalHotKeyTip" Position="185,364,325,386" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <Button Name="HotKeyConfigReset" Position="331,362,410,388" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+    </Container>
+    <!--音频配置-->
+    <Container name="OutputConfig" Position="136,32,635,442">
+      <Image name="_0" Position="112,33,472,34" Bitmap="Config_Spilt.png"/>
+      <Image name="_1" Position="112,179,472,180" Bitmap="Config_Spilt.png"/>
+      <!--输出设置-->
+      <Label name="OutputConfigDeviceLabel" Position="54,26,112,41"/>
+      <Label name="OutputConfigAudioRendererLabel" Position="54,57,124,72"/>
+      <Combobox name="OutputConfigAudioRendererCombobox" Position="130,52,457,74">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Label name="OutputConfigVideoRendererLabel" Position="54,88,124,103"/>
+      <Combobox name="OutputConfigVideoRendererCombobox" Position="130,82,457,104">
+        <ComboboxEdit name="_0" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" FrameSelecting="edit_focused_config.png" >
+          <ComboboxEditButton name="_0" NormalBack="combobox_edit_button_config_normal.png" HoverBack="combobox_edit_button_config_hover.png" DownBack="combobox_edit_button_config_pressed.png" DisabledBack="combobox_edit_button_config_disabled.png" SelectedNormal="combobox_edit_button_config_pressed.png" SelectedHover="combobox_edit_button_config_pressed.png" SelectedDown="combobox_edit_button_config_pressed.png" SelectedDisabled="combobox_edit_button_config_pressed.png"/>
+        </ComboboxEdit>
+      </Combobox>
+      <Label name="OutputConfigDriveTipLabel" Position="54,119,469,149"/>
+      <!--音效设置-->
+      <Label name="OutputConfigSoundEffectLabel" Position="54,172,112,187"/>
+      <CheckBox name="OutputConfigEnableFadingCheckBox" Position="54,201,193,219" NormalBack="check_box_config_normal.png" HoverBack="check_box_config_hover.png" DownBack="check_box_config_down.png" DisabledBack="check_box_config_disabled.png" SelectedNormal="check_box_selected_config_normal.png" SelectedHover="check_box_selected_config_hover.png" SelectedDown="check_box_selected_config_down.png" SelectedDisabled="check_box_selected_config_disabled.png" HalfSelectedNormal="check_box_halfselected_config_normal.png" HalfSelectedHover="check_box_halfselected_config_hover.png" HalfSelectedDown="check_box_halfselected_config_down.png" HalfSelectedDisabled="check_box_halfselected_config_disabled.png"/>
+      <Label name="OutputConfigFadeInLabel" Position="54,232,88,247"/>
+      <SpinEdit name="OutputConfigFadeInTime" Position="91,226,170,249" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" >
+        <SpinEditUpButton name="_0" NormalBack="spin_edit_up_button_config_normal.png" HoverBack="spin_edit_up_button_config_hover.png" DownBack="spin_edit_up_button_config_pressed.png" DisabledBack="spin_edit_up_button_config_disabled.png"/>
+        <SpinEditDownButton name="_1" NormalBack="spin_edit_down_button_config_normal.png" HoverBack="spin_edit_down_button_config_hover.png" DownBack="spin_edit_down_button_config_pressed.png" DisabledBack="spin_edit_down_button_config_disabled.png"/>
+      </SpinEdit>
+      <Label name="OutputConfigFadeOutLabel" Position="264,232,297,247"/>
+      <SpinEdit name="OutputConfigFadeOutTime" Position="299,226,378,249" BackgroundPic="edit_frame_config.png" FrameDisabled="edit_disabled_config.png" FrameFocused="edit_frame_config.png" >
+        <SpinEditUpButton name="_0" NormalBack="spin_edit_up_button_config_normal.png" HoverBack="spin_edit_up_button_config_hover.png" DownBack="spin_edit_up_button_config_pressed.png" DisabledBack="spin_edit_up_button_config_disabled.png"/>
+        <SpinEditDownButton name="_1" NormalBack="spin_edit_down_button_config_normal.png" HoverBack="spin_edit_down_button_config_hover.png" DownBack="spin_edit_down_button_config_pressed.png" DisabledBack="spin_edit_down_button_config_disabled.png"/>
+      </SpinEdit>
+      <Label name="OutputConfigFadeInTimeLabel" Position="172,232,254,247"/>
+      <Label name="OutputConfigFadeOutTimeLabel" Position="386,232,472,247"/>
+      <Label name="OutputConfigFadingTipLabel" Position="54,260,380,278"/>
+      <Button name="OutputConfigEqConfigButton" Position="54,292,146,318" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+      <Button name="OutputConfigPluginConfigButton" Position="156,292,248,318" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+    </Container>
+    <!--软件更新-->
+    <Container Name="UpdateConfig" Position="136,32,635,442">
+      <Image name="_0" Position="112,33,472,34" Bitmap="Config_Spilt.png"/>
+      <Label name="UpdateConfigUpdateLabel" position="54,26,112,41"/>
+      <Label Name="UpdateConfigCurrentVersionLabel" Position="54,50,400,65"/>
+      <Label Name="UpdateConfigUpdateTimeLabel" Position="54,74,400,89"/>
+      <Button Name="UpdateConfigCheck" Position="54,105,154,131" NormalTextColor="0xFF454545" HoverTextColor="0xFF454545" DownTextColor="0xFF454545" NormalBack="btn_normal_config.png" HoverBack="btn_hover_config.png" DownBack="btn_down_config.png" DisabledBack="btn_disabled_config.png"/>
+    </Container>
+     <!--DLNA设备-->
+    <Container name="OtherConfig" position="136,32,635,442">
+	    <Image name="_0" position="112,33,472,34" Bitmap="Config_Spilt.png"/>
+      <Label name="FanxingLabel" position="54,26,112,41"/>
+      <Container name="FanxingGroup" position="54,51,179,71">
+        <RadioBox name="FanxingOn" position="0,0,60,18" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+        <RadioBox name="FanxingOff" position="65,0,125,18" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+      </Container>
+      <Label name="FanxingTips" position="54,75,354,87"/>
+
+      <Label name="FanxingLineLabel" position="54,96,152,111"/>
+      <Container name="FanxinLineGroup" position="54,121,179,141">
+        <RadioBox name="FanxingLineOn" position="0,0,60,18" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+        <RadioBox name="FanxingLineOff" position="65,0,125,18" NormalBack="radio_box_config_normal.png" HoverBack="radio_box_config_hover.png" DownBack="radio_box_config_down.png" DisabledBack="radio_box_config_disable.png" RadioNormal="radio_box_selected_config_normal.png" RadioHover="radio_box_selected_config_hover.png" RadioDown="radio_box_selected_config_down.png" RadioDisabled="radio_box_selected_config_disable"/>
+      </Container>
+      <Label name="FanxingLineDetail" position="54,145,354,157"/>
+	  </Container>
+  </Form>
+</Forms>

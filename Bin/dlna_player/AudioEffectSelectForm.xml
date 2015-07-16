@@ -1,0 +1,11 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <WindowContainer Name="AudioEffectSelectForm" Position="0,0,174,220" BackgroundPic="AudioEffectSelectFormBack.png" BackgroundSep="66,14,67,15" FrameBorders="0,0,0,0">
+    <Container Name="AudioEffectGroup" Anchors="left,top" RelativePosition="6,6,162,214">
+      <RadioBox NormalBack="original_0.png" HoverBack="original_0.png" DownBack="original_0.png" DisabledBack="original_0.png" RadioNormal="original_1.png" RadioHover="original_1.png" RadioDown="original_1.png" RadioDisabled="original_1.png" Name="AudioEffectOriginal" Anchors="left,top" RelativePosition="0,0,162,52"/>
+      <RadioBox NormalBack="AudioEffectBeautiful_0.png" HoverBack="AudioEffectBeautiful_0.png" DownBack="AudioEffectBeautiful_0.png" DisabledBack="AudioEffectBeautiful_0.png" RadioNormal="AudioEffectBeautiful_1.png" RadioHover="AudioEffectBeautiful_1.png" RadioDown="AudioEffectBeautiful_1.png" RadioDisabled="AudioEffectBeautiful_1.png" Name="AudioEffectBeautiful" Anchors="left,top" RelativePosition="0,52,162,52"/>
+      <RadioBox NormalBack="AudioEffectBass_0.png" HoverBack="AudioEffectBass_0.png" DownBack="AudioEffectBass_0.png" DisabledBack="AudioEffectBass_0.png" RadioNormal="AudioEffectBass_1.png" RadioHover="AudioEffectBass_1.png" RadioDown="AudioEffectBass_1.png" RadioDisabled="AudioEffectBass_1.png" Name="AudioEffectBass" Anchors="left,top" RelativePosition="0,104,162,52"/>
+      <RadioBox NormalBack="AudioEffectClear_0.png" HoverBack="AudioEffectClear_0.png" DownBack="AudioEffectClear_0.png" DisabledBack="AudioEffectClear_0.png" RadioNormal="AudioEffectClear_1.png" RadioHover="AudioEffectClear_1.png" RadioDown="AudioEffectClear_1.png" RadioDisabled="AudioEffectClear_1.png" Name="AudioEffectClear" Anchors="left,top" RelativePosition="0,156,162,52"/>
+	  </Container>
+  </WindowContainer>
+</Forms>

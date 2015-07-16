@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Container name="WebErrorPageContainer" Anchors="left,top,right,bottom" RelativePosition="0,0,0,30">
+    <Image name="WebErrorPageBackGround" RelativePosition="0,0,0,0" Anchors="left,top,right,bottom" />
+    <Image name="WebErrorPageIcon" RelativePosition="0,38,226,136" Bitmap="errorNetInvalid.png" Anchors="top"/>
+    <Image name="WebErrroPageSorry" RelativePosition="0,198,200,16" Bitmap="errorNetInvalidSorry.png"  Anchors="top"/>        
+    <label name="WebErrorPageSolution" RelativePosition="21,233,246,100" Anchors="top"/>
+    <label name="WebErrorPageLink" RelativePosition="-61,275,50,12" Anchors="top"/>
+    <label name="WebErrorPageSolutionEnd" RelativePosition="-22,275,28,12" Anchors="top"/>
+    <Button name="WebErrorPageRefresh" RelativePosition="0,310,80,33" Anchors="top" NormalBack="errorNetInvalidNormal.png" HoverBack="errorNetInvalidHovering.png" DownBack="errorNetInvalidPressed.png" DisabledBack="errorNetInvalidDisabled.png"/>
+  </Container>
+</Forms>

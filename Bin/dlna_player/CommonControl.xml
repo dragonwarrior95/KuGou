@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Common>
+  <Form ClipPic="Clipbmp.png" ClipSep="2,2,2,2" FrameSep="3,3,91,58" FramePic="FrameImg.png" FrameBorders="6,6,3,6" />
+  <Button NormalBack="btnNormal.png" HoverBack="btnHot.png" DownBack="btnDown.png" DisabledBack="btnDisable.png" Focused="" NormalTextColor="0xFF000000" HoverTextColor="0xFF000000" DownTextColor="0xFF000000" DisabledTextColor="0xFF888888"/>
+  <DigitalTime Digital0="0.png" Digital1="1.png" Digital2="2.png" Digital3="3.png" Digital4="4.png" Digital5="5.png" Digital6="6.png" Digital7="7.png" Digital8="8.png" Digital9="9.png" DigitalTimeColon="10.png" DigitalTimeMinus="11.png" DigitalTimeSplit="12.png"/>
+  <ScrollBar ScrollBarBackground="ScrollBarBack.png" UpNomal="ScrollBarUp_0.png" UpMouseOver="ScrollBarUp_1.png" UpMouseDown="ScrollBarUp_2.png" UpDisable="ScrollBarUp_3.png" DownNomal="ScrollBarDown_0.png" DownMouseOver="ScrollBarDown_1.png" DownMouseDown="ScrollBarDown_2.png" DownDisable="ScrollBarDown_3.png" ThumbNomal="ScrollBarThumb_0.png" ThumbMouseOver="ScrollBarThumb_1.png" ThumbMouseDown="ScrollBarThumb_2.png" ThumbDisable="ScrollBarThumb_3.png"/>
+  <ProgressBar ProgressBackground="PlaylistAddProgressBack.png" ProgressFacade="PlaylistAddProgressDot.png" ProgressImageCenterRect="4, 1, 7, 7"/>
+  <CheckBox NormalBack="check_box_0.png" HoverBack="check_box_1.png" DownBack="check_box_2.png" DisabledBack="check_box_3.png" SelectedNormal="check_box_4.png" SelectedHover="check_box_5.png" SelectedDown="check_box_6.png" SelectedDisabled="check_box_7.png" HalfSelectedNormal="check_box_8.png" HalfSelectedHover="check_box_9.png" HalfSelectedDown="check_box_10.png" HalfSelectedDisabled="check_box_11.png"/>
+  <RadioBox NormalBack="radio_box_normal.png" HoverBack="radio_box_hover.png" DownBack="radio_box_down.png" DisabledBack="radio_box_disable.png" RadioNormal="radio_box_selected_nomal.png" RadioHover="radio_box_selected_hover.png" RadioDown="radio_box_selected_down.png" RadioDisabled="radio_box_selected_disable.png"/>
+  <TrackBar TrackBarBackground="track_bar_bk.png" TrackBarCache="track_bar_cache.png" TrackBarFront="track_bar_front.png" TrackBarThumbNormal="track_bar_thumb_0.png" TrackBarThumbDisable="track_bar_thumb_3.png" TrackBarThumbHover="track_bar_thumb_1.png" TrackBarThumbDown="track_bar_thumb_2.png" TrackBarThumbSize="21,21" />
+  <TreeList BackPic="PlayListBK.png" BackPicCenter="68,10,69,11" RowBackNormalPic="PlayListNormal.png" RowBackHotPic="PlayListSel.png" RowBackSelectedPic="PlayListSel.png" SelectionFillColor="0x998eb6ff" SelectionBorderColor="0x99000000"/>
+  <ColumnHead HeadNormal="head_normal.png" HeadHover="head_hover.png" HeadDown="head_down.png" HeadSelected="head_down.png" HeadAsc="HeaderSort_0.png" HeadDesc="HeaderSort_1.png"/>
+  <HotKey HotKeyBackground="EditFrame.png" HotKeyFocus="edit_frame_focused.png"/>
+  <RichEdit BackgroundPic="EditFrame.png" FrameHovering="EditFrame.png" BackgroundSep="2,2,33,19" FrameDisabled="editFrameDisable.png" FrameFocused="edit_frame_focused.png" Insets="4,5,4,5"/>
+  <TabLabel TabLabelNormal="TabLabel_nomal.png" TabLabelHover="TabLabel_hover.png" TabLabelDown="TabLabel_down.png" TabControlWidth="-1"/>
+  <TabControl Anchors="left,top,right,bottom" TabControlHeadHeight="29" TabControlLabelWidth="97" TabControlLabelOverlap="0" TabControlLableLeftOffset="0" TabControlAnimation="0"/>
+  <PageControl PageItemHover="page_item_hover.png" PageItemSelect="page_item_select.png" PageItemSize="15,16" PrePageNomarl="pre_page_0.png" PrePageHover="pre_page_1.png" PrePageDown="pre_page_2.png" PrePageDisable="pre_page_3.png" NextPageNomarl="next_page_0.png" NextPageHover="next_page_1.png" NextPageDown="next_page_2.png" NextPageDisable="next_page_3.png" PreNextBitmapSize="15,16" PageControlTextColor="0xffffffff"/>
+  <Container/>
+  <WindowContainer ShadowBitmap="" ShadowBound="0,0,0,0"/>
+  <WindowControl ShadowBitmap="" ShadowBound="0,0,0,0"/>
+  <Combobox DropboxHostBackground="ComboxPopBk.png" DropboxHostCenterRect="1,1,48,17"/>
+  <ComboboxEdit BackGroundPic="EditFrame.png" BackgroundSep="2,2,33,19" FrameDisabled="editFrameDisable.png" FrameFocused="EditFrame.png" Insets="4,5,4,5" FrameSelecting="edit_frame_focused.png"/>
+  <SpinEdit BackGroundPic="EditFrame.png" BackgroundSep="2,2,33,19" FrameDisabled="editFrameDisable.png" FrameFocused="edit_frame_focused.png" Insets="4,6,4,5"/>
+  <SpinEditUpButton NormalBack="spin_edit_up_button_normal.png" HoverBack="spin_edit_up_button_hover.png" DownBack="spin_edit_up_button_pressed.png" DisabledBack="spin_edit_up_button_disabled.png"/>
+  <SpinEditDownButton NormalBack="spin_edit_down_button_normal.png" HoverBack="spin_edit_down_button_hover.png" DownBack="spin_edit_down_button_pressed.png" DisabledBack="spin_edit_down_button_disabled.png"/>
+  <Grid GridBackground="grid_bk.png"/>
+  <ComboboxEditButton NormalBack="combobox_edit_button_normal.png" HoverBack="combobox_edit_button_hover.png" DownBack="combobox_edit_button_pressed.png" DisabledBack="combobox_edit_button_disabled.png" SelectedNormal="combobox_edit_button_pressed.png" SelectedHover="combobox_edit_button_pressed.png" SelectedDown="combobox_edit_button_pressed.png" SelectedDisabled="combobox_edit_button_disabled.png"/>
+  <DropBoxDelButton NormalBack="btnDelNormal.png" HoverBack="btnDelHover.png" DownBack="btnDelDown.png" DisabledBack="btnDelDisable.png" />
+  <MenuHost ClipPic="" BackGroundPic="menu_background.png" BackgroundSep="2,2,83,20" MenuCheckNormal="menu_check_normal.png" MenuCheckHovering="menu_check_hovering.png" MenuArrowNormal="menu_arrow_normal.png" MenuArrowHovering="menu_arrow_hovering.png"/>
+  <Image/>
+  <AnimateButton/>
+  <SingleSplitview DividerSize="4"/>
+  <Label/>
+  <MusicRender/>
+  <Control/>
+  <PicEditControl/>
+  <DropboxHost/>
+  <NewFeature/>
+  <BitmapList/>
+  <BitmapIcon/>
+  <RecommandSearchGrid VtitileBmp="VerSplit.png" HtitileBmp="VerSplit.png" ItemSpace="2,2" ItemHeight="39"/>
+  <AnimationControl/>
+  <AnimationWindow/>
+  <DefaultImage/>
+</Common>

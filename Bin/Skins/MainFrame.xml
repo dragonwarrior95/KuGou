@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1172,623" sizebox="4,4,4,4" roundcorner="5,5" caption="0,0,0,60" mininfo="800,600" bktrans="false">
+    <Font name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font name="微软雅黑" size="16" bold="false" italic="false" />
+    <Font name="微软雅黑" size="18" bold="false" italic="false" />
+    <Font name="微软雅黑" size="20" bold="false" italic="false" />
+	<Font name="微软雅黑" size="24" bold="false" italic="false" />
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	<Default name="HScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,0,16,16' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,0,34,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,0,52,16' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,0,70,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,18,16,34' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,18,34,34' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,18,52,34' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,18,70,34' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,36,16,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,36,34,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,36,52,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,36,70,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,54,16,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,54,34,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,54,52,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,54,70,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,72,16,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,72,34,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,72,52,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,72,70,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	
+	<Default name="Button" value="normalimage=&quot;file='btn_default.png' source='0,0,96,24' fade='200'&quot; hotimage=&quot;file='btn_default.png' source='0,24,96,48' fade='200'&quot; pushedimage=&quot;file='btn_default.png' source='0,48,96,72' fade='200'&quot; " />
+    
+    
+    <VerticalLayout name="VerLayFrame" height="30" bkimage="skin\Skin3.jpg">
+    	
+        <!--浏览器标题栏-->
+        <VerticalLayout name="VerLayCaption" height="90" bordercolor="#FFFF0000" bordersize="0">
+            <HorizontalLayout name="HorLayTitle" height="60" bordercolor="#FFFF0000" bordersize="0">
+                <VerticalLayout name="VerLayLogin" width="60" height="60" bordercolor="#FF00FF00" bordersize="1" >
+                	<Button name="BtnLogin" float="true" pos="0,0,0,0" width="60" height="60" normalimage="file='user_normal.png'" hotimage="file='user_hover.png'" pushedimage="file='user_pushed.png'" />
+               	</VerticalLayout>
+                <VerticalLayout name="VerLayHead" height="60" bordercolor="#FF00FF00" bordersize="0" >
+                	<!--标题栏-->
+                	<HorizontalLayout name="VerTitle" height="30" bordercolor="#FF00FF00" bordersize="0" >
+                		<VerticalLayout name="VerTitleName" width="200" bordercolor="#FF00FF00" bordersize="0" >
+                			<Text name="TextTitle" float="true" pos="0,0,0,0" width="200" height="30" text="360安全浏览器" textcolor="#FFFFFFFF" textpadding="3,0,0,0" font="2" align="left" valign="vcenter" />
+                		</VerticalLayout>
+                		<VerticalLayout name="VerMenu" bordercolor="#FF00FF00" bordersize="0" >
+                		</VerticalLayout>
+                		<VerticalLayout name="VerSystemButton" width="200" bordercolor="#FF00FF00" bordersize="0" >
+                			<Button name="BtnClose" float="true" pos="153,3,0,0" width="44" height="22" normalimage="file='res/buttons/1/skin_close.png' source='0,0,44,22'" hotimage="file='res/buttons/1/skin_close.png' source='44,0,88,22'" pushedimage="file='res/buttons/1/skin_close.png' source='88,0,132,22'" />
+                    		<Button name="BtnRestore" float="true" visible="false" pos="120,3,0,0" width="33" height="22" normalimage="file='res/buttons/1/skin_reduction.png' source='0,0,33,22'" hotimage="file='res/buttons/1/skin_reduction.png' source='33,0,66,22'" pushedimage="file='res/buttons/1/skin_reduction.png' source='66,0,99,22'" />
+                    		<Button name="BtnMax" float="true" pos="120,3,0,0" width="33" height="22" normalimage="file='res/buttons/1/skin_max.png' source='0,0,33,22'" hotimage="file='res/buttons/1/skin_max.png' source='33,0,66,22'" pushedimage="file='res/buttons/1/skin_max.png' source='66,0,99,22'" />
+                    		<Button name="BtnMin" float="true" pos="84,3,0,0" width="36" height="22" normalimage="file='res/buttons/1/skin_min.png' source='0,0,36,22'" hotimage="file='res/buttons/1/skin_min.png' source='36,0,72,22'" pushedimage="file='res/buttons/1/skin_min.png' source='72,0,108,22'" />
+                    		
+                    		<Button name="BtnSkin" float="true" pos="51,3,0,0" width="33" height="22" normalimage="file='res/buttons/1/skin_button.png' source='0,0,33,22'" hotimage="file='res/buttons/1/skin_button.png' source='33,0,66,22'" pushedimage="file='res/buttons/1/skin_button.png' source='66,0,99,22'" />
+                		</VerticalLayout>
+                	</HorizontalLayout>
+                	
+                	<!--地址栏-->
+                	<HorizontalLayout name="HorAddr" height="30" >
+                		<VerticalLayout name="VerToolButtons" width="120" bordercolor="#FFE9EEF2" bordersize="0" >
+                			<Button name="BtnBack" float="true" pos="3,0,0,0" width="29" height="31" normalimage="file='res/buttons/3/back_button.png' source='0,0,29,31'" hotimage="file='res/buttons/3/back_button.png' source='29,0,58,31'" pushedimage="file='res/buttons/3/back_button.png' source='58,0,87,31'" />
+                    		<Button name="BtnForward" float="true" pos="32,0,0,0" width="29" height="31" normalimage="file='res/buttons/3/forward.png' source='0,0,29,31'" hotimage="file='res/buttons/3/forward.png' source='29,0,58,31'" pushedimage="file='res/buttons/3/forward.png' source='58,0,87,31'" />
+                    		<Button name="BtnRefresh" float="true" pos="61,0,0,0" width="29" height="31" normalimage="file='res/buttons/3/refresh.png' source='0,0,29,31'" hotimage="file='res/buttons/3/refresh.png' source='29,0,58,31'" pushedimage="file='res/buttons/3/refresh.png' source='58,0,87,31'" />
+                    		<Button name="BtnHome" float="true" pos="90,0,0,0" width="29" height="31" normalimage="file='res/buttons/3/btn_home.png' source='0,0,29,31'" hotimage="file='res/buttons/3/btn_home.png' source='29,0,58,31'" pushedimage="file='res/buttons/3/btn_home.png' source='58,0,87,31'" />
+                		</VerticalLayout>
+                		
+                		<VerticalLayout name="VerAddr" bordercolor="#FF00FF00" bordersize="0" >
+                			<Button name="BtnBrowser" float="true" pos="0,0,0,0" width="30" height="29" normalimage="file='res/buttons/3/btn_search.png' source='0,0,24,29'" hotimage="file='res/buttons/3/btn_search.png' source='24,0,48,29'" pushedimage="file='res/buttons/3/btn_search.png' source='48,0,72,29'" />
+                			
+                			<Combo name="ComboAddr" normalimage="file='../Images/Combo/combo_ziyoujiancai.png' dest='0,0,135,25' source='0,0,135,25'" pushedimage="file='../Images/Combo/combo_ziyoujiancai.png' dest='0,0,135,25' source='135,0,270,25'" dropboxsize="0,270" itemtextcolor="#FF000000" itemselectedtextcolor="#FF33A3E0" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemfont="-1" itemalign="left" float="true" pos="0,0,0,0" width="730" height="30" relativepos="0,0,100,100" bkimage="file='../Images/Combo/combo_ziyoujiancai.png' dest='0,0,730,30' source='0,0,730,30'" itemtextpadding="10,0,0,0" textpadding="3,0,0,0" >
+					            <ListLabelElement text="http://hao.360.cn/?1004" selected="true" />
+					            <ListLabelElement text="http://www.baidu.com/" />
+					        </Combo>
+					        
+					       <Button name="BtnAddr" text="360导航" float="true" pos="0,0,0,0" width="90" height="30" normalimage="file='res/buttons/3/1.png' source='0,0,29,31'" hotimage="file='res/buttons/3/1.png' source='29,0,58,31'" pushedimage="file='res/buttons/3/1.png' source='58,0,87,31'" textpaddding="4,4,0,0" bordercolor="#FF000000" bordersize="1" textcolor="#FF000000" bkcolor="#FFE7FCCD" font="2" align="left" valign="vcenter" />
+                			
+					        <Edit name="EditAddr" float="true" pos="90,0,0,0" width="610" height="30" relativepos="0,0,100,100" bkcolor="#FFFFFFFF" endellipsis="true" textpadding="4,0,4,0" textcolor="#FF838384" font="2" valign="vcenter" normalimage="file='../Images/Edit/Edit_KuanGao.png' source='0,0,44,20' dest='0,0,48,20'" focusedimage="file='../Images/Edit/Edit_KuanGao.png' source='44,0,88,20' dest='0,0,48,20'" />
+        
+                		</VerticalLayout>
+                		
+                		<VerticalLayout name="VerSearch" width="260" bordercolor="#FFE9EEF2" bordersize="0" >
+					        <Edit name="EditSearch" float="true" pos="10,0,0,0" width="216" height="29" endellipsis="true" bkcolor="#FFFFFFFF" textpadding="4,0,4,0" textcolor="#FF838384" font="2" valign="vcenter" normalimage="file='../Images/Edit/Edit_KuanGao.png' source='0,0,44,20' dest='0,0,48,20'" focusedimage="file='../Images/Edit/Edit_KuanGao.png' source='44,0,88,20' dest='0,0,48,20'" />
+					        
+                			<Button name="BtnSearch" float="true" pos="226,0,0,0" width="24" height="29" normalimage="file='res/buttons/3/btn_search.png' source='0,0,24,29'" hotimage="file='res/buttons/3/btn_search.png' source='24,0,48,29'" pushedimage="file='res/buttons/3/btn_search.png' source='48,0,72,29'" />
+                		</VerticalLayout>
+                	</HorizontalLayout>
+                	
+                </VerticalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout name="HorFavorites" height="30" bordercolor="#FFE9EEF2" bordersize="0">
+            	<VerticalLayout name="VerFavorites" width="70" height="30" >
+            		<Combo name="collection" float="true" pos="10,0,0,0" width="70" height="30" />
+            		
+            		<Button name="btn_collection" text="收藏" float="true" pos="10,0,0,0" width="50" height="30" textcolor="#FFFFFFFF" font="2" align="center" valign="vcenter" />
+            	</VerticalLayout>
+            	
+            	<VerticalLayout name="VerLayAddr2" height="30" bordercolor="#FF0000FF" bordersize="0" >
+            		
+            	</VerticalLayout>                                  
+            </HorizontalLayout>
+        </VerticalLayout>
+        
+        
+        <!--浏览器客户区-->
+        <VerticalLayout name="VerLayClient" >
+        	<HorizontalLayout height="30" bkcolor="#FFA4BED4" >
+        		<HorizontalLayout width="40" bordercolor="#FF00FFFF" bordersize="0" >
+        			<Button name="BtnTabLeft" visible="true" float="true" pos="5,0,0,0" width="30" height="30" normalimage="file='btn_tab_left.png' dest='3,3,27,27' source='0,0,24,24'" hotimage="file='btn_tab_left.png' dest='3,3,27,27' source='24,0,48,24'" pushedimage="file='btn_tab_left.png' dest='3,3,27,27' source='48,0,72,24'" disabledimage="file='btn_tab_left.png' dest='3,3,27,27' source='72,0,96,24'" />
+        			<Button name="BtnTabRight" visible="false" float="true" pos="5,0,0,0" width="30" height="30" normalimage="file='btn_tab_right.png' dest='3,3,27,27' source='0,0,24,24'" hotimage="file='btn_tab_right.png' dest='3,3,27,27' source='24,0,48,24'" pushedimage="file='btn_tab_right.png' dest='3,3,27,27' source='48,0,72,24'" disabledimage="file='btn_tab_right.png' dest='3,3,27,27' source='72,0,96,24'" />
+        		</HorizontalLayout>
+        		
+        		<!--摆放网页切换按钮-->
+        		<HorizontalLayout name="HorLaySwitch" >
+        			<HorizontalLayout name="HoriTabHome" maxwidth="230" bkimage="file='ver_tab_label.png' source='400,0,600,30' corner='10,0,170,0'" >
+        				<HorizontalLayout >
+        					<Text name="TextTitle" text="360导航_新一代安全上网导航" relativepos="0,0,100,100" endellipsis="true" showhtml="true" height="30" textpadding="12,0,0,0" font="2" align="left" valign="vcenter" bordercolor="#FFFF0000" bordersize="0" />
+        				</HorizontalLayout>
+        				<HorizontalLayout width="32" >
+        					<Button name="BtnTabClose" float="true" pos="0,0,0,0" width="20" height="30" normalimage="file='btn_tab_close.png' dest='0,0,20,30' source='0,0,20,31'" hotimage="file='btn_tab_close.png' dest='0,0,20,30' source='20,0,40,31'" pushedimage="file='btn_tab_close.png' dest='0,0,20,30' source='40,0,60,31'" disabledimage="file='btn_tab_close.png' dest='0,0,20,30' source='60,0,80,31'" />
+        				</HorizontalLayout>
+        			</HorizontalLayout>
+        			
+        			<HorizontalLayout name="HoriNewItem" >
+        				<Button name="BtnTabNewItem" float="true" pos="0,0,0,0" width="33" height="30" normalimage="file='btn_tab_new.png' dest='0,2,33,30' source='0,0,33,28'" hotimage="file='btn_tab_new.png' dest='0,2,33,30' source='33,0,66,28'" pushedimage="file='btn_tab_new.png' dest='0,2,33,30' source='66,0,99,28'" disabledimage="file='btn_tab_new.png' dest='0,2,33,30' source='99,0,132,28'" />
+        			</HorizontalLayout>
+        		</HorizontalLayout>
+        		
+        		<HorizontalLayout width="70" >
+        			<Button name="BtnTabAll" float="true" pos="0,0,0,0" width="30" height="30" normalimage="file='btn_tab_all.png' dest='5,5,24,24' source='0,0,19,19'" hotimage="file='btn_tab_all.png' dest='5,5,24,24' source='0,0,19,19'" pushedimage="file='btn_tab_all.png' dest='5,5,24,24' source='0,0,19,19'" />
+        			<Button name="BtnTabRecycle" float="true" pos="30,0,0,0" width="29" height="30" normalimage="file='btn_tab_recycle.png' source='0,0,29,31'" hotimage="file='btn_tab_recycle.png' source='29,0,58,31'" pushedimage="file='btn_tab_recycle.png' source='58,0,87,31'" />
+        		</HorizontalLayout>
+        	</HorizontalLayout>
+        	
+        	<HorizontalLayout name="VerLayWebPage" >
+        		<VerticalLayout width="40" />
+        		<VerticalLayout name="VerTab" >
+        			<!--网页Tab页-->
+	        		<TabLayout name="TabSwitch" >
+		        		<VerticalLayout >
+		        			<WebBrowser name="ActiveClient" homepage="http://hao.360.cn/?1004" autonavi="true" />
+		        		</VerticalLayout>
+	        		</TabLayout>
+        		</VerticalLayout>
+        		<VerticalLayout width="2" />
+        	</HorizontalLayout>
+        </VerticalLayout>
+        
+        
+        <!--浏览器状态栏-->
+        <VerticalLayout name="VerLayStatus" height="30" bordercolor="#FFFF0000" bordersize="0" >
+        </VerticalLayout>
+    </VerticalLayout>
+</Window>

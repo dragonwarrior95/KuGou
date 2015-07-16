@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Form name="ReaderForm" position="0,0,1001,668" ShadowBitmap="ShadowImgFrame.png" ShadowBound="8,7,8,8">
+    <Image Name="ReaderFormBackground" Anchors="left,top,right,bottom"  RelativePosition="3,3,3,3" Bitmap="reader_form_back_background.png" />
+    <Image Name="ReaderFormLogo" Anchors="left,top" RelativePosition="10,9,105,27" Bitmap="reader_from_logo.png" />
+    <Button name="ReaderFormBackButton" anchors="left,top" RelativePosition="156,6,32,32" NormalBack="reader_form_back_normal.png" HoverBack="reader_form_back_hovering.png" DownBack="reader_form_back_pressed.png" DisabledBack="reader_form_back_disabled.png"/>
+    <Button name="ReaderFormForwardButton" anchors="left,top" RelativePosition="195,6,32,32" NormalBack="reader_form_forward_normal.png" HoverBack="reader_form_forward_hovering.png" DownBack="reader_form_forward_pressed.png" DisabledBack="reader_form_forward_disabled.png"/>
+    <Button name="ReaderFormRefreshButton" anchors="left,top" RelativePosition="235,6,32,32" NormalBack="reader_form_refresh_normal.png" HoverBack="reader_form_refresh_hovering.png" DownBack="reader_form_refresh_pressed.png" DisabledBack="reader_form_refresh_disabled.png"/>
+    <Button name="ReaderFormCloseButton" anchors="right,top" RelativePosition="8,12,18,18" NormalBack="reader_form_close_normal.png" HoverBack="reader_form_close_hovering.png" DownBack="reader_form_close_pressed.png" DisabledBack="reader_form_close_disabled.png"/>
+    <CheckBox Name="ReaderFormMaximize" Anchors="right,top" RelativePosition="33,12,18,18" NormalBack="reader_form_maximize_normal.png" HoverBack="reader_form_maximize_hovering.png" DownBack="reader_form_maximize_pressed.png" DisabledBack="reader_form_maximize_disabled.png"  SelectedNormal="reader_form_restore_normal.png" SelectedHover="reader_form_restore_hovering.png" SelectedDown="reader_form_restore_pressed.png" SelectedDisabled="reader_form_restore_disabled.png"/>
+    <Button Name="ReaderFormMinimize" Anchors="right,top" RelativePosition="58,12,18,18" NormalBack="reader_form_minimize_normal.png" HoverBack="reader_form_minimize_hovering.png" DownBack="reader_form_minimize_pressed.png" DisabledBack="reader_form_minimize_disabled.png" />
+    <WindowControl Name="ReaderFormWeb" Anchors="left,top,right,bottom" RelativePosition="3,41,3,3">
+      <WindowControl Name="_0" Anchors="left,top,right,bottom" RelativePosition="0,0,0,0" WinBackColor="0xFFFFFFFF"/>
+      <Container name="_1" Anchors="left,top,right,bottom" RelativePosition="0,0,0,0">
+        <Image name="_0" RelativePosition="0,0,0,0" Anchors="left,top,right,bottom" />
+        <Image name="_1" position="236,184,459,292" Bitmap="errorNetInvalid.png" Anchors=""/>
+        <label name="_2" position="466,194,646,224" Anchors=""/>
+        <Button name="_3" position="466,234,531,264" Anchors=""/>
+        <label name="_4" position="536,243,686,255" Anchors=""/>
+        <label name="_5" position="576,243,626,255" Anchors=""/>
+        <label name="_6" position="466,274,711,374" Anchors=""/>
+      </Container>
+      <Image name="_2" RelativePosition="0,0,0,0" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+      <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+    </WindowControl>
+  </Form>
+</Forms>

@@ -1,0 +1,6 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Bitmaplist Name="ApptoolNormalIcons" BitmapCount="1">
+    <BitmapIcon Name="_0" BitmapID="0" Icon="defaultLastPlayGame.png"/>
+  </Bitmaplist>
+</Forms>

@@ -1,0 +1,190 @@
+1、文件长度		4个字节
+2、记录长度		4个字节
+3、文件名长度	1个字节
+4、空4个字节	4个字节
+5、文件长度		4个字节
+。。。。。。
+文件数据起始位置
+
+struct SkinFileInfo_T
+{
+	int nIndex;			// 标记当前是第几个文件
+	int nRecordLength;	// 记录长度
+	int nFileNameLength;// 文件名长度
+	CString strFileName;// 文件名
+	int nFilter;		// 四个预留字节
+	int nFileSize;		// 文件大小
+};
+
+
+  // 7.5.85.14422
+  // kugou.skn
+  TKugouSkinRead = class
+  public
+  type
+     PKugouResRec = ^TKugouResRec;
+     TKugouResRec = packed record
+       Index: Integer;
+       FileSize: Integer;
+       FileName: string;
+       Position: Int64;
+     end;
+  private
+     FList: TList;
+     FFileName: string;
+     FMemStream: TMemoryStream;
+     function GetFileName(P: Pointer): string;
+  public
+     constructor Create;
+     destructor Destroy; override;
+     procedure LoadFromFile(AFileName: string);
+     procedure Clear;
+     procedure Extract(AIndex: Integer; out AStream: TMemoryStream); overload;
+     procedure Extract(AFileName: string; out AStream: TMemoryStream); overload;
+     procedure ExtractAll(ADir: string);
+     procedure ExtractToFile(AIndex: Integer; AFileName: string = '');
+  end;
+  
+implementation
+
+{ TKugouSkinRead }
+
+procedure TKugouSkinRead.Clear;
+var
+  I: Integer;
+begin
+  for I := 0 to FList.Count - 1 do Dispose(FList[I]);
+  FList.Clear;
+end;
+
+constructor TKugouSkinRead.Create;
+begin
+  inherited Create;
+  FList := TList.Create;
+  FMemStream := TMemoryStream.Create;
+end;
+
+destructor TKugouSkinRead.Destroy;
+begin
+  Clear;
+  FList.Free;
+  FMemStream.Free;
+  inherited;
+end;
+
+procedure TKugouSkinRead.Extract(AIndex: Integer; out AStream: TMemoryStream);
+var
+  Buffer: array of Byte;
+  Item: PKugouResRec;
+begin
+  if (AIndex >= 0) and (AIndex < FList.Count) and (Assigned(AStream)) then
+  begin
+    AStream.Position := 0;
+    Item := PKugouResRec(FList[AIndex]);
+    SetLength(Buffer, Item^.FileSize);
+    try
+      FMemStream.Position := Item^.Position;
+      FMemStream.Read(Pointer(Buffer)^, Item^.FileSize);
+      AStream.Write(Pointer(Buffer)^, Item^.FileSize);
+      AStream.Position := 0;
+    finally
+      SetLength(Buffer, 0);
+    end;
+  end;
+end;
+
+procedure TKugouSkinRead.Extract(AFileName: string;
+  out AStream: TMemoryStream);
+var
+  I: Integer;
+begin
+  for I := 0 to FList.Count - 1 do
+    if SameStr(LowerCase(GetFileName(FList[I])), LowerCase(AFileName)) then
+    begin
+      Extract(I, AStream);
+      Exit;
+    end;
+end;
+
+procedure TKugouSkinRead.ExtractAll(ADir: string);
+var
+  I: Integer;
+  Mem: TMemoryStream;
+begin
+  Mem := TMemoryStream.Create;
+  try
+    if not DirectoryExists(ADir) then
+      CreateDir(ADir);
+    if LastDelimiter('\', ADir) <> Length(ADir) then
+      ADir := ADir + '\';
+    for I := 0 to FList.Count - 1 do
+    begin
+      Mem.Clear;
+      Extract(I, Mem);
+      Mem.SaveToFile(ADir + GetFileName(FList[I]));
+    end;
+  finally
+    Mem.Free;
+  end;
+end;
+
+procedure TKugouSkinRead.ExtractToFile(AIndex: Integer; AFileName: string);
+var
+  Mem: TMemoryStream;
+begin
+  Mem := TMemoryStream.Create;
+  try
+    Extract(AIndex, Mem);
+    if Mem.Size > 0 then
+      if Length(AFileName) = 0 then
+        Mem.SaveToFile(GetFileName(FList[AIndex]))
+      else Mem.SaveToFile(AFileName);
+  finally
+    Mem.Free;
+  end;
+end;
+
+function TKugouSkinRead.GetFileName(P: Pointer): string;
+begin
+  Result := '';
+  if Assigned(P) then
+    Result := PKugouResRec(P)^.FileName;
+end;
+
+procedure TKugouSkinRead.LoadFromFile(AFileName: string);
+var
+  FileCount, I: Integer;
+  Item: PKugouResRec;
+  RecLen: Integer;    // 每条记录长度
+  LNameLen: Byte;  // 文件名的长度
+  LName: array[Byte] of Char;
+  FileStartPosi: Int64;
+begin
+  Clear;
+  FFileName := AFileName;
+  try
+    FMemStream.LoadFromFile(AFileName);
+    FMemStream.Read(FileCount, 4);
+    for I := 1 to FileCount do
+    begin
+      New(Item);
+      Item^.Index := I;
+      FillChar(LName, SizeOf(LName), 0);
+      FMemStream.Read(RecLen, 4);
+      FMemStream.Read(LNameLen, 1);
+      FMemStream.Read(LName, LNameLen);
+      Item^.FileName := string(LName);
+      FMemStream.Seek(RecLen - (4 + 1 + LNameLen) - 4, soCurrent);
+      FMemStream.Read(Item^.FileSize, 4);
+      FList.Add(Item);
+    end;
+    FileStartPosi := FMemStream.Position;
+    for I := 0 to FList.Count - 1 do
+    begin
+      Item := PKugouResRec(FList[I]);
+      Item^.Position := FileStartPosi;
+      Inc(FileStartPosi, Item^.FileSize);
+    end;
+  except
+  end;
+end;  

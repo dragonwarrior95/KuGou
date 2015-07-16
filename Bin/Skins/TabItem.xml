@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+    <VerticalLayout >
+		<WebBrowser name="ActiveClient" homepage="http://hao.360.cn/?1004" autonavi="true" />
+	</VerticalLayout>
+</Window>

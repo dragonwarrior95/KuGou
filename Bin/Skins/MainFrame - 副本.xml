@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="629,400" sizebox="4,4,4,4" roundcorner="5,5" caption="0,0,0,-1" mininfo="629,400" bktrans="false">
+    <Font name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font name="微软雅黑" size="16" bold="false" italic="false" />
+    <Font name="微软雅黑" size="18" bold="false" italic="false" />
+    <Font name="微软雅黑" size="20" bold="false" italic="false" />
+	<Font name="微软雅黑" size="24" bold="false" italic="false" />
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	<Default name="HScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,0,16,16' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,0,34,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,0,52,16' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,0,70,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,18,16,34' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,18,34,34' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,18,52,34' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,18,70,34' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,36,16,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,36,34,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,36,52,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,36,70,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,54,16,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,54,34,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,54,52,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,54,70,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,72,16,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,72,34,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,72,52,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,72,70,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	
+	<Default name="Button" value="normalimage=&quot;file='btn_default.png' source='0,0,96,24' fade='200'&quot; hotimage=&quot;file='btn_default.png' source='0,24,96,48' fade='200'&quot; pushedimage=&quot;file='btn_default.png' source='0,48,96,72' fade='200'&quot; " />
+    
+    
+    <VerticalLayout name="VerLayFrame" height="30" bkimage="skin\Skin3.jpg">
+    	
+        <!--浏览器标题栏-->
+        <VerticalLayout name="VerLayCaption" height="100" bordercolor="#FFFF0000" bordersize="1">
+            <HorizontalLayout name="HorLayTitle" height="30" bordercolor="#FFFF0000" bordersize="1">
+                <HorizontalLayout name="HorizontalLayoutUI1" height="30" />
+                <HorizontalLayout name="HorizontalLayoutUI3" width="300" height="30">
+                    <FadeButton name="BtnClose" float="true" pos="258,3,0,0" width="39" height="46" normalimage="file='btn_close.png' source='0,0,39,46'" hotimage="file='btn_close.png' source='0,46,39,92'" pushedimage="file='btn_close.png' source='0,92,39,138'" />
+                    <FadeButton name="BtnRestore" float="true" visible="false" pos="219,3,0,0" width="39" height="46" normalimage="file='btn_restore.png' source='0,0,39,46'" hotimage="file='btn_restore.png' source='0,46,39,92'" pushedimage="file='btn_restore.png' source='0,92,39,138'" />
+                    <FadeButton name="BtnMax" float="true" pos="219,3,0,0" width="39" height="46" normalimage="file='btn_max.png' source='0,0,39,46'" hotimage="file='btn_max.png' source='0,46,39,92'" pushedimage="file='btn_max.png' source='0,92,39,138'" />
+                    <FadeButton name="BtnMin" float="true" pos="180,3,0,0" width="39" height="46" normalimage="file='btn_min.png' source='0,0,39,46'" hotimage="file='btn_min.png' source='0,46,39,92'" pushedimage="file='btn_min.png' source='0,92,39,138'" />
+                </HorizontalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout name="HorLayTool" height="50" bordercolor="#FFFF0000" bordersize="1" >
+            </HorizontalLayout>
+            <HorizontalLayout name="HorLayAddr" height="30" bordercolor="#FFFF0000" bordersize="1">
+            	<HorizontalLayout name="HorLayAddr1" width="60" height="30" >
+            		<Text name="TextAddr" text="地址：" float="true" pos="0,0,0,0" width="60" height="30" textcolor="#FFFFFFFF" align="right" valign="vcenter" font="2" />
+            	</HorizontalLayout>
+            	
+            	<HorizontalLayout name="HorLayAddr2" height="30" bordercolor="#FF0000FF" bordersize="1" >
+            		<Edit name="EditAddr" float="true" pos="0,0,0,0" width="469" height="30" relativepos="0,0,100,100" bkimage="file='edit_path.png' corner='10,10,10,10'" textpadding="4,1,4,1" bkcolor="#00FFFFFF" nativebkcolor="#FFFFFFFF" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="left" valign="vcenter" />
+            	</HorizontalLayout>
+            	
+            	<HorizontalLayout name="HorLayAddr3" width="100" height="30" >
+                	<Button name="BtnBrowser" text="转到" float="true" pos="10,0,0,0" width="80" height="30" normalimage="file='btn_default.png' source='0,0,96,24'" hotimage="file='btn_default.png' source='0,24,96,48'" pushedimage="file='btn_default.png' source='0,48,96,72'" textcolor="#FFFFFFFF" align="center" valign="vcenter" font="2" /> 
+            	</HorizontalLayout>                                    
+            </HorizontalLayout>
+        </VerticalLayout>
+        
+        
+        <!--浏览器客户区-->
+        <VerticalLayout name="VerLayClient" >
+        	<!--ActiveX name="ActiveClient" /-->
+        	<WebBrowser name="ActiveClient" homepage="http://hao.360.cn/?1004" autonavi="true" />
+        </VerticalLayout>
+        
+        
+        <!--浏览器状态栏-->
+        <VerticalLayout name="VerLayStatus" height="30" bordercolor="#FFFF0000" bordersize="1" >
+        </VerticalLayout>
+    </VerticalLayout>
+</Window>

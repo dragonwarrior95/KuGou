@@ -1,0 +1,1126 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Form Name="MainForm" Position="0,0,1001,669" Constraints="1001,604,9999,9999">
+    <!--让你跨越！就喜欢抄是吧-->
+    <Container Name="StrideAcrossChangJiangContainer" Position="48,115,998,636" Anchors="left,top,right,bottom">
+      <!--让你变态！！-->
+      <Container Name="Mp3CopyContainer" BackgroundPic="long_time_operation_box.png" BackgroundSep="0,0,19,24" Position="0,0,950,521" Anchors="left,top,right,bottom">
+      </Container>
+    </Container>
+    <Container Anchors="left,top,right,bottom" Name="MainFormFullBackgroundContianer" Position="0,0,1001,669">
+      <Container Anchors="left,top,right,bottom" Name="MainFormFullBackGround" Position="0,0,1001,669">
+        <Container Anchors="left,top,right,bottom" Name="FullSingerBackgroundControl" Position="0,0,1001,669"/>
+      </Container>
+    </Container>
+    <SingleSplitview Anchors="left,top,right,bottom" Name="SplitView" Position="0,0,998,665" Constraints="996,0,9999,9999" DividerInitialPosition="362">
+      <Container Anchors="left,top,right,bottom" Name="PlaybackControlPanel" Constraints="362,0,9999,9999">
+        <CheckBox Anchors="left,top" Name="PlaybackControlPanelLyric" position="11,74,40,95" NormalBack="BtnLyrics_0.png" HoverBack="BtnLyrics_1.png" DownBack="BtnLyrics_2.png" DisabledBack="BtnLyrics_3.png" SelectedNormal="BtnLyrics_4.png" SelectedHover="BtnLyrics_5.png" SelectedDown="BtnLyrics_6.png" SelectedDisabled="BtnLyrics_7.png"/>
+        <Button name="PlaybackControlPanelChangeOrderMode" anchors="left,top" position="49,73,75,94" NormalBack="playlist_control_bar_order_mode_normal.png" HoverBack="playlist_control_bar_order_mode_hovering.png" DownBack="playlist_control_bar_order_mode_pressed.png" DisabledBack="playlist_control_bar_order_mode_disabled.png" ActionId="8716" ActionName="点击主面板播放模式|主面板"/>
+        <TrackBar Anchors="left,top,right" name="PlaybackControlPanelProgressBar" position="11,35,354,48" TrackBarThumbSize="13,13" TrackBarBackground="PlayProgressBkgnd_0.png" TrackBarFront="PlayProgressBkgnd_2.png"  TrackBarCache="PlayProgressBkgnd_3.png" TrackBarThumbNormal="PlayProgressThumb_0.png" TrackBarThumbDisable="PlayProgressThumb_3.png" TrackBarThumbHover="PlayProgressThumb_1.png" TrackBarThumbDown="PlayProgressThumb_2.png" ProgressBarNewFront0="ProgressBarNewFront.png" ProgressBarNewFront1="ProgressBarNewFront1.png" ProgressBarNewFront2="ProgressBarNewFront2.png"/>
+        <Button name="PlaybackControlPanelVolumeIndicator" Anchors="right,top" position="267,71,296,96" NormalBack="volume_indicator_normal.png" HoverBack="volume_indicator_hovering.png" DownBack="volume_indicator_pressed.png" DisabledBack="volume_indicator_disabled.png" ActionId="8305" ActionName="点击主面板静音|主面板"/>
+        <Button Anchors="left,top" name="PlaybackControlPanelBeautiful" position="300,76,348,95" NormalBack="Beautiful_0.png" HoverBack="Beautiful_1.png" DownBack="Beautiful_2.png" DisabledBack="Beautiful_3.png"/>
+        <Container Anchors="left,top" Name="PlaybackControlPanelVolumeContainer" Position="265,71,354,98">
+          <Image Name="_0" Anchors="left,top,right,bottom" Bitmap="VolumeContainerBack.png" position="0,0,89,27"/>
+          <TrackBar Anchors="top,right" name="PlaybackControlPanelVolume" position="27,9,85,21" TrackBarThumbSize="10,12" TrackBarBackground="MainFormVolumnBackground.png" TrackBarFront="MainFormVolumnForeground.png" TrackBarThumbNormal="MainSoudSliderThumb_0.png" TrackBarThumbDisable="MainSoudSliderThumb_3.png" TrackBarThumbHover="MainSoudSliderThumb_1.png" TrackBarThumbDown="MainSoudSliderThumb_2.png"/>
+        </Container>
+        <Button Anchors="top" name="PlaybackControlPanelPlayPrev" position="104,58,153,107" NormalBack="ButtonPlayPreNormal.png" HoverBack="ButtonPlayPreHover.png" DownBack="ButtonPlayPreDown.png" DisabledBack="ButtonPlayPreDisable.png" ActionId="8302" ActionName="点击主面板上一首|主面板"/>
+        <Button Anchors="top" name="PlaybackControlPanelPlayNext" position="206,58,255,107" NormalBack="ButtonPlayNextNormal.png" HoverBack="ButtonPlayNextHover.png" DownBack="ButtonPlayNextDown.png" DisabledBack="ButtonPlayNextDisable.png" ActionId="8303" ActionName="点击主面板下一首|主面板"/>
+        <CheckBox Anchors="top" name="PlaybackControlPanelPlayPause" position="155,59,204,108" NormalBack="ButtonPlayNormal.png" HoverBack="ButtonPlayHover.png" DownBack="ButtonPlayDown.png" DisabledBack="ButtonPlayDisable.png" SelectedNormal="ButtonPauseNormal.png" SelectedHover="ButtonPauseHover.png" SelectedDown="ButtonPauseDown.png" SelectedDisabled="ButtonPauseDisable.png" ActionId="8304" ActionName="点击主面板播放暂停|主面板"/>
+        <Container Anchors="left,top" Name="PlaybackControlPanelTopLayOutContainer" position="11,10,275,36" Constraints="264,0,9999,9999">
+          <Button name="PlayBackToneQuality" Anchors="left,top" position="0,3,49,22" ControlSpace="0,3,4,4" NormalTextColor="0xffffffff" HoverTextColor="0xffffffff" DownTextColor="0xffffffff" DisabledTextColor="0xffb2b2b2" NormalBack="PlayBackToneNormal.png" HoverBack="PlayBackToneHover.png" DownBack="PlayBackTonePressed.png" DisabledBack="PlayBackToneDisabled.png"/>
+          <Label Anchors="left,top,right" name="PlaybackControlPanelSongStatus" position="59,6,205,18" Constraints="0,0,250,9999" ControlSpace="6,6,2,18"/>
+          <Label Anchors="left,top,right" name="VipAccelerateLabel" position="144,5,291,17" ControlSpace="0,5,2,9"/>
+          <Container name="PlaybackControlPanelLikeInMiniBottonContainer" Anchors="top,left" position="235,0,264,26" ControlSpace="0,0,0,0">
+            <CheckBox name="PlaybackControlPanellikeInMini" Anchors="top,left" position="0,0,29,26" NormalBack="playlist_like_0.png" HoverBack="playlist_like_1.png" DownBack="playlist_like_2.png" DisabledBack="playlist_like_3.png" SelectedNormal="playlist_like_4.png" SelectedHover="playlist_like_5.png" SelectedDown="playlist_like_6.png" SelectedDisabled="playlist_like_7.png"/>
+          </Container>
+        </Container>
+        <DigitalTime Anchors="top,left,right" name="PlaybackControlPanelTimeStatus" position="17,46,349,58"/>
+        <Container name="PlaybackControlPanelShareAndLikeBottonContainer" Anchors="top,right" position="220,10,360,36">
+          <Button name="PlaybackControlPanelReal" Anchors="top,right" position="2,0,38,26" NormalBack="playpanel_real_normal.png" HoverBack="playpanel_real_hovering.png" DownBack="playpanel_real_pressed.png" DisabledBack="playpanel_real_disabled.png" ActionId="893" ActionName="真字匹配成功点击7625|主界面"/>
+          <Button name="PlaybackControlPanelDown" Anchors="top,right" position="43,0,71,26" NormalBack="playpanel_down_0.png" HoverBack="playpanel_down_1.png" DownBack="playpanel_down_2.png" DisabledBack="playpanel_down_3.png" ActionId="8717" ActionName="点击主面板下载|主界面"/>
+          <CheckBox name="PlaybackControlPanelLike" Anchors="top,right" position="77,0,106,26" NormalBack="playlist_like_0.png" HoverBack="playlist_like_1.png" DownBack="playlist_like_2.png" DisabledBack="playlist_like_3.png" SelectedNormal="playlist_like_4.png" SelectedHover="playlist_like_5.png" SelectedDown="playlist_like_6.png" SelectedDisabled="playlist_like_7.png"/>
+          <Button name="PlaybackControlPanelShare" Anchors="top,right" position="111,0,140,26" NormalBack="playpanel_share_normal.png" HoverBack="playpanel_share_hovering.png" DownBack="playpanel_share_pressed.png" DisabledBack="playpanel_share_disabled.png" ActionId="9302" ActionName="点击播放面板分享|本地列表"/>
+        </Container>
+        <TabControl name="PlaybackControlPanelTabControl"  BackgroundPic="mainform_tabbackground.png" BackgroundSep="47,409,48,410" position="3,115,362,666" TabControlLabelWidth="60" TabControlHeadHeight="45" PlaybackControlPanelTabControlSplitter="CommonTabCtrlSpliter.png">
+          <AnimationControl Name="_0" Anchors="left,top" position="0,0,20,20" ACFrameCount="1" ACFrameTick="9999" ACFrameRepeat="1" ACFramePic="TabLabelTriangle.png"/>
+          <Container Name="_1" />
+          <TabLabel name="PlaybackControlPanelCloudListTabLabel" TabControlWidth="62" TabLabelNormal="TabPlayListBkImg_0.png" TabLabelHover="TabPlayListBkImg_1.png" TabLabelDown="TabPlayListBkImg_2.png" CloudListTabLabelForegroundNormal="TabCloudListForegroundImage_0.png" CloudListTabLabelForegroundHover="TabCloudListForegroundImage_1.png" CloudListTabLabelForegroundSelected="TabCloudListForegroundImage_2.png"  ActionId="819" ActionName="点击收藏列表页|左侧TAB">
+            <AnimationControl name="_0" Position="0,0,96,62" anchors="left,top" ACFrameCount="1" ACFrameTick="9999" ACFrameRepeat="1" ACFramePic="PlayBackTabelLabelCloud.png"/>
+            <Image name="CloudListTabSyncState" Anchors="top,left" position="25,30,38,43" Bitmap="cloud_list_tab_sync_state.png"/>
+            <Image name="CloudListTabSyncing" Anchors="top,left" position="25,30,38,43" Bitmap="PlaylistSyncAni.png"/>
+            <Image Name="ListContainerModified" Anchors="top,left" position="28,16,37,25" Bitmap="ListContainerModified.png"/>
+          </TabLabel>
+          <Container name="_3">
+            <!--GeneralListContainer-->
+            <Container name="GeneralListTreeViewContainer" position="0,0,314,521" Anchors="left,top,right,bottom">
+              <!--GeneralListContainer-->
+              <Container name="_0" Anchors="left,right,bottom">
+                <!--GeneralListFindBar-->
+                <RichEdit name="_0" BackgroundPic="" FrameDisabled="" FrameFocused="">
+                  <!--GeneralListFindBarEdit-->
+                  <ScrollBar Name="_0"/>
+                  <Image name="_1" Bitmap="playlist_find_bar_magnifier.png"/>
+                </RichEdit>
+                <Button Name="_1" NormalBack="playlist_find_bar_close_normal.png" HoverBack="playlist_find_bar_close_hovering.png" DownBack="playlist_find_bar_close_pressed.png" DisabledBack="playlist_find_bar_close_disabled.png"/>
+              </Container>
+              <Container name="_1">
+                <!--LongTimeOperationView-->
+                <Image name="_0" Bitmap="long_time_operation_mask.png"/>
+                <Container name="_1" BackgroundPic="long_time_operation_box.png" BackgroundSep="0,0,19,24">
+                  <Label name="_0"/>
+                  <Label name="_1"/>
+                  <ProgressBar name="_2" ProgressBackground="long_time_operation_progress_background.png" ProgressFacade="long_time_operation_progress_facade.png" ProgressImageCenterRect="1, 1, 11, 6"/>
+                  <Button name="_3"/>
+                </Container>
+              </Container>
+              <Control name="PlaylistTreeMenuIconsLoader" PlaylistTreeMenuAddIconNormal="menu_add_normal.png" PlaylistTreeMenuAddIconHovering="menu_add_hovering.png" PlaylistTreeMenuAddIconPressed="menu_add_pressed.png" PlaylistTreeMenuAddIconDisabled="menu_add_disabled.png" PlaylistTreeMenuClearIconNormal="menu_clear_normal.png" PlaylistTreeMenuClearIconHovering="menu_clear_hovering.png" PlaylistTreeMenuClearIconPressed="menu_clear_pressed.png" PlaylistTreeMenuClearIconDisabled="menu_clear_disabled.png" PlaylistTreeMenuFavoriteIconNormal="menu_favorite_normal.png" PlaylistTreeMenuFavoriteIconHovering="menu_favorite_hovering.png" PlaylistTreeMenuFavoriteIconPressed="menu_favorite_pressed.png" PlaylistTreeMenuFavoriteIconDisabled="menu_favorite_disabled.png" PlaylistTreeMenuDeleteIconNormal="menu_delete_normal.png" PlaylistTreeMenuDeleteIconHovering="menu_delete_hovering.png" PlaylistTreeMenuDeleteIconPressed="menu_delete_pressed.png" PlaylistTreeMenuDeleteIconDisabled="menu_delete_disabled.png" PlaylistTreeMenuSearchMVIconNormal="menu_search_mv_normal.png" PlaylistTreeMenuSearchMVIconHovering="menu_search_mv_hovering.png" PlaylistTreeMenuSearchMVIconPressed="menu_search_mv_pressed.png" PlaylistTreeMenuSearchMVIconDisabled="menu_search_mv_disabled.png"
+                PlaylistTreeMenuSendToPortableIconNormal="menu_trans_song_to_mobile_dev_normal.png" PlaylistTreeMenuSendToPortableIconHovering="menu_trans_song_to_mobile_dev_hovering.png" PlaylistTreeMenuSendToPortableIconPressed="menu_trans_song_to_mobile_dev_down.png" PlaylistTreeMenuSendToPortableIconDisabled="menu_trans_song_to_mobile_dev_disabled.png" PlaylistTreeMenuCloudIconNormal="menu_cloud_normal.png" PlaylistTreeMenuCloudIconHovering="menu_cloud_hovering.png" PlaylistTreeMenuCloudIconPressed="menu_cloud_pressed.png" PlaylistTreeMenuCloudIconDisabled="menu_cloud_disabled.png" PlaylistTreeMenuShareToIconNormal="menu_share_to_normal.png" PlaylistTreeMenuShareToIconHovering="menu_share_to_hovering.png" PlaylistTreeMenuShareToIconPressed="menu_share_to_pressed.png" PlaylistTreeMenuShareToIconDisabled="menu_share_to_disabled.png" PlaylistTreeMenuRecommendSongIconNormal="menu_recommend_song_normal.png" PlaylistTreeMenuRecommendSongIconHovering="menu_recommend_song_hovering.png" PlaylistTreeMenuRecommendSongIconPressed="menu_recommend_song_pressed.png" PlaylistTreeMenuRecommendSongIconDisabled="menu_recommend_song_disabled.png"
+                PlaylistTreeMenuAddToQueueIconNormal="menu_add_to_queue_normal.png" PlaylistTreeMenuAddToQueueIconHovering="menu_add_to_queue_hovering.png" PlaylistTreeMenuAddToQueueIconPressed="menu_add_to_queue_pressed.png" PlaylistTreeMenuAddToQueueIconDisabled="menu_add_to_queue_disabled.png"/>
+              <Control name="PlaylistTreeItemIconsLoader" PlaylistTreeItemViewGrouperNormal="playlist_group_normal.png" PlaylistTreeItemViewGrouperHovering="playlist_group_hovering.png" PlaylistTreeItemViewGrouperPressed="playlist_group_pressed.png" PlaylistTreeItemViewGrouperDisabled="playlist_group_disabled.png" PlaylistTreeViewGrouperStateIndicatorCollapsed="playlist_group_indicator_collapsed.png" PlaylistTreeViewGrouperStateIndicatorExpanded="playlist_group_indicator_expanded.png" PlaylistTreeViewGrouperStateIndicatorPlaying="playlist_group_indicator_playing.png" PlaylistTreeItemViewGrouperMenuButtonNormal="playlist_menu_button_normal.png" PlaylistTreeItemViewGrouperMenuButtonHovering="playlist_menu_button_hovering.png" PlaylistTreeItemViewGrouperMenuButtonPressed="playlist_menu_button_pressed.png" PlaylistTreeItemViewGrouperMenuButtonDisabled="playlist_menu_button_disabled.png" PlaylistTreeItemViewEmptyGrouperAddFiles="playlist_empty_grouper_add_files.png" PlaylistTreeItemViewEmptyGrouperAddFolder="playlist_empty_grouper_add_folder.png" PlaylistTreeDragImage="drag_image_song.png" PlaylistTreeItemViewGrouperShadow="playlist_group_shadow.png" CloudlistBackgroundTips="cloud_list_background_tips.png"/>
+              <Container name="GeneralListTreeView" Anchors="left,top,right,bottom" position="0,0,312,521">
+                <ScrollBar Name="_0" ScrollBarBackground="TransparentScrollBarBack.png" UpNomal="TransparentScrollBarUp_0.png" UpMouseOver="TransparentScrollBarUp_1.png" UpMouseDown="TransparentScrollBarUp_2.png" UpDisable="TransparentScrollBarUp_3.png" DownNomal="TransparentScrollBarDown_0.png" DownMouseOver="TransparentScrollBarDown_1.png" DownMouseDown="TransparentScrollBarDown_2.png" DownDisable="TransparentScrollBarDown_3.png" ThumbNomal="TransparentScrollBarThumb_0.png" ThumbMouseOver="TransparentScrollBarThumb_1.png" ThumbMouseDown="TransparentScrollBarThumb_2.png" ThumbDisable="TransparentScrollBarThumb_3.png"/>
+                <Container Name="_1">
+                  <Container Name="_0" ActionId="8311" ActionName="双击本地列表项|本地列表">
+                    <!--GeneralListTreeItem-->
+                    <Image name="_0" Bitmap="playlist_local_mark.png"/>
+                    <!--LocalMark-->
+                    <Label name="_1"/>
+                    <Control Name="titleSplitLable"/>
+                    <!--TitleLabel-->
+                    <Image name="_2" />
+                    <!--GrouperStateIndicator-->
+                    <Button Name="_3"/>
+                    <!--GrouperMenu-->
+                    <Label name="_4"/>
+                    <!--AddFilesLabel-->
+                    <Image name="_5"/>
+                    <!--AddFilesIcon-->
+                    <Label name="_6"/>
+                    <!--AddFolderLabel-->
+                    <Image name="_7"/>
+                    <!--AddFolderIcon-->
+                    <Label name="_8"/>
+                    <!--SongCountLabel-->
+                    <CheckBox Name="_9" NormalBack="add_to_favorite_cross_normal.png" HoverBack="add_to_favorite_cross_hovering.png" DownBack="add_to_favorite_cross_pressed.png" DisabledBack="add_to_favorite_cross_disabled.png" ActionId="8343" ActionName="点击添加到按钮|本地列表"/>
+                    <CheckBox Name="_10" NormalBack="add_to_favorite_normal.png" HoverBack="add_to_favorite_hovering.png" DownBack="add_to_favorite_pressed.png" DisabledBack="add_to_favorite_disabled.png" SelectedNormal="added_to_favorite_normal.png" SelectedHover="added_to_favorite_hovering.png" SelectedDown="added_to_favorite_pressed.png" SelectedDisabled="added_to_favorite_disabled.png"/>
+                    <CheckBox Name="_11" NormalBack="playlist_karaoke_mv_button_normal.png" HoverBack="playlist_karaoke_mv_button_hovering.png" DownBack="playlist_karaoke_mv_button_pressed.png" DisabledBack="playlist_karaoke_mv_button_disabled.png" SelectedNormal="playlist_karaoke_mv_button_highlighted_normal.png" SelectedHover="playlist_karaoke_mv_button_highlighted_hovering.png" SelectedDown="playlist_karaoke_mv_button_highlighted_pressed.png" SelectedDisabled="playlist_karaoke_mv_button_highlighted_disabled.png" ActionId="3109" ActionName="点击播放列表MV|本地列表"/>
+                    <CheckBox Name="_12" NormalBack="playlist_non_karaoke_mv_button_normal.png" HoverBack="playlist_non_karaoke_mv_button_hovering.png" DownBack="playlist_non_karaoke_mv_button_pressed.png" DisabledBack="playlist_non_karaoke_mv_button_disabled.png" SelectedNormal="playlist_non_karaoke_mv_button_highlighted_normal.png" SelectedHover="playlist_non_karaoke_mv_button_highlighted_hovering.png" SelectedDown="playlist_non_karaoke_mv_button_highlighted_pressed.png" SelectedDisabled="playlist_non_karaoke_mv_button_highlighted_disabled.png" ActionId="3109" ActionName="点击播放列表MV|本地列表"/>
+                    <Button Name="_13" NormalBack="playlist_delete_normal.png" HoverBack="playlist_delete_hovering.png" DownBack="playlist_delete_pressed.png" DisabledBack="playlist_delete_disabled.png" ActionId="8312" ActionName="点击本地列表删除7525|本地列表"/>
+                    <Button Name="_14" NormalBack="playlist_download_normal.png" HoverBack="playlist_download_hovering.png" DownBack="playlist_download_pressed.png" DisabledBack="playlist_download_disabled.png" ActionId="5020" ActionName="点击下载按钮|本地列表"/>
+                    <Button Name="_15" NormalBack="playlist_next_normal.png" HoverBack="playlist_next_hovering.png" DownBack="playlist_next_pressed.png" DisabledBack="playlist_next_disabled.png"/>
+                    <Button Name="_16" NormalBack="playlist_play_0.png" HoverBack="playlist_play_1.png" DownBack="playlist_play_2.png" DisabledBack="playlist_play_3.png" ActionId="8310" ActionName="点击本地列表播放|本地列表"/>
+                    <Button Name="_17" NormalBack="playlist_playpause_normal.png" HoverBack="playlist_playpause_hovering.png" DownBack="playlist_playpause_pressed.png" DisabledBack="playlist_playpause_disabled.png"/>
+                    <Button Name="_18" NormalBack="playlist_report_normal.png" HoverBack="playlist_report_hovering.png" DownBack="playlist_report_pressed.png" DisabledBack="playlist_report_disabled.png"/>
+                    <Button Name="_19" NormalBack="playlist_share_normal.png" HoverBack="playlist_share_hovering.png" DownBack="playlist_share_pressed.png" DisabledBack="playlist_share_disabled.png" ActionId="9305" ActionName="点击本地列表分享|本地列表"/>
+                    <Image Name="_20" Bitmap="unknown_artist.png"/>
+                    <DigitalTime name="_21"/>
+                    <Container Name="_22">
+                      <!-- FanxingListPanel -->
+                      <Image name="_0" Anchors="left,top" Position="5,7,21,23"/>
+                      <!--GrouperStateIndicator-->
+                      <Label name="_1"/>
+                      <!--SongCountLabel-->
+                      <Label name="_2" Anchors="left,top" Position="20,5,300,23"/>
+                      <!--TitleLabel-->
+                      <Container Name="_3">
+                        <!-- FanxingListView -->
+                        <Container Name="_0">
+                          <ScrollBar Name="_0"/>
+                          <Container Name="_1">
+                            <Container Name="_0">
+                              <!-- FanxingListItemView -->
+                              <Image Name="_0" Bitmap="fanxing_living.png"/>
+                              <!-- Living State -->
+                              <Image Name="_1" Bitmap="unknow_artist.png" Position="20,4,72,56"/>
+                              <!-- Star Avatar -->
+                              <Image Name="_2" Anchors="left,top" Position="80,30,96,46"/>
+                              <!-- Star Level -->
+                              <Label Name="_3" Anchors="left,top" Position="80,8,300,22"/>
+                              <!-- Star Name -->
+                              <Button Name="_4" NormalBack="playlist_delete_normal.png" HoverBack="playlist_delete_hovering.png" DownBack="playlist_delete_pressed.png" DisabledBack="playlist_delete_disabled.png"/>
+                              <!-- Unfollow Button -->
+                            </Container>
+                          </Container>
+                        </Container>
+                        <ColumnHead Anchors="top,left,right" Name="_1" position="0,0,500,22"/>
+                      </Container>
+                    </Container>
+                    <!--PlayTime-->
+                    <Image Name="_23" Bitmap="playlist_local_mark_large.png"/>
+                    <!-- 占位24 -->
+                    <Image Name="_24" Bitmap=""/>
+                    <Button Name="_25" NormalBack="playlist_recommand_song_normal.png" HoverBack="playlist_recommand_song_hovering.png" DownBack="playlist_recommand_song_pressed.png" DisabledBack="playlist_recommand_song_disabled.png" ActionId="5176" ActionName="点击智能推荐7625|智能推荐" />
+                    <!-- 占位26 -->
+                    <Container Name="_26"/>
+                    <!-- 占位27 -->
+                    <Image Name="_27"/>
+                    <Button Name="_28" NormalBack="play_list_item_translate_to_phone_normal.png" HoverBack="play_list_item_translate_to_phone_hovering.png" DownBack="play_list_item_translate_to_phone_down.png" DisabledBack="play_list_item_translate_to_phone_disabled.png"/>
+                  </Container>
+                </Container>
+                <Container Name="_2">
+                  <!--GeneralListViceGrouper-->
+                  <Label name="_0"/>
+                  <Image name="_1"/>
+                  <Button Name="_2"/>
+                </Container>
+              </Container>
+              <Container name="GeneralListPrompt" anchors="left,right,bottom" position="0,498,312,521">
+                <Image name="GeneralListPromptIcon" anchors="left,top" position="33,4,49,20" Bitmap="PlaylistPromptIconOK.png"/>
+                <Image name="GeneralListPromptWarnIcon" anchors="left,top" position="33,4,49,20" Bitmap="PlaylistPromptIconWarn.png"/>
+                <Label name="GeneralListPromptTextLabel" anchors="left,top" position="51,1,262,21"/>
+                <Button name="GeneralListPromptCloseButton" anchors="left,top" position="265,7,272,14" NormalBack="PlayListBannerCloseBtn_0.png" HoverBack="PlayListBannerCloseBtn_1.png" DownBack="PlayListBannerCloseBtn_2.png" DisabledBack="PlayListBannerCloseBtn_3.png"/>
+              </Container>
+            </Container>
+          </Container>
+          <Container name="_4">
+            <!--CloudListContainer-->
+            <Container name="CloudListTreeViewContainer" position="0,0,314,521" Anchors="left,top,right,bottom">
+              <Container name="_0" Anchors="left,right,bottom">
+                <!--CloudListFindBar-->
+                <RichEdit name="_0" BackgroundPic="" FrameDisabled="" FrameFocused="">
+                  <!--CloudListFindBarEdit-->
+                  <ScrollBar Name="_0"/>
+                  <Image name="_1" Bitmap="playlist_find_bar_magnifier.png"/>
+                </RichEdit>
+                <Button Name="_1" NormalBack="playlist_find_bar_close_normal.png" HoverBack="playlist_find_bar_close_hovering.png" DownBack="playlist_find_bar_close_pressed.png" DisabledBack="playlist_find_bar_close_disabled.png"/>
+              </Container>
+              <Container name="_1">
+                <!--LongTimeOperationView-->
+                <Image name="_0" Bitmap="long_time_operation_mask.png"/>
+                <Container name="_1" BackgroundPic="long_time_operation_box.png" BackgroundSep="0,0,19,24">
+                  <Label name="_0"/>
+                  <Label name="_1"/>
+                  <ProgressBar name="_2" ProgressBackground="long_time_operation_progress_background.png" ProgressFacade="long_time_operation_progress_facade.png" ProgressImageCenterRect="1, 1, 11, 6"/>
+                  <Button name="_3"/>
+                </Container>
+              </Container>
+              <Image Name="CloudListContainerSynchronizing" Bitmap="PlaylistAddMark.png" Anchors="left,top,right,bottom" position="0,-10,314,550"/>
+              <Image Name="CloudListContainerSynchronizingMessage" Bitmap="CloudSynchronizingMessage.png" Anchors="top" position="17,163,297,284"/>
+              <Container name="CloudListTreeView" Anchors="left,top,right,bottom" position="0,0,312,490">
+                <ScrollBar Name="_0" ScrollBarBackground="TransparentScrollBarBack.png" UpNomal="TransparentScrollBarUp_0.png" UpMouseOver="TransparentScrollBarUp_1.png" UpMouseDown="TransparentScrollBarUp_2.png" UpDisable="TransparentScrollBarUp_3.png" DownNomal="TransparentScrollBarDown_0.png" DownMouseOver="TransparentScrollBarDown_1.png" DownMouseDown="TransparentScrollBarDown_2.png" DownDisable="TransparentScrollBarDown_3.png" ThumbNomal="TransparentScrollBarThumb_0.png" ThumbMouseOver="TransparentScrollBarThumb_1.png" ThumbMouseDown="TransparentScrollBarThumb_2.png" ThumbDisable="TransparentScrollBarThumb_3.png"/>
+                <Container Name="_1">
+                  <Container Name="_0">
+                    <!--CloudListTreeItem-->
+                    <Image name="_0" Bitmap="playlist_local_mark.png"/>
+                    <!--LocalMark-->
+                    <Label name="_1"/>
+                    <Control Name="titleSplitLable"/>
+                    <!--TitleLabel-->
+                    <Image name="_2"/>
+                    <!--GrouperStateIndicator-->
+                    <Button Name="_3"/>
+                    <!--GrouperMenu-->
+                    <Label name="_4"/>
+                    <!--AddFilesLabel-->
+                    <Image name="_5"/>
+                    <!--AddFilesIcon-->
+                    <Label name="_6"/>
+                    <!--AddFolderLabel-->
+                    <Image name="_7"/>
+                    <!--AddFolderIcon-->
+                    <Label name="_8"/>
+                    <!--SongCountLabel-->
+                    <CheckBox Name="_9" NormalBack="add_to_favorite_cross_normal.png" HoverBack="add_to_favorite_cross_hovering.png" DownBack="add_to_favorite_cross_pressed.png" DisabledBack="add_to_favorite_cross_disabled.png" ActionId="8343" ActionName="点击添加到按钮|网络收藏"/>
+                    <CheckBox Name="_10" NormalBack="add_to_favorite_normal.png" HoverBack="add_to_favorite_hovering.png" DownBack="add_to_favorite_pressed.png" DisabledBack="add_to_favorite_disabled.png" SelectedNormal="add_to_favorite_normal.png" SelectedHover="add_to_favorite_hovering.png" SelectedDown="add_to_favorite_pressed.png" SelectedDisabled="add_to_favorite_disabled.png"/>
+                    <CheckBox Name="_11" NormalBack="playlist_karaoke_mv_button_normal.png" HoverBack="playlist_karaoke_mv_button_hovering.png" DownBack="playlist_karaoke_mv_button_pressed.png" DisabledBack="playlist_karaoke_mv_button_disabled.png" SelectedNormal="playlist_karaoke_mv_button_highlighted_normal.png" SelectedHover="playlist_karaoke_mv_button_highlighted_hovering.png" SelectedDown="playlist_karaoke_mv_button_highlighted_pressed.png" SelectedDisabled="playlist_karaoke_mv_button_highlighted_disabled.png"/>
+                    <CheckBox Name="_12" NormalBack="playlist_non_karaoke_mv_button_normal.png" HoverBack="playlist_non_karaoke_mv_button_hovering.png" DownBack="playlist_non_karaoke_mv_button_pressed.png" DisabledBack="playlist_non_karaoke_mv_button_disabled.png" SelectedNormal="playlist_non_karaoke_mv_button_highlighted_normal.png" SelectedHover="playlist_non_karaoke_mv_button_highlighted_hovering.png" SelectedDown="playlist_non_karaoke_mv_button_highlighted_pressed.png" SelectedDisabled="playlist_non_karaoke_mv_button_highlighted_disabled.png"/>
+                    <Button Name="_13" NormalBack="playlist_delete_normal.png" HoverBack="playlist_delete_hovering.png" DownBack="playlist_delete_pressed.png" DisabledBack="playlist_delete_disabled.png"/>
+                    <Button Name="_14" NormalBack="playlist_download_normal.png" HoverBack="playlist_download_hovering.png" DownBack="playlist_download_pressed.png" DisabledBack="playlist_download_disabled.png" ActionId="5020" ActionName="点击下载按钮|网络收藏"/>
+                    <Button Name="_15" NormalBack="playlist_next_normal.png" HoverBack="playlist_next_hovering.png" DownBack="playlist_next_pressed.png" DisabledBack="playlist_next_disabled.png"/>
+                    <Button Name="_16" NormalBack="playlist_play_0.png" HoverBack="playlist_play_1.png" DownBack="playlist_play_2.png" DisabledBack="playlist_play_3.png"/>
+                    <Button Name="_17" NormalBack="playlist_playpause_normal.png" HoverBack="playlist_playpause_hovering.png" DownBack="playlist_playpause_pressed.png" DisabledBack="playlist_playpause_disabled.png"/>
+                    <Button Name="_18" NormalBack="playlist_report_normal.png" HoverBack="playlist_report_hovering.png" DownBack="playlist_report_pressed.png" DisabledBack="playlist_report_disabled.png"/>
+                    <Button Name="_19" NormalBack="playlist_share_normal.png" HoverBack="playlist_share_hovering.png" DownBack="playlist_share_pressed.png" DisabledBack="playlist_share_disabled.png" ActionId="9303" ActionName="点击网络收藏分享|网络收藏"/>
+                    <Image Name="_20" Bitmap="unknown_artist.png"/>
+                    <DigitalTime name="_21"/>
+                    <!-- Collect list empty panel -->
+                    <Container name="_22">
+                      <Image Name="_0" Bitmap="create_list_title_background.png" Anchors="left,top" position="0,0,312,30"/>
+                      <Label Name="_1" Anchors="left,top" position="8,10,140,22"/>
+                    </Container>
+                    <Image Name="_23" Bitmap="playlist_local_mark_large.png"/>
+                    <Image Name="_24" Bitmap="playlist_cloud_list_ilike_icon.png"/>
+                    <!-- I like list icon -->
+                    <Button Name="_25" NormalBack="playlist_recommand_song_normal.png" HoverBack="playlist_recommand_song_hovering.png" DownBack="playlist_recommand_song_pressed.png" DisabledBack="playlist_recommand_song_disabled.png" ActionId="5176" ActionName="点击智能推荐7625|智能推荐"/>
+                    <Container Name="_26" Anchors="left,top" position="0,0,312,32">
+                      <Image Name="_0" Bitmap="create_list_title_background.png" Anchors="left,top" position="0,0,312,30"/>
+                      <Label Name="_1" Anchors="left,top" position="8,10,140,22"/>
+                      <Button Name="_2" Anchors="right,top" NormalBack="cloud_list_tree_view_title_button_normal.png" HoverBack="cloud_list_tree_view_title_button_hovering.png" DownBack="cloud_list_tree_view_title_button_pressed.png" DisabledBack="cloud_list_tree_view_title_button_disabled.png" position="262,5,288,27" ActionId="9315" ActionName="新建歌单7545|网络收藏"/>
+                    </Container>
+                    <Image Name="_27" Bitmap="ListModifiedIcon.png"/>
+                    <Button Name="_28" NormalBack="play_list_item_translate_to_phone_normal.png" HoverBack="play_list_item_translate_to_phone_hovering.png" DownBack="play_list_item_translate_to_phone_down.png" DisabledBack="play_list_item_translate_to_phone_disabled.png"/>
+                    <Label name="CloudListTreeViewChannelStatus"/>
+                    <Button name="CloudListTreeViewCreateChannel" position="0,0,63,12" NormalBack="playlist_create_channel_normal.png" HoverBack="playlist_create_channel_hovering.png" DownBack="playlist_create_channel_pressed.png" DisabledBack="playlist_create_channel_disabled.png"/>
+                  </Container>
+                </Container>
+                <Container Name="_2">
+                  <!--CloudListViceGrouper-->
+                  <Label name="_0"/>
+                  <Image name="_1"/>
+                  <Button Name="_2"/>
+                  <Label name="_3"/>
+                  <!--CloudListViceGrouperChannelStatus-->
+                  <Button name="_4" position="0,0,63,12" NormalBack="playlist_create_channel_normal.png" HoverBack="playlist_create_channel_hovering.png" DownBack="playlist_create_channel_pressed.png" DisabledBack="playlist_create_channel_disabled.png"/>
+                  <!--CloudListViceGrouperCreateChannel-->
+                  <!-- 占位 5-23 -->
+                  <Image name="_5"/>
+                  <Label name="_6"/>
+                  <Image name="_7"/>
+                  <Label name="_8"/>
+                  <CheckBox Name="_9"/>
+                  <CheckBox Name="_10"/>
+                  <CheckBox Name="_11"/>
+                  <CheckBox Name="_12"/>
+                  <Button Name="_13"/>
+                  <Button Name="_14"/>
+                  <Button Name="_15"/>
+                  <Button Name="_16"/>
+                  <Button Name="_17"/>
+                  <Button Name="_18"/>
+                  <Button Name="_19"/>
+                  <Image Name="_20"/>
+                  <DigitalTime name="_21"/>
+                  <Container name="_22"/>
+                  <Image Name="_23"/>
+                  <Image Name="_24" Bitmap="playlist_cloud_list_ilike_icon.png"/>
+                  <!-- I like list icon -->
+                  <Image Name="_25" Bitmap="ListModifiedIcon.png"/>
+                  <Container Name="_26" Anchors="left,top" position="0,0,312,31">
+                    <Image Name="_0" Bitmap="create_list_title_background.png" Anchors="left,top" position="0,0,312,30"/>
+                    <Label Name="_1" Anchors="left,top" position="8,10,140,22"/>
+                    <Button Name="_2" Anchors="right,top" NormalBack="cloud_list_tree_view_title_button_normal.png" HoverBack="cloud_list_tree_view_title_button_hovering.png" DownBack="cloud_list_tree_view_title_button_pressed.png" DisabledBack="cloud_list_tree_view_title_button_disabled.png" position="262,5,288,27" ActionId="9315" ActionName="新建歌单7545|网络收藏"/>
+                  </Container>
+                </Container>
+              </Container>
+              <Container name="CloudListLoginTreeView" Anchors="left,top,right,bottom" position="0,0,312,521">
+                <ScrollBar Name="_0"/>
+                <Container Name="_1">
+                  <Container name="CloudListLoginTreeItem">
+                    <CheckBox Name="CloudListLoginTreeItemLoginDisplayButton" Anchors="left,top,right" position="0,0,312,29" NormalBack="cloud_list_container_login_display_button_normal.png" HoverBack="cloud_list_container_login_display_button_normal.png" DownBack="cloud_list_container_login_display_button_down.png" DisabledBack="cloud_list_container_login_display_button_normal.png" SelectedNormal="cloud_list_container_login_display_button_selected_normal.png" SelectedHover="cloud_list_container_login_display_button_selected_normal.png" SelectedDown="cloud_list_container_login_display_button_down.png" SelectedDisabled="cloud_list_container_login_display_button_selected_normal.png"/>
+                    <CheckBox Name="CloudListLoginTreeItemDelta" Anchors="left,top" position="5,8,21,20" NormalBack="playlist_group_indicator_expanded.png" HoverBack="playlist_group_indicator_expanded.png" DownBack="playlist_group_indicator_expanded.png" DisabledBack="playlist_group_indicator_expanded.png" SelectedNormal="playlist_group_indicator_collapsed.png" SelectedHover="playlist_group_indicator_collapsed.png" SelectedDown="playlist_group_indicator_collapsed.png" SelectedDisabled="playlist_group_indicator_collapsed.png"/>
+                    <Label Name="CloudListLoginTreeItemDefaultCloudListName" Anchors="left,top" position="30,8,125,22"/>
+                    <Image Name="CloudListLoginTreeItemLoginBackgroundImage" Bitmap="cloud_list_container_login_background.png" Anchors="left,top,right,bottom" position="0,0,314,476"/>
+                    <Image Name="CloudListLoginTreeItemLoginImage" Bitmap="PlayListFavoriteEmptyIcon.png" Anchors="top" position="30,30,292,267"/>
+                    <Button Name="CloudListLoginTreeItemLoginButton" Anchors="top" position="106,266,206,296" ActionId="9320" ActionName="网络收藏登录按钮点击7610|网络收藏Tab"/>
+                    <Label Name="CloudListLoginTreeItemNoAccount" Anchors="top" position="112,306,184,318"/>
+                    <Label Name="CloudListLoginTreeItemCreateAccount" Anchors="top" position="184,306,214,318"/>
+                  </Container>
+                </Container>
+              </Container>
+              <Container name="CloudListLogin" Anchors="left,top,right,bottom" position="0,0,313,521">
+                <Image Name="CloudListLoginImage" Bitmap="cloud_list_login_tips.png" Anchors="left,top" position="0,0,313,302"/>
+                <Image Name="CloudListLoginBackgroundImage" Bitmap="cloud_list_login_background.png" Anchors="left,top,right,bottom" position="0,302,313,521"/>
+                <Button Name="CloudListLoginButton" Anchors="top" position="73,310,239,349" NormalBack="cloud_list_login_button_normal.png" HoverBack="cloud_list_login_button_horver.png" DownBack="cloud_list_login_button_down.png" DisabledBack="cloud_list_login_button_disabled.png" ActionId="8329" ActionName="马上使用按钮点击7615|网络收藏"/>
+                <Label Name="CloudListLoginDownLoad" Anchors="top" position="101,434,216,460" ActionId="8330" ActionName="网络收藏tab下载手机酷狗点击7615|网络收藏"/>
+              </Container>
+              <Container name="CloudListConnectFailedView" Anchors="left,top,right,bottom" position="0,0,312,521">
+                <ScrollBar Name="_0"/>
+                <Container Name="_1">
+                  <Container name="CloudListConnectFailedTreeItem">
+                    <Image Name="CloudListConnectFailedBackgroundImage" Bitmap="cloud_list_container_login_background.png" Anchors="left,top,right,bottom" position="0,0,314,476"/>
+                    <Image Name="CloudListConnectFailedImage" Bitmap="cloud_list_connect_failed.png" Anchors="top" position="30,130,273,232"/>
+                    <Button Name="CloudListConnectFailedRetryButton" Anchors="top" position="106,266,210,302" NormalBack="cloud_list_container_retry_display_button_normal.png" HoverBack="cloud_list_container_retry_display_button_horver.png" DownBack="cloud_list_container_retry_display_button_down.png" DisabledBack="cloud_list_container_retry_display_button_disabled.png"/>
+                  </Container>
+                </Container>
+              </Container>
+              <Container name="CloudListPrompt" anchors="left,right,bottom" position="0,498,312,521">
+                <Image name="CloudListPromptIcon" anchors="left,top" position="33,4,49,20" Bitmap="PlaylistPromptIconOK.png"/>
+                <Image name="CloudListPromptWarnIcon" anchors="left,top" position="33,4,49,20" Bitmap="PlaylistPromptIconWarn.png"/>
+                <Label name="CloudListPromptTextLabel" anchors="left,top" position="51,3,273,21"/>
+                <Button name="CloudListPromptCloseButton" anchors="left,top" position="275,7,282,14" NormalBack="PlayListBannerCloseBtn_0.png" HoverBack="PlayListBannerCloseBtn_1.png" DownBack="PlayListBannerCloseBtn_2.png" DisabledBack="PlayListBannerCloseBtn_3.png"/>
+                <Label name="CloudListUPromptploadFileOperationLabel" anchors="left,top" position="166,5,216,21"/>
+                <Label name="CloudListPromptUploadFileDetailLabel" anchors="left,top" position="218,5,273,21"/>
+              </Container>
+              <Container name="CloudOverviewPanel" anchors="left,right,bottom" position="1,490,313,521">
+                <Label name="CloudOverviewPanelWelcome" anchors="left,top" position="9,10,62,22"/>
+                <Label name="CloudOverviewPanelUser" anchors="left,top" position="62,10,196,22" ActionId="9319" ActionName="网络收藏底部用户昵称点击数7575|网络收藏底部用户昵称点击"/>
+                <CheckBox name="CloudOverviewPanelMobile" anchors="left,top" position="197,7,210,25" NormalBack="cloud_overview_panel_android.png" HoverBack="cloud_overview_panel_android.png" DownBack="cloud_overview_panel_android.png" DisabledBack="cloud_overview_panel_android.png" SelectedNormal="cloud_overview_panel_android_mobile_logged_in.png" SelectedHover="cloud_overview_panel_android_mobile_logged_in.png" SelectedDown="cloud_overview_panel_android_mobile_logged_in.png" SelectedDisabled="cloud_overview_panel_android_mobile_logged_in.png" ActionId="3312" ActionName="点击网络收藏手机图标|网络收藏"/>
+                <Label name="CloudOverviewPanelQuantity" anchors="left,top" position="213,10,291,22"/>
+                <Image name="CloudOverviewPanelUpgradeIcon" anchors="left,top" position="294,9,308,23" Bitmap="CloudOverviewPanelUpgradeIcon.png"/>
+              </Container>
+            </Container>
+          </Container>
+          <Container name="_5">
+            <!--RadioListContainer-->
+            <Container name="RadioListTreeViewContainer" position="0,0,314,521" Anchors="left,top,right,bottom">
+              <Container name="RadioListTreeView" Anchors="left,top,right,bottom" position="0,0,312,521">
+                <ScrollBar Name="_0" ScrollBarBackground="TransparentScrollBarBack.png" UpNomal="TransparentScrollBarUp_0.png" UpMouseOver="TransparentScrollBarUp_1.png" UpMouseDown="TransparentScrollBarUp_2.png" UpDisable="TransparentScrollBarUp_3.png" DownNomal="TransparentScrollBarDown_0.png" DownMouseOver="TransparentScrollBarDown_1.png" DownMouseDown="TransparentScrollBarDown_2.png" DownDisable="TransparentScrollBarDown_3.png" ThumbNomal="TransparentScrollBarThumb_0.png" ThumbMouseOver="TransparentScrollBarThumb_1.png" ThumbMouseDown="TransparentScrollBarThumb_2.png" ThumbDisable="TransparentScrollBarThumb_3.png"/>
+                <Container Name="_1">
+                  <Container name="RadioChannelPanel" ActionId="2624" ActionName="电台列表双击播放|音乐电台">
+                    <Image name="RadioChannelPanelImage" anchors="left,top" position="5,5,29,29" Bitmap="RadioChannelDefaultChannel.png"/>
+                    <Image name="RadioChannelPanelImageBackground" Bitmap="ChannelPitureBk.png" anchors="left,top" position="2,2,32,32"/>
+                    <Label name="RadioChannelPanelTitle" anchors="left,top" position="34,14,200,38" ActionId="2710" ActionName="点击音乐节目详细|音乐电台"/>
+                    <Label name="RadioChannelPanelPlayState" anchors="left,top" position="94,28,240,52"/>
+                    <Label name="RadioChannelPanelMiscPlayingLabel" anchors="left,top" position="94,28,240,52"/>
+                    <CheckBox name="RadioChannelPanelPlayButton" anchors="left,top" position="249,3,280,34" NormalBack="BtnPlay_0.png" HoverBack="BtnPlay_1.png" DownBack="BtnPlay_2.png" DisabledBack="BtnPlay_3.png" SelectedNormal="BtnPlay_4.png" SelectedHover="BtnPlay_5.png" SelectedDown="BtnPlay_6.png" SelectedDisabled="BtnPlay_7.png" ActionId="2625" ActionName="点击电台面板播放|音乐电台"/>
+                    <Image name="RadioChannelPanelSingerHead" Bitmap="unknown_artist.png" anchors="left,top" position="5,9,85,89"/>
+                    <Label name="RadioChannelPanelSongTitle" anchors="left,top" />
+                    <CheckBox name="RadioChannelPanelExpand" anchors="left,top" position="275,68,301,90" NormalBack="RadioChannelChildItemBtnHistory_0.png" HoverBack="RadioChannelChildItemBtnHistory_1.png" DownBack="RadioChannelChildItemBtnHistory_2.png" DisabledBack="RadioChannelChildItemBtnHistory_3.png" SelectedNormal="RadioChannelChildItemBtnHistory_4.png" SelectedHover="RadioChannelChildItemBtnHistory_5.png" SelectedDown="RadioChannelChildItemBtnHistory_6.png" SelectedDisabled="RadioChannelChildItemBtnHistory_7.png" ActionId="3402" ActionName="点击播放历史|音乐电台"/>
+                    <Button name="RadioChannelPanelNextSongButton" anchors="left,top" position="250,49,276,75" NormalBack="RadioChannelChildItemBtnNext_0.png" HoverBack="RadioChannelChildItemBtnNext_1.png" DownBack="RadioChannelChildItemBtnNext_2.png" DisabledBack="RadioChannelChildItemBtnNext_3.png" ActionId="2623" ActionName="点击电台下一首|音乐电台"/>
+                    <Button name="RadioChannelPanelDeleteSongButton" anchors="left,top" position="89,68,115,90" NormalBack="playlist_delete_normal.png" HoverBack="playlist_delete_hovering.png" DownBack="playlist_delete_pressed.png" DisabledBack="playlist_delete_disabled.png"/>
+                    <Button name="RadioChannelPanelAddLocalButton" anchors="left,top" position="182,68,208,90" NormalBack="RadioChannelPanelAddLocalBtn_0.png" HoverBack="RadioChannelPanelAddLocalBtn_1.png" DownBack="RadioChannelPanelAddLocalBtn_2.png" DisabledBack="RadioChannelPanelAddLocalBtn_3.png" ActionId="2714" ActionName="点击电台面板下载|音乐电台"/>
+                    <Button name="RadioChannelPanelItemAddToFavor" anchors="left,top" position="120,68,146,90" NormalBack="RadioChannelPanelItemAddToFavorBtn_0.png" HoverBack="RadioChannelPanelItemAddToFavorBtn_1.png" DownBack="RadioChannelPanelItemAddToFavorBtn_2.png" DisabledBack="RadioChannelPanelItemAddToFavorBtn_3.png" ActionId="2621" ActionName="电台歌曲添加到列表|音乐电台"/>
+                    <Button name="RadioChannelPanelItemMiscRadioSettingsButton" anchors="left,top" position="160,8,199,28" NormalBack="RadioChannelPanelItemMiscRadioSettingsButton_0.png" HoverBack="RadioChannelPanelItemMiscRadioSettingsButton_1.png" DownBack="RadioChannelPanelItemMiscRadioSettingsButton_2.png" DisabledBack="RadioChannelPanelItemMiscRadioSettingsButton_3.png" ActionId="3424" ActionName="混合电台定制按钮点击数|音乐电台"/>
+                    <Button name="RadioChannelPanelItemShareButton" anchors="left,top" position="151,68,177,90" NormalBack="RadioChannelPanelItemShareBtn_0.png" HoverBack="RadioChannelPanelItemShareBtn_1.png" DownBack="RadioChannelPanelItemShareBtn_2.png" DisabledBack="RadioChannelPanelItemShareBtn_3.png" ActionId="9301" ActionName="点击电台分享|音乐电台"/>
+                    <Label name="RadioChannelPanelItemTitle" anchors="left,top" position="10,8,250,23"/>
+                    <Label name="RadioChannelPanelItemDuration" anchors="left,top" position="245,8,300,23"/>
+                    <Image name="RadioChannelPanelFlag" anchors="left,top" position="90,15,101,28" Bitmap="RadioChannelSongFlag.png"/>
+                    <Image name="RadioChannelPanelRandomPlayIcon" anchors="left,top" position="6,8,29,24" Bitmap="RadioChannelRandomPlayIcon.png"/>
+                    <Label name="RadioChannelPanelRandomPlayLabel" anchors="left,top" position="34,10,134,23"/>
+                    <Button name="RadioChannelPanelItemDeleteButton" anchors="left,top" position="286,3,296,13" NormalBack="RadioChannelBtnDelete_0.png" HoverBack="RadioChannelBtnDelete_1.png" DownBack="RadioChannelBtnDelete_2.png" DisabledBack="RadioChannelBtnDelete_3.png" ActionId="2715" ActionName="点击电台删除|音乐电台"/>
+                    <Image name="RadioChannelNewSongsTipsImage" anchors="left,top" position="22,1,37,16" Bitmap="RadioChannelNewSongsTipsImage.png"/>
+                    <Label name="RadioChannelStatusLabel" anchors="left,top" position="120,8,200,28"/>
+                    <Label name="RadioChannelStatusOpLabel" anchors="left,top" position="201,8,280,28"/>
+                  </Container>
+                </Container>
+                <Image name="RadioChannelShortcutTip" Bitmap="RadioChannelShortcutTipIcon.png" />
+              </Container>
+              <Container name="RadioChannelPrompt" anchors="left,right,bottom" position="0,498,312,521">
+                <Image name="RadioChannelPromptIcon" anchors="left,top" position="30,4,46,20" Bitmap="PlaylistPromptIconOK.png"/>
+                <Image name="RadioChannelPromptWarnIcon" anchors="left,top" position="33,4,49,20" Bitmap="PlaylistPromptIconWarn.png"/>
+                <Label name="RadioChannelPromptTextLabel" anchors="left,top" position="48,1,273,21"/>
+                <Button name="RadioChannelPromptCloseButton" anchors="left,top" position="275,7,282,14" NormalBack="PlayListBannerCloseBtn_0.png" HoverBack="PlayListBannerCloseBtn_1.png" DownBack="PlayListBannerCloseBtn_2.png" DisabledBack="PlayListBannerCloseBtn_3.png"/>
+              </Container>
+              <Image name="RadioChannelEmptyTipsTick" Bitmap="IconOk.png" Anchors="top" position="98,207,113,222"/>
+              <Label name="RadioChannelEmptyTips" Anchors="top" position="117,207,225,223"/>
+              <Label name="RadioChannelEmptyTipsLink" Anchors="top" position="85,230,256,248"/>
+              <Container Name="RadioChannelShortcutPrompt" Position="13,72,243,198">
+                <Image name="_0" anchors="left,top" position="0,0,230,126" Bitmap="RadioShortcutPromptBk.png"/>
+                <Button Name="_1" Anchors="right,top," RelativePosition="20,39,27,25" NormalBack="RadioShortcutPromotCloseButton_0.png" HoverBack="RadioShortcutPromotCloseButton_1.png" DownBack="RadioShortcutPromotCloseButton_2.png" DisabledBack="RadioShortcutPromotCloseButton_3.png"/>
+              </Container>
+            </Container>
+          </Container>
+          <Container name="_7">
+            <!-- Inter cut list container -->
+            <Container name="AddSongToInterListContainer" Anchors ="left,top" position="0,0,312,31">
+              <Image Name="AddSongToInterListContainerBackGround" Bitmap="add_song_to_inter_backgroud.png" Anchors="left,top" position="0,0,312,30"/>
+              <Label name="AddSongToInterListContainerLable" Anchors="left,top" position="8,1,108,30"/>
+              <CheckBox name="AddSongToInterListContainerCheckBox" Anchors="left,top" position="110,1,177,30" NormalBack="AddSongToInterList_Close_0.png" HoverBack="AddSongToInterList_Close_1.png" DownBack="AddSongToInterList_Close_2.png" DisabledBack="AddSongToInterList_Close_3.png" SelectedNormal="AddSongToInterList_Open_0.png" SelectedHover="AddSongToInterList_Open_1.png" SelectedDown="AddSongToInterList_Open_2.png" SelectedDisabled="AddSongToInterList_Open_3.png"/>
+              <Image name="AddSongToInterListContainerSeparator" Anchors="left,top" position="0,30,312,31" Bitmap="media_info_preview_panel_line.png"/>
+            </Container>
+            <Container name="InterCutListTreeViewContainer" Anchors="left,top,right,bottom" position="0,31,312,521">
+              <Container name="InterCutListTreeView" Anchors="left,top,right,bottom" position="-14,0,312,490">
+                <ScrollBar Name="_0" ScrollBarBackground="TransparentScrollBarBack.png" UpNomal="TransparentScrollBarUp_0.png" UpMouseOver="TransparentScrollBarUp_1.png" UpMouseDown="TransparentScrollBarUp_2.png" UpDisable="TransparentScrollBarUp_3.png" DownNomal="TransparentScrollBarDown_0.png" DownMouseOver="TransparentScrollBarDown_1.png" DownMouseDown="TransparentScrollBarDown_2.png" DownDisable="TransparentScrollBarDown_3.png" ThumbNomal="TransparentScrollBarThumb_0.png" ThumbMouseOver="TransparentScrollBarThumb_1.png" ThumbMouseDown="TransparentScrollBarThumb_2.png" ThumbDisable="TransparentScrollBarThumb_3.png"/>
+                <Container Name="_1">
+                  <Container Name="_0">
+                    <!--GeneralListTreeItem-->
+                    <Image name="_0" Bitmap="playlist_local_mark.png"/>
+                    <!--LocalMark-->
+                    <Label name="_1"/>
+                    <Control Name="titleSplitLable"/>
+                    <!--TitleLabel-->
+                    <Image name="_2" />
+                    <!--GrouperStateIndicator-->
+                    <Button Name="_3"/>
+                    <!--GrouperMenu-->
+                    <Label name="_4"/>
+                    <!--AddFilesLabel-->
+                    <Image name="_5"/>
+                    <!--AddFilesIcon-->
+                    <Label name="_6"/>
+                    <!--AddFolderLabel-->
+                    <Image name="_7"/>
+                    <!--AddFolderIcon-->
+                    <Label name="_8"/>
+                    <!--SongCountLabel-->
+                    <CheckBox Name="_9" NormalBack="add_to_favorite_cross_normal.png" HoverBack="add_to_favorite_cross_hovering.png" DownBack="add_to_favorite_cross_pressed.png" DisabledBack="add_to_favorite_cross_disabled.png" ActionId="8343" ActionName="点击添加到按钮|临时播"/>
+                    <CheckBox Name="_10" NormalBack="add_to_favorite_normal.png" HoverBack="add_to_favorite_hovering.png" DownBack="add_to_favorite_pressed.png" DisabledBack="add_to_favorite_disabled.png" SelectedNormal="added_to_favorite_normal.png" SelectedHover="added_to_favorite_hovering.png" SelectedDown="added_to_favorite_pressed.png" SelectedDisabled="added_to_favorite_disabled.png"/>
+                    <CheckBox Name="_11" NormalBack="playlist_karaoke_mv_button_normal.png" HoverBack="playlist_karaoke_mv_button_hovering.png" DownBack="playlist_karaoke_mv_button_pressed.png" DisabledBack="playlist_karaoke_mv_button_disabled.png" SelectedNormal="playlist_karaoke_mv_button_highlighted_normal.png" SelectedHover="playlist_karaoke_mv_button_highlighted_hovering.png" SelectedDown="playlist_karaoke_mv_button_highlighted_pressed.png" SelectedDisabled="playlist_karaoke_mv_button_highlighted_disabled.png" ActionId="3109" ActionName="点击播放列表MV|本地列表"/>
+                    <CheckBox Name="_12" NormalBack="playlist_non_karaoke_mv_button_normal.png" HoverBack="playlist_non_karaoke_mv_button_hovering.png" DownBack="playlist_non_karaoke_mv_button_pressed.png" DisabledBack="playlist_non_karaoke_mv_button_disabled.png" SelectedNormal="playlist_non_karaoke_mv_button_highlighted_normal.png" SelectedHover="playlist_non_karaoke_mv_button_highlighted_hovering.png" SelectedDown="playlist_non_karaoke_mv_button_highlighted_pressed.png" SelectedDisabled="playlist_non_karaoke_mv_button_highlighted_disabled.png" ActionId="3109" ActionName="点击播放列表MV|本地列表"/>
+                    <Button Name="_13" NormalBack="playlist_delete_normal.png" HoverBack="playlist_delete_hovering.png" DownBack="playlist_delete_pressed.png" DisabledBack="playlist_delete_disabled.png" ActionId="8312" ActionName="点击本地列表删除7525|本地列表"/>
+                    <Button Name="_14" NormalBack="playlist_download_normal.png" HoverBack="playlist_download_hovering.png" DownBack="playlist_download_pressed.png" DisabledBack="playlist_download_disabled.png" ActionId="5020" ActionName="点击下载按钮|临时播"/>
+                    <Button Name="_15" NormalBack="playlist_next_normal.png" HoverBack="playlist_next_hovering.png" DownBack="playlist_next_pressed.png" DisabledBack="playlist_next_disabled.png"/>
+                    <Button Name="_16" NormalBack="playlist_play_0.png" HoverBack="playlist_play_1.png" DownBack="playlist_play_2.png" DisabledBack="playlist_play_3.png" ActionId="8310" ActionName="点击本地列表播放|本地列表"/>
+                    <Button Name="_17" NormalBack="playlist_playpause_normal.png" HoverBack="playlist_playpause_hovering.png" DownBack="playlist_playpause_pressed.png" DisabledBack="playlist_playpause_disabled.png"/>
+                    <Button Name="_18" NormalBack="playlist_report_normal.png" HoverBack="playlist_report_hovering.png" DownBack="playlist_report_pressed.png" DisabledBack="playlist_report_disabled.png"/>
+                    <Button Name="_19" NormalBack="playlist_share_normal.png" HoverBack="playlist_share_hovering.png" DownBack="playlist_share_pressed.png" DisabledBack="playlist_share_disabled.png" ActionId="9305" ActionName="点击本地列表分享|本地列表"/>
+                    <Image Name="_20" Bitmap="unknown_artist.png"/>
+                    <DigitalTime name="_21"/>
+                    <Container Name="_22">
+                      <!-- FanxingListPanel -->
+                      <Image name="_0" Anchors="left,top" Position="5,7,21,23"/>
+                      <!--GrouperStateIndicator-->
+                      <Label name="_1"/>
+                      <!--SongCountLabel-->
+                      <Label name="_2" Anchors="left,top" Position="20,5,300,23"/>
+                      <!--TitleLabel-->
+                      <Container Name="_3">
+                        <!-- FanxingListView -->
+                        <Container Name="_0">
+                          <ScrollBar Name="_0"/>
+                          <Container Name="_1">
+                            <Container Name="_0">
+                              <!-- FanxingListItemView -->
+                              <Image Name="_0" Bitmap="fanxing_living.png"/>
+                              <!-- Living State -->
+                              <Image Name="_1" Bitmap="unknow_artist.png" Position="20,4,72,56"/>
+                              <!-- Star Avatar -->
+                              <Image Name="_2" Anchors="left,top" Position="80,30,96,46"/>
+                              <!-- Star Level -->
+                              <Label Name="_3" Anchors="left,top" Position="80,8,300,22"/>
+                              <!-- Star Name -->
+                              <Button Name="_4" NormalBack="playlist_delete_normal.png" HoverBack="playlist_delete_hovering.png" DownBack="playlist_delete_pressed.png" DisabledBack="playlist_delete_disabled.png"/>
+                              <!-- Unfollow Button -->
+                            </Container>
+                          </Container>
+                        </Container>
+                        <ColumnHead Anchors="top,left,right" Name="_1" position="0,0,500,22"/>
+                      </Container>
+                    </Container>
+                    <!--PlayTime-->
+                    <Image Name="_23" Bitmap="playlist_local_mark_large.png"/>
+                    <!-- 占位24 -->
+                    <Image Name="_24" Bitmap=""/>
+                    <Button Name="_25" NormalBack="playlist_recommand_song_normal.png" HoverBack="playlist_recommand_song_hovering.png" DownBack="playlist_recommand_song_pressed.png" DisabledBack="playlist_recommand_song_disabled.png" ActionId="5176" ActionName="点击智能推荐7625|智能推荐" />
+                    <!-- 占位26 -->
+                    <Image Name="_26" Bitmap=""/>
+                    <!-- 占位27 -->
+                    <Image Name="_27" Bitmap=""/>
+                    <Button Name="_28" NormalBack="play_list_item_translate_to_phone_normal.png" HoverBack="play_list_item_translate_to_phone_hovering.png" DownBack="play_list_item_translate_to_phone_down.png" DisabledBack="play_list_item_translate_to_phone_disabled.png" />
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+            <Container name="InterCutListWizardViewContainer" Anchors="left,top,right,bottom" position="0,31,312,521">
+              <Image name="InterCutListWizardViewImage" Anchors="left,top," position="31,2,291,352" Bitmap="InterCutListContainerNoItem.png"/>
+            </Container>
+            <Container name="InterListPrompt" anchors="left,right,bottom" position="0,498,312,521">
+              <Image name="InterListPromptIcon" anchors="left,top" position="33,4,49,20" Bitmap="PlaylistPromptIconOK.png"/>
+              <Image name="InterListPromptWarnIcon" anchors="left,top" position="33,4,49,20" Bitmap="PlaylistPromptIconWarn.png"/>
+              <Label name="InterListPromptTextLabel" anchors="left,top" position="51,1,262,21"/>
+              <Button name="InterListPromptCloseButton" anchors="left,top" position="265,7,272,14" NormalBack="PlayListBannerCloseBtn_0.png" HoverBack="PlayListBannerCloseBtn_1.png" DownBack="PlayListBannerCloseBtn_2.png" DisabledBack="PlayListBannerCloseBtn_3.png"/>
+            </Container>
+          </Container>
+          <Container name="_8">
+            <!--DownListContainer-->
+            <Container Name="DownLoadListView" Anchors="left,top,right,bottom" position="0,0,312,521" >
+              <ScrollBar Name="_0" ScrollBarBackground="TransparentScrollBarBack.png" UpNomal="TransparentScrollBarUp_0.png" UpMouseOver="TransparentScrollBarUp_1.png" UpMouseDown="TransparentScrollBarUp_2.png" UpDisable="TransparentScrollBarUp_3.png" DownNomal="TransparentScrollBarDown_0.png" DownMouseOver="TransparentScrollBarDown_1.png" DownMouseDown="TransparentScrollBarDown_2.png" DownDisable="TransparentScrollBarDown_3.png" ThumbNomal="TransparentScrollBarThumb_0.png" ThumbMouseOver="TransparentScrollBarThumb_1.png" ThumbMouseDown="TransparentScrollBarThumb_2.png" ThumbDisable="TransparentScrollBarThumb_3.png"/>
+              <Container name="_1">
+                <Container name="_0">
+                  <Image name="_0" Anchors="left,top" Position="201,9,220,20" Bitmap="DownloaListMvIcion.png" />
+                  <Image name="_1" Bitmap="playlist_group_indicator_collapsed.png" />
+                  <Image name="_2" Bitmap="playlist_group_indicator_expanded.png" />
+                  <Image Name="_3" Bitmap="create_list_title_background.png" Anchors="left,top" position="0,0,312,30"/>
+                  <Button Name="_4"  Anchors="right,bottom" Position="-26,-22,0,0" NormalBack="downlist_setting_button_normal.png" HoverBack="downlist_setting_button_hovering.png" DownBack="downlist_setting_button_pressed.png" DisabledBack="downlist_setting_button_disabled.png"/>
+                  <Button Name="_5"  Anchors="right,bottom" Position="-26,-22,0,0" NormalBack="playlist_menu_button_normal.png" HoverBack="playlist_menu_button_hovering.png" DownBack="playlist_menu_button_pressed.png" DisabledBack="playlist_menu_button_disabled.png"/>
+                  <Button Name="_6"  Anchors="right,bottom" Position="-26,-22,0,0" NormalBack="downlist_playpause_normal.png" HoverBack="downlist_playpause_hovering.png" DownBack="downlist_playpause_pressed.png" DisabledBack="downlist_playpause_disabled.png" />
+                  <Button Name="_7"  Anchors="right,bottom" Position="-26,-22,0,0" NormalBack="downloading_delete_normal.png" HoverBack="downloading_delete_hovering.png" DownBack="downloading_delete_pressed.png" DisabledBack="downloading_delete_disabled.png" />
+                  <Button Name="_8"  Anchors="left,bottom" Position="-26,-22,0,0" NormalBack="playlist_play_0.png" HoverBack="playlist_play_1.png" DownBack="playlist_play_2.png" DisabledBack="playlist_play_3.png" />
+                  <Button Name="_9"  Anchors="right,bottom" Position="-26,-22,0,0" NormalBack="open_to_normal.png" HoverBack="open_to_hovering.png" DownBack="open_to_down.png" DisabledBack="open_to_disabled.png" ActionId="3492" ActionName="打开文件目录|下载Tab"/>
+                  <Button Name="translateToPhone" Anchors="right,bottom" Position="-26,-22,0,0" NormalBack="play_list_item_translate_to_phone_normal.png" HoverBack="play_list_item_translate_to_phone_hovering.png" DownBack="play_list_item_translate_to_phone_down.png" DisabledBack="play_list_item_translate_to_phone_disabled.png"/>
+                  <Button Name="_11" Anchors="right,bottom" Position="-26,-22,0,0" NormalBack="add_to_favorite_cross_normal.png" HoverBack="add_to_favorite_cross_hovering.png" DownBack="add_to_favorite_cross_pressed.png" DisabledBack="add_to_favorite_cross_disabled.png"/>
+
+                  <Button Name="_12" Anchors="right,bottom" Position="-26,-22,0,0" NormalBack="playlist_delete_normal.png" HoverBack="playlist_delete_hovering.png" DownBack="playlist_delete_pressed.png" DisabledBack="playlist_delete_disabled.png" />
+                  <Label Name="_13" Anchors="right,top" Position="-24,-20,0,0"/>
+                  <Button Name="_14" Anchors="left,top" Position="-37,-18,0,0" ActionId="3491" ActionName="开通VIP加速|下载Tab" NormalBack="open0.png" HoverBack="open1.png" DownBack="open2.png" DisabledBack="open3.png"/>
+                  <Image Name="_15" Bitmap="downlist_finish_notify.png" />
+                  <Image Name="_16" Bitmap="unknown_artist.png"/>
+                  <DigitalTime name="_17" Anchors="left,bottom" Position="-26,-15,0,0"/>
+                  <Button Name="_18" Anchors="right,top" Position="-26,-22,0,0" NormalBack="playlist_delete_normal.png" HoverBack="playlist_delete_hovering.png" DownBack="playlist_delete_pressed.png" DisabledBack="playlist_delete_disabled.png"/>
+                  <Button Name="_19" Anchors="right,bottom" Position="-26,-22,0,0" NormalBack="playlist_share_normal.png" HoverBack="playlist_share_hovering.png" DownBack="playlist_share_pressed.png" DisabledBack="playlist_share_disabled.png" />
+                  <Button Name="_20" Anchors="right,top" Position="-26,-22,0,0" NormalBack="playlist_recommand_song_normal.png" HoverBack="playlist_recommand_song_hovering.png" DownBack="playlist_recommand_song_pressed.png" DisabledBack="playlist_recommand_song_disabled.png" ActionId="5176" ActionName="点击智能推荐7625|智能推荐" />
+                  <Button Name="_21" Anchors="right,bottom" Position="-26,-22,0,0" NormalBack="playlist_download_normal.png" HoverBack="playlist_download_hovering.png" DownBack="playlist_download_pressed.png" DisabledBack="playlist_download_disabled.png" />
+                  <Label name="_22" anchors="left,top" position="85,9,150,23" ActionId="3496" ActionName="已下载传歌到手机文字链点击7575|下载Tab"/>
+                  <Label Name="_23" Anchors="left,top" Position="8,9,85,23"/>
+                  <Label Name="_24" Anchors="left,top" Position="82,9,200,23"/>
+                  <Label Name="_25" Anchors="left,top" Position="32,8,75,22"/>
+                  <Label Name="_26" Anchors="left,top" Position="76,8,250,22"/>
+                  <Label Name="_27" Anchors="left,top" Position="15,8,140,22"/>
+                  <Label Name="_28" Anchors="right,top" Position="231,8,293,22"/>
+                  <Label Name="_29" Anchors="left,top" Position="150,8,240,22"/>
+                  <Label Name="_30" Anchors="left,top" Position="150,8,195,22"/>
+                  <Label Name="_31" Anchors="left,top" Position="196,8,240,22"/>
+                  <Label name="titleSeparate_0"/>
+                  <Label name="titleSeparate_1"/>
+                  <Label name="titleSeparate_2"/>
+                  <Label name="titleSeparate_3"/>
+                  <Label name="titleSeparate_4"/>
+                  <Label name="titleSeparate_5"/>
+                </Container>
+              </Container>
+              <Container name="_2">
+                <Image name="_0" Bitmap="DownloaListMvIcion.png" />
+                <Image name="_1" Bitmap="playlist_group_indicator_collapsed.png" />
+                <Image name="_2" Bitmap="playlist_group_indicator_expanded.png" />
+                <Image Name="_3" Bitmap="create_list_title_background.png" Anchors="left,top" position="0,0,312,30"/>
+                <Button Name="_4"  Anchors="right,top" Position="267,3,293,25" NormalBack="downlist_setting_button_normal.png" HoverBack="downlist_setting_button_hovering.png" DownBack="downlist_setting_button_pressed.png" DisabledBack="downlist_setting_button_disabled.png"/>
+                <Button Name="_5"  Anchors="right,top" Position="253,3,279,25" NormalBack="playlist_menu_button_normal.png" HoverBack="playlist_menu_button_hovering.png" DownBack="playlist_menu_button_pressed.png" DisabledBack="playlist_menu_button_disabled.png"/>
+                <Button Name="_6"  Anchors="right,top" Position="245,3,271,25" NormalBack="downlist_playpause_normal.png" HoverBack="downlist_playpause_hovering.png" DownBack="downlist_playpause_pressed.png" DisabledBack="downlist_playpause_disabled.png" />
+                <Button Name="_7"  Anchors="right,top" Position="271,3,297,25" NormalBack="downloading_delete_normal.png" HoverBack="downloading_delete_hovering.png" DownBack="downloading_delete_pressed.png" DisabledBack="downloading_delete_disabled.png" />
+                <Button Name="_8"  Anchors="left,top" Position="8,3,34,25" NormalBack="playlist_play_0.png" HoverBack="playlist_play_1.png" DownBack="playlist_play_2.png" DisabledBack="playlist_play_3.png" />
+                <Button Name="_9"  Anchors="right,top" Position="193,3,219,25" NormalBack="open_to_normal.png" HoverBack="open_to_hovering.png" DownBack="open_to_down.png" DisabledBack="open_to_disabled.png" ActionId="3492" ActionName="打开文件目录|下载Tab"/>
+                <Button Name="_10" Anchors="right,top" Position="219,3,245,25" NormalBack="play_list_item_inter_cut_normal.png" HoverBack="play_list_item_inter_cut_hovering.png" DownBack="play_list_item_inter_cut_down.png" DisabledBack="play_list_item_inter_cut_disabled.png" ActionId="5301" ActionName="点击临时播|我的下载"/>
+                <Button Name="_11" Anchors="right,top" Position="245,3,271,25" NormalBack="add_to_favorite_cross_normal.png" HoverBack="add_to_favorite_cross_hovering.png" DownBack="add_to_favorite_cross_pressed.png" DisabledBack="add_to_favorite_cross_disabled.png" ActionId="8343" ActionName="点击添加到按钮|我的下载"/>
+                <Button Name="_12" Anchors="right,top" Position="271,3,297,25" NormalBack="playlist_delete_normal.png" HoverBack="playlist_delete_hovering.png" DownBack="playlist_delete_pressed.png" DisabledBack="playlist_delete_disabled.png" />
+                <Label Name="_13" Anchors="right,top" Position="197,5,221,25"/>
+                <Button Name="_14" Anchors="left,top" Position="85,5,122,23" ActionId="3491" ActionName="开通VIP加速|下载Tab" NormalBack="open0.png" HoverBack="open1.png" DownBack="open2.png" DisabledBack="open3.png"/>
+                <Image Name="_15" Bitmap="downlist_finish_notify.png" />
+                <Image Name="_16" Bitmap="unknown_artist.png"/>
+                <DigitalTime name="_17" Anchors="left,bottom" Position="0,10,0,25"/>
+                <Button Name="_18" Anchors="right,top" Position="-26,4,0,26" NormalBack="playlist_delete_normal.png" HoverBack="playlist_delete_hovering.png" DownBack="playlist_delete_pressed.png" DisabledBack="playlist_delete_disabled.png"/>
+                <Button Name="_19" Anchors="right,bottom" Position="-26,4,0,26" NormalBack="playlist_share_normal.png" HoverBack="playlist_share_hovering.png" DownBack="playlist_share_pressed.png" DisabledBack="playlist_share_disabled.png" />
+                <Button Name="_20" Anchors="right,top" Position="-26,4,0,26" NormalBack="playlist_recommand_song_normal.png" HoverBack="playlist_recommand_song_hovering.png" DownBack="playlist_recommand_song_pressed.png" DisabledBack="playlist_recommand_song_disabled.png" ActionId="5176" ActionName="点击智能推荐7625|智能推荐" />
+                <Button Name="_21" Anchors="right,bottom" Position="-26,4,0,26" NormalBack="playlist_download_normal.png" HoverBack="playlist_download_hovering.png" DownBack="playlist_download_pressed.png" DisabledBack="playlist_download_disabled.png" />
+                <Label name="_22" anchors="left,top" position="85,9,150,23" ActionId="3496" ActionName="已下载传歌到手机文字链点击7575|下载Tab"/>
+                <Label Name="_23" Anchors="left,top" Position="8,9,85,23"/>
+                <Label Name="_24" Anchors="left,top" Position="82,9,200,23"/>
+                <Label Name="_25" Anchors="left,top" Position="32,8,75,22"/>
+                <Label Name="_26" Anchors="left,top" Position="76,8,250,22"/>
+                <Label Name="_27" Anchors="left,top" Position="15,8,140,22"/>
+                <Label Name="_28" Anchors="right,top" Position="231,8,293,22"/>
+                <Label Name="_29" Anchors="left,top" Position="150,8,240,22"/>
+                <Label Name="_30" Anchors="left,top" Position="150,8,195,22"/>
+                <Label Name="_31" Anchors="left,top" Position="196,8,240,22"/>
+              </Container>
+              <DigitalTime name="_3" Anchors="left,bottom" Position="-26,10,0,25"/>
+            </Container>
+            <Container name="DownListChannelPrompt" anchors="left,right,bottom" position="0,498,312,521">
+              <Image name="DownListChannelPromptIcon" anchors="left,top" position="30,4,46,20" Bitmap="PlaylistPromptIconOK.png"/>
+              <Image name="DownListChannelPromptWarnIcon" anchors="left,top" position="33,4,49,20" Bitmap="PlaylistPromptIconWarn.png"/>
+              <Label name="DownListChannelPromptTextLabel" anchors="left,top" position="48,1,273,21"/>
+              <Button name="DownListChannelPromptCloseButton" anchors="left,top" position="275,7,282,14" NormalBack="PlayListBannerCloseBtn_0.png" HoverBack="PlayListBannerCloseBtn_1.png" DownBack="PlayListBannerCloseBtn_2.png" DisabledBack="PlayListBannerCloseBtn_3.png"/>
+            </Container>
+            <Container name="DownloadListFindBar" Anchors="left,right,bottom">
+              <!--DownloadListFindBar-->
+              <RichEdit name="_0" BackgroundPic="" FrameDisabled="" FrameFocused="">
+                <!--DownloadListFindBarEdit-->
+                <ScrollBar Name="_0"/>
+                <Image name="_1" Bitmap="playlist_find_bar_magnifier.png"/>
+              </RichEdit>
+              <Button Name="_1" NormalBack="playlist_find_bar_close_normal.png" HoverBack="playlist_find_bar_close_hovering.png" DownBack="playlist_find_bar_close_pressed.png" DisabledBack="playlist_find_bar_close_disabled.png"/>
+            </Container>
+          </Container>
+          <TabLabel name="PlaybackControlPanelGeneralListTabLabel" TabControlWidth="62" TabLabelNormal="TabPlayListBkImg_0.png" TabLabelHover="TabPlayListBkImg_1.png" TabLabelDown="TabPlayListBkImg_2.png" GeneralListTabLabelForegroundNormal="TabPlaylistForegroundImage_0.png" GeneralListTabLabelForegroundHover="TabPlaylistForegroundImage_1.png" GeneralListTabLabelForegroundSelected="TabPlaylistForegroundImage_2.png" ActionId="816" ActionName="点击本地列表页|左侧TAB">
+            <AnimationControl name="_0" Position="0,0,96,62" anchors="left,top" ACFrameCount="1" ACFrameTick="9999" ACFrameRepeat="1" ACFramePic="PlayBackTabLabelLocal.png"/>
+          </TabLabel>
+          <TabLabel name="PlaybackControlPanelRadioListTabLabel" TabControlWidth="62" TabLabelNormal="TabPlayListBkImg_0.png" TabLabelHover="TabPlayListBkImg_1.png" TabLabelDown="TabPlayListBkImg_2.png" RadioListTabLabelForegroundNormal="TabRadioListForegroundImage_0.png" RadioListTabLabelForegroundHover="TabRadioListForegroundImage_1.png" RadioListTabLabelForegroundSelected="TabRadioListForegroundImage_2.png" ActionId="817" ActionName="点击电台列表页|左侧TAB">
+            <AnimationControl name="_0" Position="0,0,96,62" anchors="left,top" ACFrameCount="1" ACFrameTick="9999" ACFrameRepeat="1" ACFramePic="PlayBackTabelLabelRadio.png"/>
+          </TabLabel>
+          <TabLabel name="PlaybackControlPanelWifiUserListTabLabel" TabControlWidth="62" TabLabelNormal="TabPlayListBkImg_0.png" TabLabelHover="TabPlayListBkImg_1.png" TabLabelDown="TabPlayListBkImg_2.png" WifiUserListTabLabelForegroundNormal="TabWifiUserListForegroundImage_0.png" WifiUserListTabLabelForegroundHover="TabWifiUserListForegroundImage_1.png" WifiUserListTabLabelForegroundSelected="TabWifiUserListForegroundImage_2.png" ActionId="5206" ActionName="点击附近列表页|左侧TAB">
+            <AnimationControl name="_0" Position="0,0,96,62" anchors="left,top" ACFrameCount="1" ACFrameTick="9999" ACFrameRepeat="1" ACFramePic="PlayBackTabLabelWifiUser.png"/>
+          </TabLabel>
+          <TabLabel name="PlaybackControlPanelInterCutListTabLabel" TabControlWidth="62" TabLabelNormal="TabPlayListBkImg_0.png" TabLabelHover="TabPlayListBkImg_1.png" TabLabelDown="TabPlayListBkImg_2.png" InterCutListTabLabelForegroundNormal="TabInterCutListForegroundImage_0.png" InterCutListTabLabelForegroundHover="TabInterCutListForegroundImage_1.png" InterCutListTabLabelForegroundSelected="TabInterCutListForegroundImage_2.png" InterCutListTabLabelForegroundLightNormal="TabInterCutListForegroundLightImage_0.png" InterCutListTabLabelForegroundLightHover="TabInterCutListForegroundLightImage_1.png" InterCutListTabLabelForegroundLightSelected="TabInterCutListForegroundLightImage_2.png" ActionId="8715" ActionName="点击临时播列表页|左侧TAB">
+            <AnimationControl name="_0" Position="0,0,96,62" anchors="left,top" ACFrameCount="1" ACFrameTick="9999" ACFrameRepeat="1" ACFramePic="PlayBackTabLabelInterCut.png"/>
+            <Container name="_1" Position="50,0,64,16">
+              <Image Anchors="left,top,right,bottom" name="_0" Position="0,0,14,16" Bitmap="red_count_balloon.png"/>
+              <Label Anchors="left,top" name="_1" Position="2,2,8,14"/>
+              <Image Anchors="left,top" name="_2" Position="3,5,8,11" Bitmap="count_n.png"/>
+            </Container>
+            <Image Anchors="top,left" name="_2" position="28,16,37,25" Bitmap="ListContainerModified.png"/>
+          </TabLabel>
+          <TabLabel name="PlaybackControlPanelAppToolTabLabel" TabControlWidth="62" TabLabelNormal="TabPlayListBkImg_0.png" TabLabelHover="TabPlayListBkImg_1.png" TabLabelDown="TabPlayListBkImg_2.png" AppToolBackGroundNormal="apptoolTab_0.png" AppToolBackGroundHover="apptoolTab_1.png" AppToolBackGroundSelect="apptoolTab_2.png" ActionId="840" ActionName="点击更多列表页|左侧TAB">
+            <AnimationControl name="_0" Position="0,0,96,62" anchors="left,top" ACFrameCount="1" ACFrameTick="9999" ACFrameRepeat="1" ACFramePic="apptoolActionPic.png"/>
+			<Image Name="ListContainerModified" Anchors="top,left" position="28,16,37,25" Bitmap="ListContainerModified.png"/>
+          </TabLabel>
+          <Container name="BlankTablContainer"/>
+          <TabLabel name="BlankTabLabel"/>
+          <TabLabel name="PlaybackControlPanelDownloadTabLabel" TabControlWidth="62" TabLabelNormal="TabPlayListBkImg_0.png" TabLabelHover="TabPlayListBkImg_1.png" TabLabelDown="TabPlayListBkImg_2.png" DownloadTabLabelForegroundNormal="TabDownloadListForegroundImage_0.png" DownloadTabLabelForegroundHover="TabDownloadListForegroundImage_1.png" DownloadTabLabelForegroundSelected="TabDownloadListForegroundImage_2.png" ActionId="839" ActionName="点击下载列表页|左侧TAB">
+            <AnimationControl name="_0" Position="0,0,96,62" anchors="left,top" ACFrameCount="1" ACFrameTick="9999" ACFrameRepeat="1" ACFramePic="PlayBackTabLabelDownload.png"/>
+            <Container name="_1" Position="50,0,64,16">
+              <Image Anchors="left,top,right,bottom" name="_0" Position="0,0,14,16" Bitmap="red_count_balloon.png"/>
+              <Label Anchors="left,top" name="_1" Position="2,2,8,14"/>
+              <Image Anchors="left,top" name="_2" Position="3,5,8,11" Bitmap="count_n.png"/>
+            </Container>
+          </TabLabel>
+        </TabControl>
+        <Container name="PlaylistControlBar" anchors="left,right,bottom" Relativeposition="0,0,0,30">
+          <Button name="_0" anchors="left,top" position="80,0,111,29" NormalBack="playlist_control_bar_add_normal.png" HoverBack="playlist_control_bar_add_hovering.png" DownBack="playlist_control_bar_add_pressed.png" DisabledBack="playlist_control_bar_add_disabled.png" ActionId="8718" ActionName="点击添加歌曲/文件夹|播放列表底部"/>
+          <Button name="_1" anchors="left,top" position="222,0,253,29" NormalBack="playlist_control_bar_find_normal.png" HoverBack="playlist_control_bar_find_hovering.png" DownBack="playlist_control_bar_find_pressed.png" DisabledBack="playlist_control_bar_find_disabled.png" ActionId="8719" ActionName="点击定位当前歌曲|播放列表底部"/>
+          <Button name="_2" anchors="left,top" position="151,0,182,29" NormalBack="playlist_control_bar_locate_normal.png" HoverBack="playlist_control_bar_locate_hovering.png" DownBack="playlist_control_bar_locate_pressed.png" DisabledBack="playlist_control_bar_locate_disabled.png" ActionId="8720" ActionName="点击查找歌曲|播放列表底部"/>
+          <Button name="_4" anchors="left,top" position="293,0,324,29" NormalBack="playlist_control_bar_setting_normal.png" HoverBack="playlist_control_bar_setting_hovering.png" DownBack="playlist_control_bar_setting_pressed.png" DisabledBack="playlist_control_bar_setting_disabled.png" ActionId="8721" ActionName="点击设置中心|播放列表底部"/>
+          <Button name="MenuButtonPhoneTranslationForPlayList" anchors="left,top" position="293,0,324,30" NormalBack="playlist_control_bar_Phone_Translation_normal.png" HoverBack="playlist_control_bar_Phone_Translation_hovering.png" DownBack="playlist_control_bar_Phone_Translation_pressed.png" DisabledBack="playlist_control_bar_Phone_Translation_disabled.png"/>
+          <Image name="phoneTranslationLinking" Anchors="top,left" position="293,0,324,30" Bitmap="phoneTranslationLinking.png"/>
+        </Container>
+      </Container>
+      <Container Anchors="left,top,right,bottom" name="MusicExt" Constraints="634,0,9999,9999">
+        <Container Anchors="top,left,right" Name="MainExpandPanel" Position="18,3,663,42" Constraints="0,0,9999,9999">
+          <Image Name="MainExpandPanelLongBack" Anchors="left,right,top" Bitmap="MainExpandBackground.png" Position="0,0,630,39" />
+          <Container name="StrethLayoutContainer" Constraints="150,0,9999,9999" Anchors="left,right,top" Position="20,0,361,39">
+            <Container Name="placeholderRightSearchPanel" ControlSpace="4,0,0,0" Constraints="50,0,9999,9999" Anchors="top,left,right" position="140,0,341,32"/>
+            <Image Name="MainExpandPanelSpit" Position="54,12,55,24" Anchors="left,top" ControlSpace="5,0,0,0" Bitmap="Login_ImgSplit.png" />
+            <Label Name="MainExpandPanelLogin" Position="24,12,50,26" Anchors="left,top" Constraints="0,0,58,14" ControlSpace="12,0,0,0"  />
+            <Label Name="MainExpandPanelRegister" Position="64,12,88,26" Anchors="left,top" Constraints="0,0,98,14" ControlSpace="5,0,0,0"/>
+            <Container Name="MainExpandPanelUserHeadContainer" Position="90,5,133,34" Anchors="left,top" ControlSpace="7,0,0,0">
+              <Container Name="MainExpandPanelLogoContainer" Position="0,0,36,29" Anchors="left,top" ControlSpace="7,0,0,0">
+                <Image Name="MainExpandPanelLogo" Position="0,0,29,29" Anchors="left,top" Bitmap="main_KLogo_artist.png"/>
+                <Image Name="MainExpandPanelRedPoint" Position="29,0,36,7" Anchors="left,top" Bitmap="ListContainerModified.png"/>
+              </Container>
+              <DefaultImage Name="MainExpandPanelUserAvatar" Position="0,0,29,29" Anchors="left,top" Bitmap="main_unknown_artist.png" MaskOwnerBitmap="usermask.png"/>
+              <CheckBox Name ="MainExpandPanelCheckBoxVip" Position="18,17,32,29" Anchors="left,top" NormalBack="ico_vip_no.png" HoverBack="ico_vip_no.png" DownBack="ico_vip_no.png" HalfSelectedNormal="ico_vip_01.png" HalfSelectedHover="ico_vip_01.png" HalfSelectedDown="ico_vip_01.png" SelectedNormal="ico_vip_02.png" SelectedHover="ico_vip_02.png" SelectedDown="ico_vip_02.png"/>
+            </Container>
+          </Container>
+          <Button Name="MainExpandPanelGame" Position="369,10,421,28" Anchors="right,top" NormalBack="MainForm_game_0.png" HoverBack="MainForm_game_1.png" DownBack="MainForm_game_2.png" ActionId="825" ActionName="点击主窗口顶部游戏|主窗口顶部"/>
+          <Button name="MainExpandPanelLuckyBag" Anchors="right,top" position="424,0,450,28" NormalBack="LuckyBagBtn_0.png" HoverBack="LuckyBagBtn_1.png" DownBack="LuckyBagBtn_0.png" DisabledBack="LuckyBagBtn_0.png" ActionId="5350" ActionName="点击福袋|主窗口顶部"/>
+          <AnimationControl Name="MainExpandPanelLuckyBagAni" position="424,0,450,28" anchors="right,top" ACFrameCount="13" ACFrameTick="20" ACFrameRepeat="1" ACFramePic="LuckyBagAni.png"/>
+          <AnimationControl Name="MainExpandPanelLuckyBagAutoAni" position="424,0,450,28" anchors="right,top" ACFrameCount="16" ACFrameTick="40" ACFrameRepeat="8" ACFramePic="LuckyBagAutoAni.png"/>
+        </Container>
+        <Container name="RightSearchPanel" ControlSpace="4,0,0,0" Constraints="50,0,9999,9999" Anchors="top,left" position="140,0,341,32">
+          <RichEdit position="0,5,201,32" FrameDisabled="SearchPanelEditDisable.png" BackgroundPic="SearchPanelEditNormal.png" BackgroundSep="2,2,5,19"  FrameFocused="SearchPanelEditFocus.png" Anchors="left,top,right" name="_0"  Insets="4,5,33,5"/>
+          <Button Anchors="top,right" name="_1" position="0,0,0,0"  NormalBack="search_button_tri_normal.png" HoverBack="search_button_tri_hot.png" DownBack="search_button_tri_pushed.png" DisabledBack="search_button_tri_disable.png"/>
+          <Button Anchors="top,right" name="_2" position="168,4,201,31" NormalBack="search_button_normal.png" HoverBack="search_button_hot.png" DownBack="search_button_pushed.png" DisabledBack="search_button_disable.png"   />
+        </Container>
+        <Button Anchors="left,top" name="MusicExtBack" position="31,63,65,113" NormalBack="BrowerBack_0.png" HoverBack="BrowerBack_1.png" DownBack="BrowerBack_2.png" DisabledBack="BrowerBack_3.png" ActionId="8344" ActionName="点击返回按钮|TAB面板"/>
+        <Button Anchors="left,top" name="MusicExtRefresh" position="74,63,108,113" NormalBack="BrowerRefresh_0.png" HoverBack="BrowerRefresh_1.png" DownBack="BrowerRefresh_2.png" DisabledBack="BrowerRefresh_3.png" ActionId="8345" ActionName="点击刷新按钮|TAB面板"/>
+        <Image  Anchors="left,bottom"  name="MainFormTextAdImg" Position="10,587,26,603" Bitmap="TextSpreadImg.png"/>
+        <Label  Anchors="left,bottom"  name="MainFormTextAd2" Position="36,590,300,602" />
+        <Container Anchors="left,right,bottom" name="MusicExtAppToolBar" Position="16,642,450,662">
+          <Button Name="_0" NormalBack="AppToolBarButton0.png" HoverBack="AppToolBarButton1.png" DownBack="AppToolBarButton2.png" DisabledBack="AppToolBarButton3.png"/>
+        </Container>
+        <TabControl Name="MusicExtTabContorl" Anchors="left,top,right,bottom" position="0,65,636,666" TabControlLabelOverlap="-18" TabControlLableLeftOffset="137" TabControlHeadHeight="50" TabControlLabelWidth="80" TabControlAnimation="1">
+          <AnimationControl Name="_0" Anchors="left,top" position="0,0,20,20" ACFrameCount="1" ACFrameTick="9999" ACFrameRepeat="1" ACFramePic="TabLabelTriangle.png"/>
+          <Container Name="_1" />
+          <Container name="MusicExtLibrary">
+            <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,521" WinBackColor="0xFFFFFFFF"/>
+            <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+            <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+          </Container>
+          <Container name="MusicExtMusicZone">
+            <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,521" WinBackColor="0xFFFFFFFF"/>
+            <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+            <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+          </Container>
+          <Container name="MusicExtRadio">
+            <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,521" WinBackColor="0xFFFFFFFF"/>
+            <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+            <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+          </Container>
+          <Container name="MusicExtFanxing">
+            <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,521" WinBackColor="0xFFFFFFFF"/>
+            <Image name="_2" Position="0,0,636,501" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+            <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+          </Container>
+          <Container name="MusicExtAppTool">
+            <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,521" WinBackColor="0xFFFFFFFF"/>
+            <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+            <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+          </Container>
+          <Container name="MusicExtVersionPage">
+            <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,521" WinBackColor="0xFFFFFFFF"/>
+            <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+            <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+          </Container>
+          <Container name="SingeHomeLoadingPage">
+            <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,521" WinBackColor="0xFFFFFFFF"/>
+            <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+            <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+          </Container>
+          <Container name="MusicExtSearch1">
+            <Container name="MusicExtSearch" Anchors="left,right,top,bottom" Position="0,0,636,521">
+              <Label Name="MusicExtSearchTitle" Anchors="left,top" RelativePosition="18,22,300,20"/>
+              <Image Name="MusicExtSearchBackground" Anchors="left,top,right,bottom" Position="0,0,636,521" Bitmap="BlankBk.png"/>
+              <ScrollBar Name="MusicExtSearchScrollBar" Anchors="top,right,bottom" Position="623,31,636,521"/>
+              <Container name="SearchCopyRight" Anchors="left,right,bottom" position="20,501,616,521">
+                <Image name="_0" Anchors="left,top,right,bottom" position="0,0,596,20"/>
+                <Label name="_1" Anchors="left,top,right,bottom" position="0,1,596,18"/>
+              </Container>
+              <Container Name="SearchErrorTipPage" Anchors="left,top,right,bottom" position="0,31,636,521" BackgroundSep="0,0,0,0">
+                <Image name="SearchErrorTipBackGround" Anchors="left,top,right,bottom" position="0,0,636,521"/>
+                <Image name="SearchErrorIconNetInvalid" position="110,166,184,239" Bitmap="errorNetInvalidForSearch.png" Anchors=""/>
+                <Image name="SearchErrorIconKeywordBanned" RelativePosition="0,38,199,189" Bitmap="errorKeywordBanned.png" Anchors="top"/>                
+                <Image name="SearchErrorIconIPArea" RelativePosition="0,38,189,142" Bitmap="errorIpArea.png" Anchors="top"/>
+                <Image name="SearchErrorIconNetInvalidTitle" position="210,196,394,214" Bitmap="errorNetInvalidTitle.png" Anchors=""/>
+                <Image name="SearchErrorIconKeywordBannedTitle" RelativePosition="0,251,304,16" Bitmap="errorKeywordBannedTitle.png" Anchors="top"/>				
+                <Image name="SearchErrorIconNoResult" RelativePosition="0,38,238,169" Bitmap="errorNoSearchResult.png" Anchors="top"/>
+                <Image name="SearchErrorIconNoResultTitleSong" RelativePosition="0,231,303,16" Bitmap="errorNoResultTitleSong.png" Anchors="top"/>
+                <Image name="SearchErrorIconNoResultTitleMV" RelativePosition="0,231,303,16" Bitmap="errorNoResultTitleMV.png" Anchors="top"/>
+                <Image name="SearchErrorIconNoResultTitleLyric" RelativePosition="0,231,303,16" Bitmap="errorNoResultTitleLyric.png" Anchors="top"/>
+                <Image name="SearchErrorIconNoResultTitleRing" RelativePosition="0,231,303,16" Bitmap="errorNoResultTitleRing.png" Anchors="top"/>
+                <Image name="SearchErrorIPAreaTitle" RelativePosition="0,204,288,17" Bitmap="errorIpAreaTitle.png" Anchors="top"/>
+                <Label name="SearchErrorTipNetInvalid" Anchors="" position="210,226,495,426"/>
+                <Label name="SearchErrorTipIPArea" RelativePosition="0,230,355,15" Anchors="top"/>				
+                <Button name="SendReportButton" Anchors="top" RelativePosition="0,270,80,33" NormalBack="errorIPAreaReportNormal.png" HoverBack="errorIPAreaReportHovering.png" DownBack="errorIPAreaReportNormal.png" DisabledBack="errorIPAreaReportNormal.png"/>
+                <Image name="SearchErrorIconRecommendEmpty" position="163,168,495,318" Bitmap="errorIpAreaTitle.png" Anchors=""/>
+                <Image name="SearchErrorIconRecommendFail" position="163,168,495,318" Bitmap="errorIpAreaTitle.png" Anchors=""/>
+              </Container>
+              <Container Name="RecommendSearchErrorTipPage" Anchors="left,top,right,bottom" RelativePosition="0,78,0,0" BackgroundSep="0,0,0,0">
+                <Image name="RecommendSearchErrorTipBackground" Anchors="left,top,right,bottom" RelativePosition="0,0,0,0"/>
+                <Image name="RecommendSearchErrorIconRecommendEmpty" RelativePosition="10,-56,332,150" Bitmap="errorRecommendEmpty.png" Anchors=""/>
+                <Image name="RecommendSearchErrorIconRecommendFail" RelativePosition="10,-56,332,150" Bitmap="errorRecommendFail.png" Anchors=""/>
+              </Container>
+              <Container Name="SearchLoadingPage" Anchors="left,top,right,bottom" position="0,0,636,521" BackgroundSep="0,0,0,0">
+                <Image name="LoadingPageBackGround" position="0,31,636,521" Anchors="left,top,right,bottom"/>
+                <Image name="LoadingPageAnimation" position="253,278,269,294" Anchors="" Bitmap="LoadAnimation.png"/>
+                <Label Name="LoadingPageTips" Anchors="" Position="273,273,400,299"/>
+              </Container>
+              <Container name="SearchNoResultRecommend" Anchors="left,right,bottom" Position="0,416,636,521">
+                <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,105" WinBackColor="0xFFFFFFFF"/>
+                <Container name="_1" Anchors="left,top,right,bottom" position="0,0,636,105">
+                  <Image name="_0" position="0,0,636,105" Anchors="left,top,right,bottom" />
+                  <Image name="_1" position="0,0,0,0" Bitmap="" Anchors=""/>
+                  <label name="_2" position="0,0,0,0" Anchors=""/>
+                  <Button name="_3" position="0,0,0,0" Anchors=""/>
+                  <label name="_4" position="0,0,0,0" Anchors=""/>
+                  <label name="_5" position="0,0,0,0" Anchors=""/>
+                  <label name="_6" position="0,0,0,0" Anchors=""/>
+                </Container>
+                <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+                <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+              </Container>
+              <Container Name="MusicExtSearchSwitchPanel" Anchors="left,top,right" position="0,0,636,31">
+                <Label Name="_0" Anchors="left,top" Position="20,13,92,-31"/>
+                <Button Name="_1" Anchors="" Position="137,0,205,31" NormalBack="search_list_switch_song_normal.png" HoverBack="search_list_switch_song_hovering.png" DownBack="search_list_switch_song_pressed.png" DisabledBack="search_list_switch_song_disabled.png"/>
+                <Button Name="_2" Anchors="" Position="283,0,351,31" NormalBack="search_list_switch_album_normal.png" HoverBack="search_list_switch_album_hovering.png" DownBack="search_list_switch_album_pressed.png" DisabledBack="search_list_switch_album_disabled.png"/>
+                <Button Name="_3" Anchors="" Position="210,0,278,31" NormalBack="search_list_switch_mv_normal.png" HoverBack="search_list_switch_mv_hovering.png" DownBack="search_list_switch_mv_pressed.png" DisabledBack="search_list_switch_mv_disabled.png"/>
+                <Button Name="_4" Anchors="" Position="429,0,497,31" NormalBack="search_list_switch_lyric_normal.png" HoverBack="search_list_switch_lyric_hovering.png" DownBack="search_list_switch_lyric_pressed.png" DisabledBack="search_list_switch_lyric_disabled.png"/>
+                <Image Name="_5" Anchors="left,top,right,bottom" position="0,0,636,31" Bitmap="search_list_switch_background.png"/>
+                <!-- 去掉网友铃声搜索类型 -->
+                <Button Name="_6" Anchors="" Position="466,0,-534,31" NormalBack="search_list_switch_ring_normal.png" HoverBack="search_list_switch_ring_hovering.png" DownBack="search_list_switch_ring_pressed.png" DisabledBack="search_list_switch_ring_disabled.png"/>
+                <Button Name="_7" Anchors="" Position="356,0,424,31" NormalBack="search_list_switch_song_list_0.png" HoverBack="search_list_switch_song_list_1.png" DownBack="search_list_switch_song_list_2.png" DisabledBack="search_list_switch_song_list_3.png"/>
+                <!-- 去掉网友电台搜索类型 -->
+                <Button Name="_8" Anchors="" Position="332,0,-400,31" NormalBack="search_list_switch_ugc_0.png" HoverBack="search_list_switch_ugc_1.png" DownBack="search_list_switch_ugc_2.png" DisabledBack="search_list_switch_ugc_3.png"/>
+              </Container>
+              <Container Anchors="left,top,right,bottom" Name="SearchListView" Position="20,31,616,521">
+                <Container name="_0">
+                  <ScrollBar Name="_0"/>
+                  <Container name="_1">
+                    <Container name="SearchListItem">
+                      <Container name="_0">
+                        <RadioBox name="_0"/>
+                      </Container>
+                      <Container name="SearchListItemHeadPanel" Anchors="left,right,bottom" Position="0,0,596,60">
+                        <!-- Add to button -->
+                        <Button Name="_0" Anchors="top,right" Position="436,5,486,27" NormalBack="search_list_addall_normal.png" HoverBack="search_list_addall_hovering.png" DownBack="search_list_addall_pressed.png" DisabledBack="search_list_addall_disabled.png"/>
+                        <!-- Download button -->
+                        <Button Name="_1" Anchors="top,right" Position="546,5,596,27" NormalBack="search_list_downloadall_normal.png" HoverBack="search_list_downloadall_hovering.png" DownBack="search_list_downloadall_pressed.png" DisabledBack="search_list_downloadall_disabled.png"/>
+                        <!-- Column head control -->
+                        <ColumnHead Name="_2" Anchors="left,right,bottom" Position="0,32,596,60" HeadNormal="search_list_head_normal.png" HeadHover="search_list_head_hovering.png" HeadDown="search_list_head_pressed.png" HeadSelected="search_list_head_pressed.png" HeadAsc="search_list_head_sort_asc.png" HeadDesc="search_list_head_sort_desc.png" HeadSplitBar=""/>
+                        <!-- Play button -->
+                        <Button Name="_3" Anchors="top,right" Position="371,5,431,27" NormalBack="search_list_playall_normal.png" HoverBack="search_list_playall_hovering.png" DownBack="search_list_playall_pressed.png" DisabledBack="search_list_playall_disabled.png"/>
+                        <!-- Select all checkbox -->
+                        <CheckBox Name="_4" Anchors="left,top" Position="5,33,31,59" NormalBack="search_list_checkbox_uncheck_normal.png" HoverBack="search_list_checkbox_uncheck_hovering.png" DownBack="search_list_checkbox_uncheck_pressed.png" DisabledBack="search_list_checkbox_uncheck_disabled.png" SelectedNormal="search_list_checkbox_checked_normal.png" SelectedHover="search_list_checkbox_checked_hovering.png" SelectedDown="search_list_checkbox_checked_pressed.png" SelectedDisabled="search_list_checkbox_checked_disabled.png"/>
+                        <!-- Button background -->
+                        <Image Name="_5" Anchors="left,top,right" Position="20,6,493,-41" Bitmap="search_list_background.png"/>
+                        <!-- Search result text -->
+                        <!--HtmlLabel-->
+                        <Control Name="_6" Anchors="left,top" Position="0,10,340,23"/>
+                        <!-- Background -->
+                        <Image Name="_7" Anchors="left,top,right" Position="0,0,596,-60" Bitmap="BlankBk.png"/>
+                        <!-- Add to cloud button -->
+                        <Button Name="_8" Anchors="top,right" Position="491,5,541,27" NormalBack="head_panel_trans_song_to_mobile_dev_0.png" HoverBack="head_panel_trans_song_to_mobile_dev_1.png" DownBack="head_panel_trans_song_to_mobile_dev_2.png" DisabledBack="head_panel_trans_song_to_mobile_dev_3.png"/>
+                        <Container Name="_9" Anchors="left,top" RelativePosition="340,5,103,25">
+                          <!-- Satisfied button -->
+                          <Button Name="_0" Anchors="left" RelativePosition="10,0,40,22" NormalBack="search_list_satisfied_normal.png" HoverBack="search_list_satisfied_hovering.png" DownBack="search_list_satisfied_pressed.png" DisabledBack="search_list_satisfied_disabled.png"/>
+                          <!-- dissatisfied button -->
+                          <Button Name="_1" Anchors="left" RelativePosition="53,0,50,22" NormalBack="search_list_dissatisfied_normal.png" HoverBack="search_list_dissatisfied_hovering.png" DownBack="search_list_dissatisfied_pressed.png" DisabledBack="search_list_dissatisfied_disabled.png"/>
+                        </Container>
+                      </Container>
+                      <Button Name="SearchListItemAlbum" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_show_album_normal.png" HoverBack="search_list_show_album_hovering.png" DownBack="search_list_show_album_pressed.png" DisabledBack="search_list_show_album_disabled.png"/>
+                      <CheckBox Name="SearchListItemCheckBox" Anchors="left,top" Position="0,0,26,26" NormalBack="search_list_checkbox_uncheck_normal.png" HoverBack="search_list_checkbox_uncheck_normal.png" DownBack="search_list_checkbox_uncheck_normal.png" DisabledBack="search_list_checkbox_uncheck_disabled.png" SelectedNormal="search_list_checkbox_checked_normal.png" SelectedHover="search_list_checkbox_checked_normal.png" SelectedDown="search_list_checkbox_checked_normal.png" SelectedDisabled="search_list_checkbox_checked_disabled.png"/>
+                      <CheckBox Name="SearchListItemKalaokMV" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_karaoke_button_normal.png" HoverBack="search_list_karaoke_button_hovering.png" DownBack="search_list_karaoke_button_pressed.png" DisabledBack="search_list_karaoke_button_disabled.png" SelectedNormal="search_list_karaoke_button_normal.png" SelectedHover="search_list_karaoke_button_hovering.png" SelectedDown="search_list_karaoke_button_pressed.png" SelectedDisabled="search_list_karaoke_button_disabled.png"/>
+                      <CheckBox Name="SearchListItemNonKalaokMV" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_mv_button_normal.png" HoverBack="search_list_mv_button_hovering.png" DownBack="search_list_mv_button_pressed.png" DisabledBack="search_list_mv_button_disabled.png" SelectedNormal="search_list_mv_button_normal.png" SelectedHover="search_list_mv_button_hovering.png" SelectedDown="search_list_mv_button_pressed.png" SelectedDisabled="search_list_mv_button_disabled.png"/>
+                      <CheckBox Name="SearchListItemPlay" Anchors="right,top" Position="0,0,26,22" NormalBack="listen_0.png" HoverBack="listen_1.png" DownBack="listen_2.png" DisabledBack="listen_3.png" SelectedNormal="listen_0.png" SelectedHover="listen_1.png" SelectedDown="listen_2.png" SelectedDisabled="listen_3.png" ActionId="9937" ActionName="试听按钮|搜索页面"/>
+                      <CheckBox Name="SearchListItemDownload" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_download_button_normal.png" HoverBack="search_list_download_button_hovering.png" DownBack="search_list_download_button_pressed.png" DisabledBack="search_list_download_button_disabled.png" SelectedNormal="search_list_download_button_normal.png" SelectedHover="search_list_download_button_hovering.png" SelectedDown="search_list_download_button_pressed.png" SelectedDisabled="search_list_download_button_disabled.png" ActionId="9939" ActionName="下载按钮|搜索页面"/>
+                      <Button Name="SearchListItemAddToList" Anchors="right,top" Position="0,0,26,22" NormalBack="add_to_list_0.png" HoverBack="add_to_list_1.png" DownBack="add_to_list_2.png" DisabledBack="add_to_list_3.png" ActionId="9938" ActionName="添加按钮|搜索页面"/>
+                      <Button Name="SearchListItemTransferSongToMobileDevice" Anchors="right,top" Position="0,0,26,22" NormalBack="list_item_trans_song_to_mobile_dev_0.png" HoverBack="list_item_trans_song_to_mobile_dev_1.png" DownBack="list_item_trans_song_to_mobile_dev_2.png" DisabledBack="list_item_trans_song_to_mobile_dev_3.png" ActionId="9848" ActionName="传歌到移动设备按钮|搜索页面"/>
+                      <Image name="SearchListItemHot" Anchors="right,top" Position="0,0,18,11" Bitmap="hotvalue.png"/>
+                      <Container Name="SearchListItemSingerName"/>
+                      <Image name="SearchListItemNew" Anchors="right,top" Position="0,0,21,9" Bitmap="SearchResultNewIcon.png"/>
+                      <Image name="SearchListItemHQ" Anchors="right,top" Position="0,0,15,9" Bitmap="SearchResultHQIcon.png"/>
+                      <Button Name="SearchListItemSourceLink" Anchors="right,top" Position="0,0,12,12" NormalBack="search_list_source_link_0.png" HoverBack="search_list_source_link_1.png" DownBack="search_list_source_link_2.png" DisabledBack="search_list_source_link_3.png"/>
+                      <Image name="SearchListItemAnimation" Anchors="right,top" Position="0,0,16,16" Bitmap="LoadAnimation.png"/>
+                      <Image name="SearchListItemTipBack"/>
+                      <Label name="SearchListItemTip"/>
+                      <Image name="SearchListItemTopTipBack"/>
+                    </Container>
+                  </Container>
+                  <Container name="SearchListHeadPanel" Anchors="left,right,bottom" Position="0,0,596,60">
+                    <!-- Add to button -->
+                    <Button Name="_0" Anchors="top,right" Position="436,5,486,27" NormalBack="search_list_addall_normal.png" HoverBack="search_list_addall_hovering.png" DownBack="search_list_addall_pressed.png" DisabledBack="search_list_addall_disabled.png"/>
+                    <!-- Download button -->
+                    <Button Name="_1" Anchors="top,right" Position="546,5,596,27" NormalBack="search_list_downloadall_normal.png" HoverBack="search_list_downloadall_hovering.png" DownBack="search_list_downloadall_pressed.png" DisabledBack="search_list_downloadall_disabled.png"/>
+                    <!-- Column head control -->
+                    <ColumnHead Name="_2" Anchors="left,right,bottom" Position="0,32,596,60" HeadNormal="search_list_head_normal.png" HeadHover="search_list_head_hovering.png" HeadDown="search_list_head_pressed.png" HeadSelected="search_list_head_pressed.png" HeadAsc="search_list_head_sort_asc.png" HeadDesc="search_list_head_sort_desc.png" HeadSplitBar=""/>
+                    <!-- Play button -->
+                    <Button Name="_3" Anchors="top,right" Position="371,5,431,27" NormalBack="search_list_playall_normal.png" HoverBack="search_list_playall_hovering.png" DownBack="search_list_playall_pressed.png" DisabledBack="search_list_playall_disabled.png"/>
+                    <!-- Select all checkbox -->
+                    <CheckBox Name="_4" Anchors="left,top" Position="5,33,31,59" NormalBack="search_list_checkbox_uncheck_normal.png" HoverBack="search_list_checkbox_uncheck_hovering.png" DownBack="search_list_checkbox_uncheck_pressed.png" DisabledBack="search_list_checkbox_uncheck_disabled.png" SelectedNormal="search_list_checkbox_checked_normal.png" SelectedHover="search_list_checkbox_checked_hovering.png" SelectedDown="search_list_checkbox_checked_pressed.png" SelectedDisabled="search_list_checkbox_checked_disabled.png"/>
+                    <!-- Button background -->
+                    <Image Name="_5" Anchors="left,top,right" Position="20,6,493,-41" Bitmap="search_list_background.png"/>
+                    <!-- Search result text -->
+                    <!--HtmlLabel-->
+                    <Control Name="_6" Anchors="left,top" Position="0,10,340,23"/>
+                    <!-- Background -->
+                    <Image Name="_7" Anchors="left,top,right" Position="0,0,596,60" Bitmap="BlankBk.png"/>
+                    <!-- Add to queue button -->
+                    <Button Name="_8" Anchors="top,right" Position="491,5,541,27" NormalBack="head_panel_trans_song_to_mobile_dev_0.png" HoverBack="head_panel_trans_song_to_mobile_dev_1.png" DownBack="head_panel_trans_song_to_mobile_dev_2.png" DisabledBack="head_panel_trans_song_to_mobile_dev_3.png"/>
+                    <!-- Search result survey -->
+                    <Container Name="_9" Anchors="left,top" RelativePosition="340,5,103,25">
+                      <!-- Satisfied button -->
+                      <Button Name="_0" Anchors="left" RelativePosition="10,0,40,22" NormalBack="search_list_satisfied_normal.png" HoverBack="search_list_satisfied_hovering.png" DownBack="search_list_satisfied_pressed.png" DisabledBack="search_list_satisfied_disabled.png"/>
+                      <!-- dissatisfied button -->
+                      <Button Name="_1" Anchors="left" RelativePosition="53,0,50,22" NormalBack="search_list_dissatisfied_normal.png" HoverBack="search_list_dissatisfied_hovering.png" DownBack="search_list_dissatisfied_pressed.png" DisabledBack="search_list_dissatisfied_disabled.png"/>
+                    </Container>
+                  </Container>
+                </Container>
+                <ColumnHead name="SearchListHead" Position="20,0,626,29"/>
+              </Container>
+              <Container Anchors="left,top,right,bottom" Name="RecommendSongListView" RelativePosition="20,46,20,0">
+                <Container name="_0">
+                  <ScrollBar Name="_0"/>
+                  <Container name="_1">
+                    <Container name="RecommendSongListItem">
+                      <Container name="_0">
+                        <RadioBox name="_0"/>
+                      </Container>
+                      <Container name="RecommendSongListItemHeadPanel" Anchors="left,right,bottom" RelativePosition="0,0,0,60">
+                        <!-- Add to button -->
+                        <Button Name="_0" Anchors="top,right" RelativePosition="110,5,50,22" NormalBack="search_list_addall_normal.png" HoverBack="search_list_addall_hovering.png" DownBack="search_list_addall_pressed.png" DisabledBack="search_list_addall_disabled.png"/>
+                        <!-- Download button -->
+                        <Button Name="_1" Anchors="top,right" RelativePosition="0,5,50,22" NormalBack="search_list_downloadall_normal.png" HoverBack="search_list_downloadall_hovering.png" DownBack="search_list_downloadall_pressed.png" DisabledBack="search_list_downloadall_disabled.png"/>
+                        <!-- Column head control -->
+                        <ColumnHead Name="_2" Anchors="left,right,bottom" RelativePosition="0,0,0,28" HeadNormal="search_list_head_normal.png" HeadHover="search_list_head_hovering.png" HeadDown="search_list_head_pressed.png" HeadSelected="search_list_head_pressed.png" HeadAsc="search_list_head_sort_asc.png" HeadDesc="search_list_head_sort_desc.png" HeadSplitBar=""/>
+                        <!-- Play button -->
+                        <Button Name="_3" Anchors="top,right" RelativePosition="165,5,60,22" NormalBack="search_list_playall_normal.png" HoverBack="search_list_playall_hovering.png" DownBack="search_list_playall_pressed.png" DisabledBack="search_list_playall_disabled.png"/>
+                        <!-- Select all checkbox -->
+                        <CheckBox Name="_4" Anchors="left,top" RelativePosition="5,33,26,26" NormalBack="search_list_checkbox_uncheck_normal.png" HoverBack="search_list_checkbox_uncheck_hovering.png" DownBack="search_list_checkbox_uncheck_pressed.png" DisabledBack="search_list_checkbox_uncheck_disabled.png" SelectedNormal="search_list_checkbox_checked_normal.png" SelectedHover="search_list_checkbox_checked_hovering.png" SelectedDown="search_list_checkbox_checked_pressed.png" SelectedDisabled="search_list_checkbox_checked_disabled.png"/>
+                        <!-- Button background -->
+                        <Image Name="_5" Anchors="left,top,right" RelativePosition="20,6,103,-35" Bitmap="search_list_background.png"/>
+                        <!-- Search result text -->
+                        <!--HtmlLabel-->
+                        <Control Name="_6" Anchors="left,top,right" RelativePosition="0,0,256,32"/>
+                        <!-- Background -->
+                        <Image Name="_7" Anchors="left,right,bottom" RelativePosition="0,0,0,-60"/>
+                        <!-- Add to cloud button -->
+                        <Button Name="_8" Anchors="top,right" RelativePosition="55,5,50,22" NormalBack="head_panel_trans_song_to_mobile_dev_0.png" HoverBack="head_panel_trans_song_to_mobile_dev_1.png" DownBack="head_panel_trans_song_to_mobile_dev_2.png" DisabledBack="head_panel_trans_song_to_mobile_dev_3.png"/>
+                      </Container>
+                      <Button Name="RecommendSongListItemAlbum" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_show_album_normal.png" HoverBack="search_list_show_album_hovering.png" DownBack="search_list_show_album_pressed.png" DisabledBack="search_list_show_album_disabled.png"/>
+                      <CheckBox Name="RecommendSongListItemCheckBox" Anchors="left,top" Position="0,0,26,26" NormalBack="search_list_checkbox_uncheck_normal.png" HoverBack="search_list_checkbox_uncheck_normal.png" DownBack="search_list_checkbox_uncheck_normal.png" DisabledBack="search_list_checkbox_uncheck_disabled.png" SelectedNormal="search_list_checkbox_checked_normal.png" SelectedHover="search_list_checkbox_checked_normal.png" SelectedDown="search_list_checkbox_checked_normal.png" SelectedDisabled="search_list_checkbox_checked_disabled.png"/>
+                      <CheckBox Name="RecommendSongListItemKalaokMV" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_karaoke_button_normal.png" HoverBack="search_list_karaoke_button_hovering.png" DownBack="search_list_karaoke_button_pressed.png" DisabledBack="search_list_karaoke_button_disabled.png" SelectedNormal="search_list_karaoke_button_normal.png" SelectedHover="search_list_karaoke_button_hovering.png" SelectedDown="search_list_karaoke_button_pressed.png" SelectedDisabled="search_list_karaoke_button_disabled.png"/>
+                      <CheckBox Name="RecommendSongListItemNonKalaokMV" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_mv_button_normal.png" HoverBack="search_list_mv_button_hovering.png" DownBack="search_list_mv_button_pressed.png" DisabledBack="search_list_mv_button_disabled.png" SelectedNormal="search_list_mv_button_normal.png" SelectedHover="search_list_mv_button_hovering.png" SelectedDown="search_list_mv_button_pressed.png" SelectedDisabled="search_list_mv_button_disabled.png"/>
+                      <CheckBox Name="RecommendSongListItemPlay" Anchors="right,top" Position="0,0,26,22" NormalBack="listen_0.png" HoverBack="listen_1.png" DownBack="listen_2.png" DisabledBack="listen_3.png" SelectedNormal="listen_0.png" SelectedHover="listen_1.png" SelectedDown="listen_2.png" SelectedDisabled="listen_3.png" ActionId="9937" ActionName="试听按钮|搜索页面"/>
+                      <CheckBox Name="RecommendSongListItemDownload" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_download_button_normal.png" HoverBack="search_list_download_button_hovering.png" DownBack="search_list_download_button_pressed.png" DisabledBack="search_list_download_button_disabled.png" SelectedNormal="search_list_download_button_normal.png" SelectedHover="search_list_download_button_hovering.png" SelectedDown="search_list_download_button_pressed.png" SelectedDisabled="search_list_download_button_disabled.png" ActionId="9939" ActionName="下载按钮|搜索页面"/>
+                      <Button Name="RecommendSongListItemAddToList" Anchors="right,top" Position="0,0,26,22" NormalBack="add_to_list_0.png" HoverBack="add_to_list_1.png" DownBack="add_to_list_2.png" DisabledBack="add_to_list_3.png" ActionId="9938" ActionName="添加按钮|搜索页面"/>
+                      <Button Name="RecommendSongListItemTransferSongToMobileDevice" Anchors="right,top" Position="0,0,26,22" NormalBack="list_item_trans_song_to_mobile_dev_0.png" HoverBack="list_item_trans_song_to_mobile_dev_1.png" DownBack="list_item_trans_song_to_mobile_dev_2.png" DisabledBack="list_item_trans_song_to_mobile_dev_3.png"/>
+                      <Image name="RecommendSongListItemHot" Anchors="right,top" Position="0,0,18,11" Bitmap="hotvalue.png"/>
+                      <Container Name="RecommendSongListItemSingerName"/>
+                      <Image name="RecommendSongListItemNew" Anchors="right,top" Position="0,0,21,9" Bitmap="SearchResultNewIcon.png"/>
+                      <Image name="RecommendSongListItemHQ" Anchors="right,top" Position="0,0,15,9" Bitmap="SearchResultHQIcon.png"/>
+                      <Image name="RecommendSongListItemAnimation" Anchors="right,top" Position="0,0,16,16" Bitmap="LoadAnimation.png"/>
+                      <Image name="RecommendSongListItemTipBack"/>
+                      <Label name="RecommendSongListItemTip"/>
+                      <Image name="RecommendSongListItemTopTipBack"/>
+                    </Container>
+                  </Container>
+                  <Container name="RecommendSongListHeadPanel" Anchors="left,right,bottom" RelativePosition="0,0,0,60">
+                    <!-- Add to button -->
+                    <Button Name="_0" Anchors="top,right" RelativePosition="110,5,50,22" NormalBack="search_list_addall_normal.png" HoverBack="search_list_addall_hovering.png" DownBack="search_list_addall_pressed.png" DisabledBack="search_list_addall_disabled.png"/>
+                    <!-- Download button -->
+                    <Button Name="_1" Anchors="top,right" RelativePosition="0,5,50,22" NormalBack="search_list_downloadall_normal.png" HoverBack="search_list_downloadall_hovering.png" DownBack="search_list_downloadall_pressed.png" DisabledBack="search_list_downloadall_disabled.png"/>
+                    <!-- Column head control -->
+                    <ColumnHead Name="_2" Anchors="left,right,bottom" RelativePosition="0,0,0,28" HeadNormal="search_list_head_normal.png" HeadHover="search_list_head_hovering.png" HeadDown="search_list_head_pressed.png" HeadSelected="search_list_head_pressed.png" HeadAsc="search_list_head_sort_asc.png" HeadDesc="search_list_head_sort_desc.png" HeadSplitBar=""/>
+                    <!-- Play button -->
+                    <Button Name="_3" Anchors="top,right" RelativePosition="165,5,60,22" NormalBack="search_list_playall_normal.png" HoverBack="search_list_playall_hovering.png" DownBack="search_list_playall_pressed.png" DisabledBack="search_list_playall_disabled.png"/>
+                    <!-- Select all checkbox -->
+                    <CheckBox Name="_4" Anchors="left,top" RelativePosition="5,33,26,26" NormalBack="search_list_checkbox_uncheck_normal.png" HoverBack="search_list_checkbox_uncheck_hovering.png" DownBack="search_list_checkbox_uncheck_pressed.png" DisabledBack="search_list_checkbox_uncheck_disabled.png" SelectedNormal="search_list_checkbox_checked_normal.png" SelectedHover="search_list_checkbox_checked_hovering.png" SelectedDown="search_list_checkbox_checked_pressed.png" SelectedDisabled="search_list_checkbox_checked_disabled.png"/>
+                    <!-- Button background -->
+                    <Image Name="_5" Anchors="left,top,right" RelativePosition="20,6,103,-35" Bitmap="search_list_background.png"/>
+                    <!-- Search result text -->
+                    <!--HtmlLabel-->
+                    <Control Name="_6" Anchors="left,top" RelativePosition="0,10,256,13"/>
+                    <!-- Background -->
+                    <Image Name="_7" Anchors="left,top,right" RelativePosition="0,0,0,60" Bitmap="BlankBk.png"/>
+                    <!-- Add to cloud button -->
+                    <Button Name="_8" Anchors="top,right" RelativePosition="55,5,50,22" NormalBack="head_panel_trans_song_to_mobile_dev_0.png" HoverBack="head_panel_trans_song_to_mobile_dev_1.png" DownBack="head_panel_trans_song_to_mobile_dev_2.png" DisabledBack="head_panel_trans_song_to_mobile_dev_3.png"/>
+                  </Container>
+                </Container>
+                <ColumnHead name="RecommendSongListHead" Position="20,0,626,29"/>
+              </Container>
+              <Container name="RingSearchListView" Anchors="left,top,right,bottom" Position="20,62,616,521">
+                <Container name="_0">
+                  <ScrollBar Name="_0"/>
+                  <Container name="_1">
+                    <Container name="RingSearchListItem">
+                      <Button Name="RingSearchListItemRingback" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_color_ring_normal.png" HoverBack="search_list_color_ring_hovering.png" DownBack="search_list_color_ring_pressed.png" DisabledBack="search_list_color_ring_disabled.png"/>
+                      <Button Name="RingSearchListItemRing" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_ring_tone_normal.png" HoverBack="search_list_ring_tone_hovering.png" DownBack="search_list_ring_tone_pressed.png" DisabledBack="search_list_ring_tone_disabled.png"/>
+                      <Image name="RingSearchListItemScore" Anchors="right,top" Position="0,0,70,-22" Bitmap="ringSorce.png"/>
+                      <Image name="RingSearchListItemAnimation" Anchors="right,top" Position="0,0,16,16" Bitmap="LoadAnimation.png"/>
+                      <Image name="RingSearchListItemTipBack"/>
+                      <Label name="RingSearchListItemTip"/>
+                    </Container>
+                  </Container>
+                </Container>
+                <ColumnHead name="RingSearchListHead" HeadNormal="search_list_head_normal.png" HeadHover="search_list_head_hovering.png" HeadDown="search_list_head_pressed.png" HeadSelected="search_list_head_pressed.png" HeadAsc="search_list_head_sort_asc.png" HeadDesc="search_list_head_sort_desc.png" HeadSplitBar=""/>
+              </Container>
+              <Container Name="MVSearchListView" Anchors="left,top,right,bottom" position="20,62,636,521" BackgroundSep="0,0,0,0">
+                <Container Name="MVSearchResultViewsContainerWithTip" Constraints="0,0,99999,99999">
+                  <Container Name="MVSearchResultViewsContainer" Constraints="0,0,99999,99999">
+                    <Container Name="MVSearchResultView" position="0,0,124,132" BackgroundSep="0,0,0,0" BackgroundPic="">
+                      <Image name="MVSearchResultViewBKHot" Bitmap="NLMvItemBkHover.png" position="0,0,124,84"/>
+                      <Image name="MVPreview" Bitmap="NLMvItemPreviewDef.png" HotBitmap="NLMvItemPreviewPlay.png" HotPosition="72,32,102,62" position="2,2,122,82"/>
+                      <Image name="MVSearchResultViewPreviewBK" Bitmap="NLMvItemPreviewBk.png" position="4,5,136,-103"/>
+                      <Label Name="MVSearchResultViewTitle" position="2,92,122,105"/>
+                      <CheckBox Name="MVSearchResultViewType" position="-4,110,71,132" HoverTextColor="0xff589de7" NormalBack="search_list_karaoke_button_normal.png" HoverBack="search_list_karaoke_button_hovering.png" DownBack="search_list_karaoke_button_pressed.png" DisabledBack="search_list_karaoke_button_disabled.png" SelectedNormal="search_list_mv_button_normal.png" SelectedHover="search_list_mv_button_hovering.png" SelectedDown="search_list_mv_button_pressed.png" SelectedDisabled="search_list_mv_button_disabled.png"/>
+                      <Button Name="MVSearchResultViewPlay" position="46,25,79,59" NormalBack="NLMvItemListen_0.png" HoverBack="NLMvItemListen_1.png" DownBack="NLMvItemListen_2.png" DisabledBack="NLMvItemListen_3.png" Focused=""/>
+                      <Button Name="MVSearchResultViewAdd" position="74,110,100,132" NormalBack="add_to_list_0.png" HoverBack="add_to_list_1.png" DownBack="add_to_list_2.png" DisabledBack="add_to_list_3.png" Focused=""/>
+                      <CheckBox Name="MVSearchResultViewDownload" Position="98,110,124,132" NormalBack="search_list_download_button_normal.png" HoverBack="search_list_download_button_hovering.png" DownBack="search_list_download_button_pressed.png" DisabledBack="search_list_download_button_disabled.png" SelectedNormal="search_list_downloaded_button_normal.png" SelectedHover="search_list_downloaded_button_hovering.png" SelectedDown="search_list_downloaded_button_pressed.png" SelectedDisabled="search_list_downloaded_button_disabled.png"  ActionId="3110" ActionName="MV搜索下载按钮点击数7530|MV搜索"/>
+                    </Container>
+                  </Container>
+                  <Container Name="MVSearchResultListViewTip" position="0,385,596,490">
+                    <Image Name="LoadingTipBackGround" Anchors="left,top,right,bottom" position="0,0,576,30"/>
+                    <Image Name="LoadingTipAnimation" Anchors="" position="241,7,257,23" Bitmap="LoadAnimation.png"/>
+                    <Label Name="LoadingTipLabel"  Anchors="" position="259,9,379,21"/>
+                  </Container>
+                </Container>
+                <ScrollBar Name="MVSearchResultScrollBar" Position="603,0,616,459" Anchors="right,top,bottom"/>
+              </Container>
+              <Container name="MusicExtSearchHeadPanel" Anchors="left,top,right" Position="20,31,616,91">
+                <!-- Add to button -->
+                <Button Name="_0" Anchors="top,right" Position="436,5,486,27" NormalBack="search_list_addall_normal.png" HoverBack="search_list_addall_hovering.png" DownBack="search_list_addall_pressed.png" DisabledBack="search_list_addall_disabled.png"/>
+                <!-- Download button -->
+                <Button Name="_1" Anchors="top,right" Position="546,5,596,27" NormalBack="search_list_downloadall_normal.png" HoverBack="search_list_downloadall_hovering.png" DownBack="search_list_downloadall_pressed.png" DisabledBack="search_list_downloadall_disabled.png"/>
+                <!-- Column head control -->
+                <ColumnHead Name="_2" Anchors="left,right,bottom" Position="0,32,596,60" HeadNormal="search_list_head_normal.png" HeadHover="search_list_head_hovering.png" HeadDown="search_list_head_pressed.png" HeadSelected="search_list_head_pressed.png" HeadAsc="search_list_head_sort_asc.png" HeadDesc="search_list_head_sort_desc.png" HeadSplitBar=""/>
+                <!-- Play button -->
+                <Button Name="_3" Anchors="top,right" Position="371,5,431,27" NormalBack="search_list_playall_normal.png" HoverBack="search_list_playall_hovering.png" DownBack="search_list_playall_pressed.png" DisabledBack="search_list_playall_disabled.png"/>
+                <!-- Select all checkbox -->
+                <CheckBox Name="_4" Anchors="left,top" Position="5,33,31,59" NormalBack="search_list_checkbox_uncheck_normal.png" HoverBack="search_list_checkbox_uncheck_hovering.png" DownBack="search_list_checkbox_uncheck_pressed.png" DisabledBack="search_list_checkbox_uncheck_disabled.png" SelectedNormal="search_list_checkbox_checked_normal.png" SelectedHover="search_list_checkbox_checked_hovering.png" SelectedDown="search_list_checkbox_checked_pressed.png" SelectedDisabled="search_list_checkbox_checked_disabled.png"/>
+                <!-- Button background -->
+                <Image Name="_5" Anchors="left,top,right" Position="20,6,493,-41" Bitmap="search_list_background.png"/>
+                <!-- Search result text -->
+                <!--HtmlLabel-->
+                <Control Name="_6" Anchors="left,top" Position="0,10,340,23"/>
+                <!-- Background -->
+                <Image Name="_7" Anchors="left,top,right" Position="0,0,596,32" Bitmap="BlankBk.png"/>
+                <!-- Add to queue button -->
+                <Button Name="_8" Anchors="top,right" Position="491,5,541,27" NormalBack="head_panel_trans_song_to_mobile_dev_0.png" HoverBack="head_panel_trans_song_to_mobile_dev_1.png" DownBack="head_panel_trans_song_to_mobile_dev_2.png" DisabledBack="head_panel_trans_song_to_mobile_dev_3.png"/>
+              </Container>
+              <Container name="LyricSearchListView" Anchors="left,top,right,bottom" position="20,91,616,521">
+                <Container name="_0">
+                  <ScrollBar Name="_0"/>
+                  <Container name="_1">
+                    <Container name="LyricSearchListItem">
+                      <CheckBox Name="LyricSearchListItemCheckBox" Anchors="left,top" Position="0,0,26,26" NormalBack="search_list_checkbox_uncheck_normal.png" HoverBack="search_list_checkbox_uncheck_normal.png" DownBack="search_list_checkbox_uncheck_normal.png" DisabledBack="search_list_checkbox_uncheck_disabled.png" SelectedNormal="search_list_checkbox_checked_normal.png" SelectedHover="search_list_checkbox_checked_normal.png" SelectedDown="search_list_checkbox_checked_normal.png" SelectedDisabled="search_list_checkbox_checked_disabled.png"/>
+                      <CheckBox Name="LyricSearchListItemPlay" Anchors="right,top" Position="0,0,26,22" NormalBack="listen_0.png" HoverBack="listen_1.png" DownBack="listen_2.png" DisabledBack="listen_3.png" SelectedNormal="listen_0.png" SelectedHover="listen_1.png" SelectedDown="listen_2.png" SelectedDisabled="listen_3.png"/>
+                      <Button Name="LyricSearchListItemAdd" Anchors="right,top" Position="0,0,26,22" NormalBack="add_to_list_0.png" HoverBack="add_to_list_1.png" DownBack="add_to_list_2.png" DisabledBack="add_to_list_3.png"/>
+                      <Button Name="LyricSearchListItemTransSongToMobileDevice" Anchors="right,top" Position="0,0,26,22" NormalBack="list_item_trans_song_to_mobile_dev_0.png" HoverBack="list_item_trans_song_to_mobile_dev_1.png" DownBack="list_item_trans_song_to_mobile_dev_2.png" DisabledBack="list_item_trans_song_to_mobile_dev_3.png"/>
+                      <CheckBox Name="LyricSearchListItemDownload" Anchors="right,top" Position="0,0,26,22" NormalBack="search_list_download_button_normal.png" HoverBack="search_list_download_button_hovering.png" DownBack="search_list_download_button_pressed.png" DisabledBack="search_list_download_button_disabled.png" SelectedNormal="search_list_downloaded_button_normal.png" SelectedHover="search_list_downloaded_button_hovering.png" SelectedDown="search_list_downloaded_button_pressed.png" SelectedDisabled="search_list_downloaded_button_disabled.png"/>
+                      <Image name="LyricSearchListItemHot" Anchors="right,top" Position="0,0,18,-11" Bitmap="hotvalue.png"/>
+                      <Label name="LyricSearchListItemDetails" Anchors="right,top" Position="0,0,30,-16"/>
+                      <Image name="LyricSearchListItemAnimation" Anchors="right,top" Position="0,0,16,16" Bitmap="LoadAnimation.png"/>
+                      <Image name="LyricSearchListItemTipBack"/>
+                      <Label name="LyricSearchListItemTip"/>
+                    </Container>
+                  </Container>
+                </Container>
+                <ColumnHead name="LyricSearchListHead" HeadNormal="search_list_head_normal.png" HeadHover="search_list_head_hovering.png" HeadDown="search_list_head_pressed.png" HeadSelected="search_list_head_pressed.png" HeadAsc="search_list_head_sort_asc.png" HeadDesc="search_list_head_sort_desc.png" HeadSplitBar=""/>
+              </Container>
+              <Container name="WebSearchContainer" Anchors="left,top,right,bottom" Position="0,31,636,521">
+                <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,490" WinBackColor="0xFFFFFFFF"/>
+                <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+                <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+              </Container>
+              <Container name="ComplexSearch" Anchors="left,top,right" Position="0,31,623,136">
+                <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,623,105" WinBackColor="0xFFFFFFFF"/>
+                <Container name="_1" Anchors="left,top,right,bottom" position="0,0,623,105">
+                  <Image name="_0" position="0,0,623,105" Anchors="left,top,right,bottom" />
+                  <Image name="_1" position="0,0,0,0" Bitmap="" Anchors=""/>
+                  <label name="_2" position="0,0,0,0" Anchors=""/>
+                  <Button name="_3" position="0,0,0,0" Anchors=""/>
+                  <label name="_4" position="0,0,0,0" Anchors=""/>
+                  <label name="_5" position="0,0,0,0" Anchors=""/>
+                  <label name="_6" position="0,0,0,0" Anchors=""/>
+                </Container>
+                <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+                <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+              </Container>
+              <Container name="SearchListRecommendSearch" Anchors="left,right,bottom" Position="0,416,636,521">
+                <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,105" WinBackColor="0xFFFFFFFF"/>
+                <Container name="_1" Anchors="left,top,right,bottom" position="0,0,636,105">
+                  <Image name="_0" position="0,0,636,105" Anchors="left,top,right,bottom" />
+                  <Image name="_1" position="0,0,0,0" Bitmap="" Anchors=""/>
+                  <label name="_2" position="0,0,0,0" Anchors=""/>
+                  <Button name="_3" position="0,0,0,0" Anchors=""/>
+                  <label name="_4" position="0,0,0,0" Anchors=""/>
+                  <label name="_5" position="0,0,0,0" Anchors=""/>
+                  <label name="_6" position="0,0,0,0" Anchors=""/>
+                </Container>
+                <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+                <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+              </Container>
+              <Container name="RecommendSongListRecommendSearch" Anchors="left,right,bottom" RelativePosition="0,0,0,100">
+                <WindowControl Name="_0" Anchors="left,top,right,bottom" RelativePosition="0,0,0,0" WinBackColor="0xFFFFFFFF"/>
+                <Container name="_1" Anchors="left,top,right,bottom" RelativePosition="0,0,0,0">
+                  <Image name="_0" Anchors="left,top,right,bottom" RelativePosition="0,0,0,0"/>
+                  <Image name="_1" position="0,0,0,0" Bitmap="" Anchors=""/>
+                  <label name="_2" position="0,0,0,0" Anchors=""/>
+                  <Button name="_3" position="0,0,0,0" Anchors=""/>
+                  <label name="_4" position="0,0,0,0" Anchors=""/>
+                  <label name="_5" position="0,0,0,0" Anchors=""/>
+                  <label name="_6" position="0,0,0,0" Anchors=""/>
+                </Container>
+                <Image name="_2" Anchors="left,top,right,bottom" RelativePosition="0,0,0,0" ImageColor="0xFFFFFFFF"/>
+                <WindowControl Name="_3" Anchors="" RelativePosition="0,0,635,100" WinBackColor="0xFFFFFFFF"/>
+              </Container>
+            </Container>
+          </Container>
+          <Container name="MusicExtMV">
+            <Image name="_0" Anchors="left,top,right,bottom" position="0,0,636,521" />
+            <Container name="MusicExt_MV" Anchors="left,top,right,bottom" position="0,0,636,521" >
+              <Control name="MVIcons" MVPopMenuEnterMiniMode="MVPopMenuEnterMiniMode.png" MVPopMenuExitMiniMode="MVPopMenuExitMiniMode.png" MVPopMenuEnterFullScreenMode="MVPopMenuEnterFullScreenMode.png" MVPopMenuExitFullScreenMode="MVPopMenuExitFullScreenMode.png" MVPopMenuPauseState="MVPopMenuPauseState.png" MVPopMenuPlayState="MVPopMenuPlayState.png" />
+              <WindowControl name="MVWindow" Anchors="left,top,right,bottom" position="0,0,636,521" Constraints="480,100,9999,9999" />
+            </Container>
+            <Container name="MusicVideoContainerWeb" position="0,0,636,521" Anchors="left,top,right,bottom">
+              <WindowControl Name="_0" Anchors="left,top,right,bottom" position="0,0,636,521" WinBackColor="0xFFFFFFFF"/>
+              <Image name="_2" Position="0,0,636,521" ImageColor="0xFFFFFFFF" Anchors="left,top,right,bottom" />
+              <WindowControl Name="_3" Anchors="" position="224,195,398,305" WinBackColor="0xFFFFFFFF"/>
+            </Container>
+          </Container>
+          <Container name="MusicExtLyric" >
+          </Container>
+          <Container nmae="AppToolWrapperContainer"/>
+          <TabLabel Name="MusicExtTabLabelLibrary" TabControlWidth="80" TabLabelIconSize="0,0" TabLabelIcon="" TabLabelNormal="NetBillListTabBK_0.png" TabLabelHover="NetBillListTabBK_1.png" TabLabelDown="NetBillListTabBK_2.png" ActionId="807" ActionName="乐库页|右侧TAB"/>
+          <TabLabel Name="MusicExtTabLabelMusicZone" TabControlWidth="0" TabLabelIconSize="0,0" TabLabelIcon="" TabLabelNormal="" TabLabelHover="" TabLabelDown=""/>
+          <TabLabel Name="MusicExtTabLabelVersionPage" TabControlWidth="0" TabLabelIconSize="0,0" TabLabelIcon="" TabLabelNormal="" TabLabelHover="" TabLabelDown=""/>
+          <TabLabel Name="MusicExtTabLabelRadio"  TabControlWidth="80" TabLabelIconSize="0,0" TabLabelIcon="" TabLabelNormal="RadioListTabBK_0.png" TabLabelHover="RadioListTabBK_1.png" TabLabelDown="RadioListTabBK_2.png" ActionId="810" ActionName="电台页|右侧TAB"/>
+          <TabLabel Name="MusicExtTabLabelSearch"  TabControlWidth="0" TabLabelButtonSize="0,0" TabLabelNormalTextColor="0xffffffff"  TabLabelDownTextColor="0xffffffff" TabLabelNormal="" TabLabelHover="" TabLabelDown="" TabLabelButtonNormal="" TabLabelButtonHover="" TabLabelButtonDown="" SearchTabTextBK0="" SearchTabTextBK1="" SearchTabTextBK2="" ActionId="801" ActionName="搜索结果页|右侧TAB"/>
+          <TabLabel Name="MusicExtTabLabelMV"  TabControlWidth="80" TabLabelNormal="MVtTabBK_0.png" TabLabelHover="MVtTabBK_1.png" TabLabelDown="MVtTabBK_2.png" ActionId="806" ActionName="MV页|右侧TAB"/>
+          <TabLabel Name="MusicExtTabLabelLyric"  TabControlWidth="80" TabLabelNormal="ClassicLyricsTabBK_0.png" TabLabelHover="ClassicLyricsTabBK_1.png" TabLabelDown="ClassicLyricsTabBK_2.png" ActionId="804" ActionName="动感歌词页|右侧TAB">
+            <Image Name="MuiscExtTabelLyricRedPoint" Anchors="right,top" RelativePosition="15,8,9,9" Bitmap="ListContainerModified.png"/>
+          </TabLabel>
+          <TabLabel Name="MusicExtTabLabelFanxing"  TabControlWidth="80" TabLabelNormal="FanxingTabBK_0.png" TabLabelHover="FanxingTabBK_1.png" TabLabelDown="FanxingTabBK_2.png" ActionId="838" ActionName="直播页|右侧TAB">
+            <Image Name="MusicExtTabLabelFanxingRedPoint" Anchors="right,top" RelativePosition="15,8,9,9" Bitmap="ListContainerModified.png"/>
+          </TabLabel>
+          <TabLabel Name="MusicExtTabLabelAppTool"  TabControlWidth="80" TabLabelNormal="AppToolTabBK_0.png" TabLabelHover="AppToolTabBK_1.png" TabLabelDown="AppToolTabBK_2.png" ActionId="840" ActionName="更多页|右侧TAB"/>
+          <TabLabel Name="MusicExtTabLabelSearch"  TabControlWidth="0" TabLabelButtonSize="0,0" TabLabelNormalTextColor="0xffffffff"  TabLabelDownTextColor="0xffffffff" TabLabelNormal="" TabLabelHover="" TabLabelDown="" TabLabelButtonNormal="" TabLabelButtonHover="" TabLabelButtonDown=""/>
+          <Container name="MusicBlankTablContainer"/>
+          <TabLabel name="MusicBlankTabLabel"/>
+        </TabControl>
+      </Container>
+      <Container name="_2" />
+    </SingleSplitview>
+    <Container Name="MainFormExtContainer" Anchors="left,top" Position="287,3,362,24" BackgroundSep="0,0,0,0" BackgroundPic="ExtExpandBack.png">
+      <Button Name="MainFormExtMusicExt" Anchors="left,top" Position="8,2,31,20" NormalBack="MainForm_ckMusicExt_0.png" HoverBack="MainForm_ckMusicExt_1.png" DownBack="MainForm_ckMusicExt_2.png" ActionID="8327" ActionName="显示/隐藏音乐库|主面板"/>
+      <Button Name="MainFormExtMinizie" Anchors="left,top" Position="29,2,52,20" NormalBack="minimize_0.png" HoverBack="minimize_1.png" DownBack="minimize_2.png"/>
+      <Button Name="MainFormExtClose" Anchors="left,top" Position="52,2,75,20" NormalBack="Mainclose_Normal.png" HoverBack="Mainclose_hot.png" DownBack="Mainclose_down.png"/>
+    </Container>
+    <Image Name="MainExpanedPanelSplitImage" Position="865,13,866,31" Anchors="right,top" Bitmap="MainForm_imgSplit_.png" />
+    <Container Name="MainExpandPanelSkinContainer" Anchors="top,right" position="833,13,861,33">
+      <Image Name="MainExpandPanelSkinRedPoint" Anchors="top,left" position="19,0,28,9" Bitmap="ListContainerModified.png"/>
+      <Button Name="MainExpandPanelSkin" Anchors="top,left" position="0,0,23,18" NormalBack="PlaybackControlPanel_btnSkin_0.png" HoverBack="PlaybackControlPanel_btnSkin_1.png" DownBack="PlaybackControlPanel_btnSkin_2.png" ActionId="8301" ActionName="点击主面板皮肤|主面板"/>
+    </Container>
+    <CheckBox Name="MainForm_ckMusicExt_" Position="901,13,924,31" Anchors="right,top" NormalBack="MainForm_ckMusicExt_0.png" HoverBack="MainForm_ckMusicExt_1.png" DownBack="MainForm_ckMusicExt_2.png" SelectedNormal="MainForm_ckMusicExt_4.png" SelectedHover="MainForm_ckMusicExt_5.png" SelectedDown="MainForm_ckMusicExt_6.png" SelectedDisabled="MainForm_ckMusicExt_7.png" ActionID="8327" ActionName="显示/隐藏音乐库|主面板"/>
+    <Button Name="MainForm_nemu_" Position="874,13,897,31" Anchors="right,top" NormalBack="MainForm_nemu_0.png" HoverBack="MainForm_nemu_1.png" DownBack="MainForm_nemu_2.png" />
+    <Button Name="MainForm_minimize_" Position="948,13,971,31" Anchors="right,top" NormalBack="minimize_0.png" HoverBack="minimize_1.png" DownBack="minimize_2.png" />
+    <CheckBox Name="MiniModeButton" Position="926,13,949,31" Anchors="right,top" NormalBack="WinMinBtn_0.png" HoverBack="WinMinBtn_1.png" DownBack="WinMinBtn_2.png" DisabledBack="WinMinBtn_3.png" SelectedNormal="WinMinBtn_0.png" SelectedHover="WinMinBtn_1.png" SelectedDown="WinMinBtn_2.png" SelectedDisabled="WinMinBtn_3.png" ActionId="9904" ActionName="点击遥控器按钮|主面板"/>
+    <Button Name="CloseButton" Position="971,13,994,31" Anchors="right,top" NormalBack="Mainclose_Normal.png" HoverBack="Mainclose_hot.png" DownBack="Mainclose_down.png" DisabledBack="Mainclose_disable.png"/>
+    <Image Name="MainFormBottomBackground" Position="3,636,998,668" Anchors="left,right,bottom" Bitmap="MainPlayerWidgetBottomBK.png"/>
+    <Image Name="MainFormSizeIcon" Position="989,657,996,664" Anchors="right,bottom" Bitmap="SizeIcon.png"/>
+    <Label Name="MainFormTextAd" Position="634,647,979,659" Anchors="right,bottom" />
+    <Control Name="MainFormMenuIconsLoader" MainFormMenuLoginIconNormal="menu_login_normal.png" MainFormMenuLoginIconHovering="menu_login_hovering.png" MainFormMenuLoginIconPressed="menu_login_pressed.png" MainFormMenuLoginIconDisabled="menu_login_disabled.png"
+      MainFormMenuSkinIconNormal="menu_skin_normal.png" MainFormMenuSkinIconHovering="menu_skin_hovering.png" MainFormMenuSkinIconPressed="menu_skin_pressed.png" MainFormMenuSkinIconDisabled="menu_skin_disabled.png"
+      MainFormMenuHelpIconNormal="menu_help_normal.png" MainFormMenuHelpIconHovering="menu_help_hovering.png" MainFormMenuHelpIconPressed="menu_help_pressed.png" MainFormMenuHelpIconDisabled="menu_help_disabled.png"
+      MainFormMenuConfigureIconNormal="menu_configure_normal.png" MainFormMenuConfigureIconHovering="menu_configure_hovering.png" MainFormMenuConfigureIconPressed="menu_configure_pressed.png" MainFormMenuConfigureIconDisabled="menu_configure_disabled.png"
+      MainFormMenuQuitIconNormal="menu_quit_normal.png" MainFormMenuQuitIconHovering="menu_quit_hovering.png" MainFormMenuQuitIconPressed="menu_quit_pressed.png" MainFormMenuQuitIconDisabled="menu_quit_disabled.png"
+      MainFormMenuFeedbackIconNormal="menu_feedback_normal.png" MainFormMenuFeedbackIconHovering="menu_feedback_hovering.png" MainFormMenuFeedbackIconPressed="menu_feedback_pressed.png" MainFormMenuFeedbackIconDisabled="menu_feedback_disabled.png"
+      MainFormMenuUpdateIconNormal="menu_update_normal.png" MainFormMenuUpdateIconHovering="menu_update_hovering.png" MainFormMenuUpdateIconPressed="menu_update_pressed.png" MainFormMenuUpdateIconDisabled="menu_update_disabled.png"
+      MainFormMenuAboutIconNormal="menu_about_normal.png" MainFormMenuAboutIconHovering="menu_about_hovering.png" MainFormMenuAboutIconPressed="menu_about_pressed.png" MainFormMenuAboutIconDisabled="menu_about_disabled.png"
+      MainFormMenuTransformToCloverNormal="menu_transform_to_clover_normal.png" MainFormMenuTransformToCloverHovering="menu_transform_to_clover_hovering.png" MainFormMenuTransformToCloverPressed="menu_transform_to_clover_pressed.png" MainFormMenuTransformToCloverDisabled="menu_transform_to_clover_disabled.png"
+      MainFormMenuTransformToMiniBarNormal="menu_transform_to_mini_bar_normal.png" MainFormMenuTransformToMiniBarHovering="menu_transform_to_mini_bar_hovering.png" MainFormMenuTransformToMiniBarPressed="menu_transform_to_mini_bar_pressed.png" MainFormMenuTransformToMiniBarDisabled="menu_transform_to_mini_bar_disabled.png"
+      MainFormLockLyricNormal="TrayMenuBtnLockKrc_0.png" MainFormLockLyricHovering="TrayMenuBtnLockKrc_1.png" MainFormLockLyricPressed="TrayMenuBtnLockKrc_2.png" MainFormLockLyricDisabled="TrayMenuBtnLockKrc_3.png"
+      MainFormUnlockLyricNormal="TrayMenuBtnLockKrc_4.png" MainFormUnlockLyricHovering="TrayMenuBtnLockKrc_5.png" MainFormUnlockLyricPressed="TrayMenuBtnLockKrc_6.png" MainFormUnlockLyricDisabled="TrayMenuBtnLockKrc_7.png"
+      MainFormHelpFaqNormal="Use_help_nomal.png" MainFormHelpFaqHovering="Use_help_hovering.png" MainFormHelpFaqPressed="Use_help_pressed.png" MainFormHelpFaqDisabled="Use_help_disabled.png"
+      />
+  </Form>
+
+</Forms>
+

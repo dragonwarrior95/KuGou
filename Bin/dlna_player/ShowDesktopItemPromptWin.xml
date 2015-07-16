@@ -1,0 +1,8 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Forms>
+  <Form Name="ShowDesktopItemPromptWin" Position="0,0,290,120" ClipSep="0,0,0,0" FrameSep="0,0,0,0" FramePic="">
+    <Image name="ShowDesktopItemPromptWinBackground" Anchors="left,top,right,bottom" position="0,0,290,120"  Bitmap="ShowDesktopItemPromptBack.png"/>
+    <Button name="ShowDesktopItemPromptWinCloseButton" Anchors="right,top," RelativePosition="50,8,27,25" NormalBack="ShowDesktopItemPromptClose_0.png" HoverBack="ShowDesktopItemPromptClose_1.png" DownBack="ShowDesktopItemPromptClose_2.png"/>
+    <Label name="ShowDesktopItemPromptWinDontPromptLabel" position="53,77,133,81"/>
+  </Form>
+</Forms>

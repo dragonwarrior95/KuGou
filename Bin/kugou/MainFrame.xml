@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="998,669" sizebox="4,4,4,4" roundcorner="5,5" caption="0,0,0,-1" mininfo="998,604" bktrans="false">
+    <Font name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font name="微软雅黑" size="16" bold="false" italic="false" />
+    <Font name="微软雅黑" size="18" bold="false" italic="false" />
+    <Font name="微软雅黑" size="20" bold="false" italic="false" />
+	<Font name="微软雅黑" size="24" bold="false" italic="false" />
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	<Default name="HScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,0,16,16' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,0,34,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,0,52,16' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,0,70,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,18,16,34' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,18,34,34' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,18,52,34' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,18,70,34' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,36,16,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,36,34,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,36,52,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,36,70,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,54,16,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,54,34,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,54,52,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,54,70,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,72,16,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,72,34,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,72,52,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,72,70,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
+	
+	<Default name="Button" value="normalimage=&quot;file='btn_default.png' source='0,0,96,24' fade='200'&quot; hotimage=&quot;file='btn_default.png' source='0,24,96,48' fade='200'&quot; pushedimage=&quot;file='btn_default.png' source='0,48,96,72' fade='200'&quot; " />
+    
+    
+    <VerticalLayout name="VerLayMainFrame" bkimage="file='MainSkin.jpg' corner='10,10,10,10' " bordercolor="#FF00FF00" bordersize="0" >
+    	<HorizontalLayout name="HorLayMainFrame" >
+    		<VerticalLayout name="VerLayLeftPanel" width="362" bordercolor="#FF00FF00" bordersize="0" >
+    			<HorizontalLayout name="LeftPanelPlay" height="115" bordercolor="#FF0000FF" bordersize="0" >
+    				<Option Name="PlaybackControlPanelLyric" float="true" pos="15,74,0,0" width="29" height="26" normalimage="BtnLyrics_0.png" hotimage="BtnLyrics_1.png" pushedimage="BtnLyrics_2.png" disabledimage="BtnLyrics_3.png" selectedimage="BtnLyrics_4.png" selectedhotimage="BtnLyrics_5.png" tooltip="显示歌词" />
+			        <Button name="PlaybackControlPanelChangeOrderMode" float="true" pos="50,74,0,0" width="29" height="26" normalimage="file='playlist_control_bar_order_mode_normal.png' source='0,0,29,26'" hotimage="file='playlist_control_bar_order_mode_hovering.png' source='0,0,29,26'" pushedimage="file='playlist_control_bar_order_mode_pressed.png' source='0,0,29,26'" disabledimage="file='playlist_control_bar_order_mode_disabled.png' source='0,0,29,26'" tooltip="播放模式"/>
+			        <Slider name="PlaybackControlPanelProgressBar" float="true" pos="11,35,0,0" width="343" height="13" thumbsize="13,13" bkimage="file='ProgressBarNewFront.png' source='0,0,8,13' dest='0,0,343,13' corner='0,0,0,0'" foreimage="file='PlayProgressBkgnd_2.png' source='0,0,8,13' dest='0,0,343,13' corner='0,0,0,0'"  TrackBarCache="PlayProgressBkgnd_3.png" thumbimage="PlayProgressThumb_0.png" thumbdisableimage="PlayProgressThumb_3.png" thumbhotimage="PlayProgressThumb_1.png" thumbpushedimage="PlayProgressThumb_2.png" ProgressBarNewFront0="ProgressBarNewFront.png" ProgressBarNewFront1="ProgressBarNewFront1.png" ProgressBarNewFront2="ProgressBarNewFront2.png"/>
+			        <Button name="PlaybackControlPanelVolumeIndicator" float="true" pos="267,71,0,0" width="29" height="25" normalimage="file='volume_indicator_normal.png' source='0,0,29,25'" hotimage="file='volume_indicator_hovering.png' source='0,0,29,25'" pushedimage="file='volume_indicator_pressed.png' source='0,0,29,25'" disabledimage="file='volume_indicator_disabled.png' source='0,0,29,25'" tooltip="点击主面板静音|主面板"/>
+			        <Button name="PlaybackControlPanelBeautiful" float="true" pos="300,76,0,0" width="48" height="19" normalimage="file='Beautiful_0.png' source='0,0,48,19'" hotimage="file='Beautiful_1.png" pushedimage="file='Beautiful_2.png' source='0,0,48,19'" disabledimage="file='Beautiful_3.png' source='0,0,48,19'"/>
+			        <Container Name="PlaybackControlPanelVolumeContainer" float="true" pos="265,71,0,0" width="89" height="27" >
+			      		<label Name="_0" bkimage="VolumeContainerBack.png" float="true" pos="0,0,89,27" />
+			          	<Slider name="PlaybackControlPanelVolume" float="true" pos="27,9,0,0" width="58" height="12" thumbsize="10,12" bkimage="file='MainFormVolumnBackground.png' source='0,0,8,12' corner='2,0,2,0'" foreimage="file='MainFormVolumnForeground.png' source='0,0,8,12' corner='2,0,2,0'" thumbimage="MainSoudSliderThumb_0.png" thumbdisabledimage="MainSoudSliderThumb_3.png" thumbhotimage="MainSoudSliderThumb_1.png" thumbpushedimage="MainSoudSliderThumb_2.png"/>
+			        </Container>
+			        <Button name="PlaybackControlPanelPlayPrev" float="true" pos="104,58,0,0" width="49" height="49" normalimage="ButtonPlayPreNormal.png" hotimage="ButtonPlayPreHover.png" pushedimage="ButtonPlayPreDown.png" disabledimage="ButtonPlayPreDisable.png" tooltip="上一首"/>
+			        <Button name="PlaybackControlPanelPlayNext" float="true" pos="206,58,0,0" width="49" height="49" normalimage="ButtonPlayNextNormal.png" hotimage="ButtonPlayNextHover.png" pushedimage="ButtonPlayNextDown.png" disabledimage="ButtonPlayNextDisable.png" tooltip="下一首"/>
+			        <Option name="PlaybackControlPanelPlayPause" float="true" pos="155,59,0,0" width="49" height="49" normalimage="ButtonPlayNormal.png" hotimage="ButtonPlayHover.png" pushedimage="ButtonPlayDown.png" disabledimage="ButtonPlayDisable.png" selectedimage="ButtonPauseNormal.png" selectedhotimage="ButtonPauseHover.png" selectedpushedimage="ButtonPauseDown.png" selecteddisabled="ButtonPauseDisable.png" tooltip="暂停"/>
+			        <Container Name="PlaybackControlPanelTopLayOutContainer" float="true" pos="11,10,0,0" width="264" height="26" Constraints="264,0,9999,9999">
+			          <Button name="PlayBackToneQuality" text="高品" float="true" pos="0,3,49,22" ControlSpace="0,3,4,4" textcolor="0xffffffff" hottextcolor="0xffffffff" DownTextColor="0xffffffff" DisabledTextColor="0xffb2b2b2" normalimage="PlayBackToneNormal.png" hotimage="PlayBackToneHover.png" pushedimage="PlayBackTonePressed.png" disabledimage="PlayBackToneDisabled.png"/>
+			          <Label name="PlaybackControlPanelSongStatus" text="Hello KuGou!" float="true" textcolor="#FFFFFFFF" pos="59,6,0,0" width="146" height="12" />
+			          <Label name="VipAccelerateLabel" float="true" pos="144,5,0,0" width="147" height="12" text="Vip" />
+			          <Container name="PlaybackControlPanelLikeInMiniBottonContainer" float="true" pos="200,0,0,0" width="29" height="26" >
+			            <Option name="PlaybackControlPanellikeInMini" float="true" pos="0,0,29,26" normalimage="playlist_like_0.png" hotimage="playlist_like_1.png" pushedimage="playlist_like_2.png" disabledimage="playlist_like_3.png" selectedimage="playlist_like_4.png" selectedhotimage="playlist_like_5.png" selectedpushedimage="playlist_like_6.png" selecteddisabledimage="playlist_like_7.png" tooltip="我喜欢" />
+			          </Container>
+			        </Container>
+			        
+			    	<label name="PlaybackControlPanelTimeStatus" float="true" pos="17,46,0,0" width="332" height="12" text="TiemStatus" />
+			        <Container name="PlaybackControlPanelShareAndLikeBottonContainer" float="true" pos="220,10,0,0" width="140" height="26">
+			          <Button name="PlaybackControlPanelReal" float="true" visible="false" pos="2,0,0,0" width="36" height="26" normalimage="playpanel_real_normal.png" hotimage="playpanel_real_hovering.png" pushedimage="playpanel_real_pressed.png" disabledimage="playpanel_real_disabled.png" tooltip="真字匹配成功点击7625|主界面"/>
+			          <Button name="PlaybackControlPanelDown" float="true" pos="43,0,0,0" width="28" height="26" normalimage="file='playpanel_down_0.png' source='0,0,28,26'" hotimage="file='playpanel_down_1.png' source='0,0,28,26'" pushedimage="file='playpanel_down_2.png' source='0,0,28,26'" disabledimage="file='playpanel_down_3.png' source='0,0,28,26'" tooltip="下载"/>
+			          <Option name="PlaybackControlPanelLike" float="true" pos="77,0,0,0" width="29" height="26" normalimage="playlist_like_0.png" hotimage="playlist_like_1.png" pushedimage="playlist_like_2.png" disabledimage="playlist_like_3.png" selectedimage="playlist_like_4.png" selectedhotimage="playlist_like_5.png" selectedpushedimage="playlist_like_6.png" selecteddisabledimage="playlist_like_7.png" tooltip="我喜欢" />
+			          <Button name="PlaybackControlPanelShare" float="true" pos="111,0,0,0" width="29" height="26" normalimage="playpanel_share_normal.png" hotimage="playpanel_share_hovering.png" pushedimage="playpanel_share_pressed.png" disabledimage="playpanel_share_disabled.png" tooltip="分享"/>
+			        </Container>
+    				
+    				
+    				<HorizontalLayout name="LeftPanelSystem" visible="false" float="true" pos="287,0,362,21" bkimage="file='ExtExpandBack.png' corner='10,5,5,5' " bordercolor="#FF0000FF" bordersize="0" >
+                		<Button name="BtnMusicExt" tooltip="隐藏音乐库" float="true" pos="8,2,31,20" width="23" height="18" normalimage="file='MainForm_ckMusicExt_0.png' source='0,0,23,18'" hotimage="file='MainForm_ckMusicExt_1.png' source='0,0,23,18'" pushedimage="file='MainForm_ckMusicExt_2.png' source='0,0,23,18'" disabledimage="file='MainForm_ckMusicExt_3.png' source='0,0,23,18'" bordercolor="#FF0000FF" bordersize="0" />
+                		
+                		<Button name="BtnMin" tooltip="最小化" float="true" pos="29,2,52,20" width="23" height="18" normalimage="file='minimize_0.png' source='0,0,23,18'" hotimage="file='minimize_1.png' source='0,0,23,18'" pushedimage="file='minimize_2.png' source='0,0,23,18'" bordercolor="#FF0000FF" bordersize="0" />
+               		
+    					<Button name="BtnClose" tooltip="关闭" float="true" pos="52,2,75,20" width="23" height="18" normalimage="file='Mainclose_Normal.png' source='0,0,23,18'" hotimage="file='Mainclose_hot.png' source='0,0,23,18'" pushedimage="file='Mainclose_down.png' source='0,0,23,18'" bordercolor="#FF0000FF" bordersize="0" />
+                		
+    				</HorizontalLayout>
+    			</HorizontalLayout>
+    			
+    			<HorizontalLayout name="HoriLeftTabControl" bordercolor="#FF0000FF" bordersize="0" >
+    				<VerticalLayout width="3" bkimage="CommonTabCtrlSpliter.png" >
+    				</VerticalLayout>
+    				
+    				<HorizontalLayout >
+    					<HorizontalLayout name="HorLayTabOption" width="48" bkimage="mainform_tabbackground.png" >
+    						<Option name="BtnLocalList" tooltip="本地列表" float="true" pos="0,0,0,0" selected="true" width="46" height="62" 
+    						bkimage="file='PlayBackTabLabelLocal.png' source='0,0,96,62' dest='0,0,46,62'" normalimage="file='TabPlaylistForegroundImage_0.png' source='0,0,46,62'" hotimage="file='TabPlaylistForegroundImage_1.png' source='0,0,46,62'" pushedimage="file='TabPlaylistForegroundImage_2.png' source='0,0,46,62'" selectedimage="file='TabPlaylistForegroundImage_2.png' source='0,0,46,62'" bordercolor="#FF0000FF" bordersize="0" group="PlayListOption" />
+    						
+    						<Option name="BtnCloudList" tooltip="网络收藏" float="true" pos="0,62,0,0" width="46" height="62" 
+    						bkimage="file='PlayBackTabelLabelCloud.png' source='0,0,96,62'" normalimage="file='TabCloudListForegroundImage_0.png' source='0,0,46,62'" hotimage="file='TabCloudListForegroundImage_1.png' source='0,0,46,62'" pushedimage="file='TabCloudListForegroundImage_2.png' source='0,0,46,62'" selectedimage="file='TabCloudListForegroundImage_2.png' source='0,0,46,62'" bordercolor="#FF0000FF" bordersize="0" group="PlayListOption" />
+    						
+    						<Option name="BtnRadioList" tooltip="音乐电台" float="true" pos="0,124,0,0" width="46" height="62" 
+    						bkimage="file='PlayBackTabelLabelRadio.png' source='0,0,96,62'" normalimage="file='TabRadioListForegroundImage_0.png' source='0,0,46,62'" hotimage="file='TabRadioListForegroundImage_1.png' source='0,0,46,62'" pushedimage="file='TabRadioListForegroundImage_2.png' source='0,0,46,62'" selectedimage="file='TabRadioListForegroundImage_2.png' source='0,0,46,62'" bordercolor="#FF0000FF" bordersize="0" group="PlayListOption" />
+    						
+    						<Option name="BtnInterCutList" tooltip="临时播" float="true" pos="0,186,0,0" width="46" height="62" 
+    						bkimage="file='PlayBackTabLabelInterCut.png' source='0,0,96,62'" normalimage="file='TabInterCutListForegroundLightImage_0.png' source='0,0,46,62'" hotimage="file='TabInterCutListForegroundLightImage_1.png' source='0,0,46,62'" pushedimage="file='TabInterCutListForegroundLightImage_2.png' source='0,0,46,62'" selectedimage="file='TabInterCutListForegroundLightImage_2.png' source='0,0,46,62'" bordercolor="#FF0000FF" bordersize="0" group="PlayListOption" />
+    						
+    						<Option name="BtnDownLoadList" tooltip="我的下载" float="true" pos="0,248,0,0" width="46" height="62" 
+    						bkimage="file='PlayBackTabLabelDownload.png' source='0,0,96,62'" normalimage="file='TabDownloadListForegroundImage_0.png' source='0,0,46,62'" hotimage="file='TabDownloadListForegroundImage_1.png' source='0,0,46,62'" pushedimage="file='TabDownloadListForegroundImage_2.png' source='0,0,46,62'" selectedimage="file='TabDownloadListForegroundImage_2.png' source='0,0,46,62'" bordercolor="#FF0000FF" bordersize="0" group="PlayListOption" />
+    						
+    						<Option name="BtnAppToolList" tooltip="更多" float="true" pos="0,310,0,0" width="46" height="62" 
+    						bkimage="file='apptoolActionPic.png' source='0,0,96,62'" normalimage="file='apptoolTab_0.png' source='0,0,46,62'" hotimage="file='apptoolTab_1.png' source='0,0,46,62'" pushedimage="file='apptoolTab_2.png' source='0,0,46,62'" selectedimage="file='apptoolTab_2.png' source='0,0,46,62'" bordercolor="#FF0000FF" bordersize="0" group="PlayListOption" />
+    					</HorizontalLayout>
+    					
+    					<HorizontalLayout name="HorLayTabSwitch" bkcolor="#FF99D3FB" >
+    						<TabLayout name="TabPlayList" >
+    							<VerticalLayout name="VerLayLocalList" >
+    								
+    							</VerticalLayout>
+    							
+    							<VerticalLayout name="VerLayCloudList" >
+   	 								
+    							</VerticalLayout>
+    							
+    							<VerticalLayout name="VerLayRadioList" >
+		    						
+    							</VerticalLayout>
+    							
+    							<VerticalLayout name="VerLayInterCotList" >
+    								
+    							</VerticalLayout>
+    							
+    							<VerticalLayout name="VerLayDownLoadList" >
+		    						
+    							</VerticalLayout>
+    							
+    							<VerticalLayout name="VerLayAppToolList" >
+    								
+    							</VerticalLayout>
+    						</TabLayout>
+    					</HorizontalLayout>
+    				</HorizontalLayout>
+    			</HorizontalLayout>
+    		</VerticalLayout>
+    		
+    		<VerticalLayout name="VerLayRightPanel" bordercolor="#FF0000FF" bordersize="0" >
+    			<HorizontalLayout name="RightPanelCaption" height="40" bkimage="file='MainExpandBackground.png' corner='30,10,10,10' " bordercolor="#FF0000FF" bordersize="0" >
+    				<HorizontalLayout name="RightPanelTitle" width="160" bordercolor="#FF0000FF" bordersize="0" >
+    					<Label name="Login" text="登录" float="true" pos="40,0,0,0" width="40" height="40" textcolor="#FFFFFFFF" textpadding="4,4,4,4" font="0" align="right" valign="vcenter" />
+    					
+    					<Label name="Split" float="true" bkimage="file='Login_ImgSplit.png' dest='0,14,1,12'" pos="80,0,0,0" width="1" height="40" />
+    					 
+    					<Label name="Sign" text="注册" float="true" pos="81,0,0,0" width="40" height="40" textcolor="#FFFFFFFF" textpadding="4,4,4,4" font="0" align="left" valign="vcenter" />
+    					
+    					<Button name="BtnMainExpandPanelLogo" tooltip="" float="true" pos="121,6,0,0" width="29" height="29" bkimage="file='main_KLogo_artist.png' source='0,0,29,29'" bordercolor="#FF0000FF" bordersize="0" />
+    				</HorizontalLayout>
+    				
+    				<HorizontalLayout name="SearchPanel" bordercolor="#FF0000FF" bordersize="0" >
+    					<Edit name="EdtSearch" float="true" pos="0,5,220,32" relativepos="0,5,100,100" disabledimage="SearchPanelEditDisable.png" normalimage="SearchPanelEditNormal.png" BackgroundSep="2,2,5,19"  focusedimage="SearchPanelEditFocus.png" textpadding="4,5,33,5" bordercolor="#FFFF0000" bordersize="1" />
+          				
+          				<!--Button name="BtnSearch" pos="0,0,0,0"  normalimage="search_button_tri_normal.png" hotimage="search_button_tri_hot.png" pushedimage="search_button_tri_pushed.png" disabledimage="search_button_tri_disable.png"/-->
+          				
+          				<Button name="BtnSearch" float="true" tooltip="搜索" pos="168,4,200,31" relativepos="90,4,10,100" normalimage="search_button_normal.png" hotimage="search_button_hot.png" pushedimage="search_button_pushed.png" disabledimage="search_button_disable.png" /> 
+    				</HorizontalLayout>
+    				
+    				<HorizontalLayout name="RightPanelSystem" width="250" bordercolor="#FF0000FF" bordersize="0" >
+                		<Button name="BtnGame" tooltip="酷狗网页游戏平台" float="true" pos="0,10,0,0" width="52" height="18" normalimage="file='MainForm_game_0.png' source='0,0,52,18'" hotimage="file='MainForm_game_1.png' source='0,0,52,18'" pushedimage="file='MainForm_game_2.png' source='0,0,52,18'" bordercolor="#FF0000FF" bordersize="0" />
+                		
+                		<Button name="BtnLuckyBag" tooltip="抢福袋马上有奖" float="true" pos="55,0,0,0" width="26" height="28" normalimage="file='LuckyBagBtn_0.png' source='0,0,26,28'" hotimage="file='LuckyBagBtn_1.png' source='0,0,26,28'" pushedimage="file='LuckyBagBtn_0.png' source='0,0,26,28'" 
+                		disabledimage="file='LuckyBagBtn_0.png' source='0,0,26,28'" bordercolor="#FF0000FF" bordersize="0" />
+                		
+                		<Button name="BtnSkin" tooltip="更换皮肤" float="true" pos="85,10,0,0" width="23" height="18" normalimage="file='PlaybackControlPanel_btnSkin_0.png' source='0,0,23,18'" hotimage="file='PlaybackControlPanel_btnSkin_1.png' source='0,0,23,18'" pushedimage="file='PlaybackControlPanel_btnSkin_2.png' source='0,0,23,18'" bordercolor="#FF0000FF" bordersize="0" />
+                		
+                		<Label name="LabSplit" tooltip="" float="true" pos="105,10,0,0" width="15" height="18" bkimage="file='MainPlayerWidgetBottomBK.png' dest='11,0,3,18'" bordercolor="#FF0000FF" bordersize="0" />
+                		
+                		<Button name="BtnFormMenu" tooltip="主菜单" float="true" pos="125,10,0,0" width="23" height="18" normalimage="file='MainForm_nemu_0.png' source='0,0,23,18'" hotimage="file='MainForm_nemu_1.png' source='0,0,23,18'" pushedimage="file='MainForm_nemu_2.png' source='0,0,23,18'" bordercolor="#FF0000FF" bordersize="0" />
+                		
+                		<Button name="BtnMusicExt" tooltip="隐藏音乐库" float="true" pos="151,10,0,0" width="23" height="18" normalimage="file='MainForm_ckMusicExt_4.png' source='0,0,23,18'" hotimage="file='MainForm_ckMusicExt_5.png' source='0,0,23,18'" pushedimage="file='MainForm_ckMusicExt_6.png' source='0,0,23,18'" disabledimage="file='MainForm_ckMusicExt_7.png' source='0,0,23,18'" bordercolor="#FF0000FF" bordersize="0" />
+                		
+                		<Option name="BtnMiniMode" tooltip="打开遥控器" float="true" pos="176,10,0,0" width="23" height="18" normalimage="file='WinMinBtn_0.png' source='0,0,23,18'" hotimage="file='WinMinBtn_1.png' source='0,0,23,18'" pushedimage="file='WinMinBtn_2.png' source='0,0,23,18'" disabledimage="file='WinMinBtn_3.png' source='0,0,23,18'" selectedimage="file='WinMinBtn_2.png' source='0,0,23,18'" selectedhotimage="file='WinMinBtn_1.png' source='0,0,23,18'" bordercolor="#FF0000FF" bordersize="0" />
+                		
+                		<Button name="BtnMin" tooltip="最小化" float="true" pos="199,10,0,0" width="23" height="18" normalimage="file='minimize_0.png' source='0,0,23,18'" hotimage="file='minimize_1.png' source='0,0,23,18'" pushedimage="file='minimize_2.png' source='0,0,23,18'" bordercolor="#FF0000FF" bordersize="0" />
+               		
+    					<Button name="BtnClose" tooltip="关闭" float="true" pos="222,10,0,0" width="23" height="18" normalimage="file='Mainclose_Normal.png' source='0,0,23,18'" hotimage="file='Mainclose_hot.png' source='0,0,23,18'" pushedimage="file='Mainclose_down.png' source='0,0,23,18'" bordercolor="#FF0000FF" bordersize="0" />
+                		
+    				</HorizontalLayout>
+    			</HorizontalLayout>
+    			<HorizontalLayout name="RightPanelTool" height="75" bordercolor="#FF0000FF" bordersize="0" >
+    			</HorizontalLayout>
+    			<HorizontalLayout name="RightPanelCaption" bordercolor="#FF0000FF" bordersize="0" >
+    			</HorizontalLayout>
+    		</VerticalLayout>
+    	</HorizontalLayout>
+    	<!--浏览器状态栏-->
+        <VerticalLayout name="VerLayStatus" height="30" bordercolor="#FFFF0000" bordersize="0" >
+        </VerticalLayout>
+        <!--浏览器标题栏-->
+        <!--VerticalLayout name="VerLayCaption" height="90" bordercolor="#FFFF0000" bordersize="0">
+            <HorizontalLayout name="HorLayTitle" height="60" bordercolor="#FFFF0000" bordersize="0">
+                <VerticalLayout name="VerLayLogin" width="60" height="60" bordercolor="#FF00FF00" bordersize="1" >
+                	<FadeButton name="BtnClose" float="true" pos="0,0,0,0" width="60" height="60" normalimage="file='user_normal.png'" hotimage="file='user_hover.png'" pushedimage="file='user_pushed.png'" />
+               	</VerticalLayout>
+                <VerticalLayout name="VerLayHead" height="60" bordercolor="#FF00FF00" bordersize="0" >
+                	<HorizontalLayout name="VerTitle" height="30" bordercolor="#FF00FF00" bordersize="0" >
+                		<VerticalLayout name="VerTitleName" width="200" bordercolor="#FF00FF00" bordersize="0" >
+                			<Text name="TextTitle" float="true" pos="0,0,0,0" width="200" height="30" text="360安全浏览器" textcolor="#FFFFFFFF" textpadding="3,0,0,0" font="2" align="left" valign="vcenter" />
+                		</VerticalLayout>
+                		<VerticalLayout name="VerMenu" bordercolor="#FF00FF00" bordersize="0" >
+                		</VerticalLayout>
+                		<VerticalLayout name="VerSystemButton" width="200" bordercolor="#FF00FF00" bordersize="0" >
+                			<FadeButton name="BtnClose" float="true" pos="153,3,0,0" width="44" height="22" normalimage="file='res/buttons/1/skin_close.png' source='0,0,44,22'" hotimage="file='res/buttons/1/skin_close.png' source='44,0,88,22'" pushedimage="file='res/buttons/1/skin_close.png' source='88,0,132,22'" />
+                    		<FadeButton name="BtnRestore" float="true" visible="false" pos="120,3,0,0" width="33" height="22" normalimage="file='res/buttons/1/skin_reduction.png' source='0,0,33,22'" hotimage="file='res/buttons/1/skin_reduction.png' source='33,0,66,22'" pushedimage="file='res/buttons/1/skin_reduction.png' source='66,0,99,22'" />
+                    		<FadeButton name="BtnMax" float="true" pos="120,3,0,0" width="33" height="22" normalimage="file='res/buttons/1/skin_max.png' source='0,0,33,22'" hotimage="file='res/buttons/1/skin_max.png' source='33,0,66,22'" pushedimage="file='res/buttons/1/skin_max.png' source='66,0,99,22'" />
+                    		<FadeButton name="BtnMin" float="true" pos="84,3,0,0" width="36" height="22" normalimage="file='res/buttons/1/skin_min.png' source='0,0,36,22'" hotimage="file='res/buttons/1/skin_min.png' source='36,0,72,22'" pushedimage="file='res/buttons/1/skin_min.png' source='72,0,108,22'" />
+                    		
+                    		<FadeButton name="BtnSkin" float="true" pos="51,3,0,0" width="33" height="22" normalimage="file='res/buttons/1/skin_button.png' source='0,0,33,22'" hotimage="file='res/buttons/1/skin_button.png' source='33,0,66,22'" pushedimage="file='res/buttons/1/skin_button.png' source='66,0,99,22'" />
+                		</VerticalLayout>
+                	</HorizontalLayout>	
+                </VerticalLayout>
+            </HorizontalLayout>
+        </VerticalLayout-->
+        
+        
+        <!--浏览器客户区-->
+        <!--VerticalLayout name="VerLayClient" >
+        	
+        </VerticalLayout!-->
+        
+        
+        <!--浏览器状态栏-->
+        <!--VerticalLayout name="VerLayStatus" height="30" bordercolor="#FFFF0000" bordersize="0" >
+        </VerticalLayout-->
+    </VerticalLayout>
+</Window>
